@@ -1,0 +1,13 @@
+{
+  "global": {
+    "fields": {
+      "name": {
+        "default": "Corporate Tailwind",
+        "type": "string"
+      },
+      "logo": {
+        "type": "image"
+      }
+    }
+  }
+}

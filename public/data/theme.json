@@ -1,0 +1,14 @@
+{
+  "theme": {
+    "namespace": "gh_richjava_corporate",
+    "title": "Corporate",
+    "description": "Small business theme with basic Tailwind styling.",
+    "imageUrl": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/theme.png",
+    "demoUrl": "https://builtjs-theme-corporate.vercel.app",
+    "plugins": ["gh_richjava_blog"],
+    "config": {
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}

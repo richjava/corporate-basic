@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "slug": "feature-1",
+      "_type": "feature",
+      "preheading": {
+        "text": "Preheading",
+        "type": "plain"
+      },
+      "title": "Lorem ipsum dolor sit amet",
+      "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": {
+        "path": "/images/theme/image.png",
+        "width": 1280,
+        "height": 768
+      },
+      "buttonLinks": [
+        {
+          "url": "/about",
+          "label": "Button",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "feature-2",
+      "_type": "feature",
+      "preheading": {
+        "text": "Preheading",
+        "type": "plain"
+      },
+      "title": "Lorem ipsum dolor sit amet",
+      "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": {
+        "path": "/images/theme/image.png",
+        "width": 1280,
+        "height": 768
+      },
+      "buttonLinks": [
+        {
+          "url": "/about",
+          "label": "Button",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "feature-3",
+      "_type": "feature",
+      "preheading": {
+        "text": "Preheading",
+        "type": "plain"
+      },
+      "title": "Lorem ipsum dolor sit amet",
+      "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": {
+        "path": "/images/theme/image.png",
+        "width": 1280,
+        "height": 768
+      },
+      "buttonLinks": [
+        {
+          "url": "/about",
+          "label": "Button",
+          "type": "primary"
+        }
+      ]
+    }
+  ]
+}

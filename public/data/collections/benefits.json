@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "slug": "benefit-1",
+      "_type": "benefit",
+      "preheading": {
+        "text": "Preheading",
+        "type": "dot"
+      },
+      "title": "Lorem ipsum dolor sit amet",
+      "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": {
+        "path": "/images/theme/image.png",
+        "width": 1280,
+        "height": 768
+      },
+      "buttonLinks": [
+        {
+          "url": "/about",
+          "label": "Button",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "benefit-2",
+      "_type": "benefit",
+      "preheading": {
+        "text": "Preheading",
+        "type": "dot"
+      },
+      "title": "Lorem ipsum dolor sit amet",
+      "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": {
+        "path": "/images/theme/image.png",
+        "width": 1280,
+        "height": 768
+      },
+      "buttonLinks": [
+        {
+          "url": "/about",
+          "label": "Button",
+          "type": "primary"
+        }
+      ]
+    },
+    {
+      "slug": "benefit-3",
+      "_type": "benefit",
+      "preheading": {
+        "text": "Preheading",
+        "type": "dot"
+      },
+      "title": "Lorem ipsum dolor sit amet",
+      "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "image": {
+        "path": "/images/theme/image.png",
+        "width": 1280,
+        "height": 768
+      },
+      "buttonLinks": [
+        {
+          "url": "/about",
+          "label": "Button",
+          "type": "primary"
+        }
+      ]
+    }
+  ]
+}

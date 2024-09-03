@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+        "slug": "services",
+        "_type": "primaryMenuItem",
+        "label": "Services",
+        "url": "/services"
+    },
+    {
+        "slug": "about",
+        "_type": "primaryMenuItem",
+        "label": "About",
+        "url": "/about"
+    },
+    {
+        "slug": "contact",
+        "_type": "primary-menu-item",
+        "label": "Contact",
+        "url": "/contact"
+    }
+  ]
+}

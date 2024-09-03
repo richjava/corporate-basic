@@ -1,0 +1,134 @@
+:root {
+  /* Accent color hsl values used in tailwind.config file */
+  --hue-accent: 220;
+  --saturation-accent: 9%;
+  --lightness-accent: 46%;
+}
+
+/* Display styles */
+.display-xs {
+  @apply font-display text-display-xs leading-display-xs;
+}
+
+.display-sm {
+  @apply font-display text-display-sm leading-display-sm;
+}
+
+.display-md {
+  @apply font-display text-display-md leading-display-md;
+}
+
+.display-lg {
+  @apply font-display text-display-lg leading-display-lg;
+}
+
+/* Heading styles */
+.heading-xs {
+  @apply text-heading-xs leading-heading-xs;
+}
+
+.heading-sm {
+  @apply text-heading-sm leading-heading-sm;
+}
+
+.heading-md {
+  @apply text-heading-md leading-heading-md;
+}
+
+.heading-lg {
+  @apply text-heading-lg leading-heading-lg;
+}
+
+.heading-xl {
+  @apply text-heading-xl leading-heading-xl;
+}
+
+.heading-xxl {
+  @apply text-heading-xxl leading-heading-xxl;
+}
+
+/* Label styles */
+.label-xs {
+  @apply text-label-xs leading-label-xs;
+}
+
+.label-sm {
+  @apply text-label-sm leading-label-sm;
+}
+
+.label-md {
+  @apply text-label-md leading-label-md;
+}
+
+.label-lg {
+  @apply text-label-lg leading-label-lg;
+}
+
+/* Paragraph styles */
+.paragraph-xs {
+  @apply text-paragraph-xs leading-paragraph-xs;
+}
+
+.paragraph-sm {
+  @apply text-paragraph-sm leading-paragraph-sm;
+}
+
+.paragraph-md {
+  @apply text-paragraph-md leading-paragraph-md;
+}
+
+.paragraph-lg {
+  @apply text-paragraph-lg leading-paragraph-lg;
+}
+
+.btn {
+  @apply inline-block px-5 py-3 text-center transition-all duration-200 ease-in-out border-2 rounded-md;
+}
+
+.btn-primary {
+  @apply text-white bg-accent border-accent btn hover:bg-accent-hover hover:border-accent-hover dark:bg-white dark:text-accent dark:border-white dark:hover:bg-gray-300 dark:hover:border-gray-300;
+}
+
+.btn-secondary {
+  @apply text-accent border-accent btn hover:bg-accent-hover hover:text-white hover:border-accent-hover dark:border-gray-300 dark:text-white dark:hover:text-white dark:hover:border-white;
+}
+
+.btn:first-of-type + .btn {
+  @apply ml-3;
+}
+
+.preheading {
+  @apply relative block mb-4 text-sm font-light tracking-widest text-gray-400 uppercase dark:text-gray-400;
+}
+
+.preheading.center {
+  max-width: max-content;
+  @apply mx-auto;
+}
+
+.preheading.line {
+  @apply pl-10;
+}
+
+.preheading.dot {
+  @apply pl-5;
+}
+
+.preheading.line::before,
+.preheading.dot::before {
+  content: "";
+  @apply absolute left-0 -translate-y-1/2 transform-gpu top-1/2;
+}
+
+.preheading.line::before {
+  @apply border-t border-gray-400 w-7;
+}
+
+.preheading.dot::before {
+  @apply w-1.5 h-1.5 bg-gray-400 rounded-full;
+}
+
+.active a {
+  color: #1a202c !important;
+  background-color: rgba(237, 242, 247, 0.75);
+}

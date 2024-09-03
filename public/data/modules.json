@@ -1,0 +1,95 @@
+{
+  "modules": [
+    {
+      "name": "introduce",
+      "title": "Introduce",
+      "description": "Familiarizes users with your product or service",
+      "required": true,
+      "modulePages": [
+        {
+          "name": "homeBase"
+        }
+      ]
+    },
+    {
+      "name": "contact",
+      "title": "Contact",
+      "description": "Encourages and facilitates making contact",
+      "modulePages": [
+        {
+          "name": "contactBase"
+        },
+        {
+          "name": "servicesContactTeaser",
+          "forModule": {
+            "name": "services"
+          }
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "title": "About",
+      "description": "Provides information related to the organisation",
+      "modulePages": [
+        {
+          "name": "aboutBase"
+        },
+        {
+          "name": "homeAboutTeaser"
+        }
+      ],
+      "modules": [
+        {
+          "name": "team"
+        }
+      ]
+    },
+    {
+      "name": "team",
+      "title": "Team",
+      "description": "Provides information about the team members",
+      "modulePages": [
+        {
+          "name": "aboutTeam"
+        },
+        {
+          "name": "authorArticle"
+        }
+      ],
+      "parent": {
+        "name": "about"
+      }
+    },
+    {
+      "name": "services",
+      "title": "Services",
+      "description": "Provides information about main services",
+      "modulePages": [
+        {
+          "name": "servicesBase"
+        }
+      ]
+    },
+    {
+      "name": "features",
+      "title": "Features",
+      "description": "Provides information about main features of offering",
+      "modulePages": [
+        {
+          "name": "homeFeatures"
+        }
+      ]
+    },
+    {
+      "name": "benefits",
+      "title": "Benefits",
+      "description": "Displays main benefits of using offering",
+      "modulePages": [
+        {
+          "name": "homeBenefits"
+        }
+      ]
+    }
+  ]
+}
