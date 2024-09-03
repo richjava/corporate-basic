@@ -41,7 +41,7 @@
         "pageTitle": "Home | Corporate Tailwind Built.JS Theme",
         "description": "Home page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -65,7 +65,7 @@
         "heading": "Lorem ipsum dolor sit amet dev",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image-square.png",
+          "path": "/images/image-square.png",
           "width": 768,
           "height": 768
         },
@@ -199,7 +199,7 @@
         "pageTitle": "Services | Corporate Tailwind Built.JS Theme",
         "description": "Services page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -223,7 +223,7 @@
         "heading": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -258,7 +258,7 @@
         "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
         "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
         "image": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -283,7 +283,7 @@
         "pageTitle": "About | Corporate Tailwind Built.JS Theme",
         "description": "About page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -307,7 +307,7 @@
         "heading": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image-square.png",
+          "path": "/images/image-square.png",
           "width": 1000,
           "height": 1000
         },
@@ -372,7 +372,7 @@
         "pageTitle": "Contact | Corporate Tailwind Built.JS Theme",
         "description": "Contact page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -402,7 +402,7 @@
         "contextualLinks": [
           {
             "icon": {
-              "path": "/images/theme/icons/phone.svg",
+              "path": "/images/icons/phone.svg",
               "width": 24,
               "height": 26
             },
@@ -412,7 +412,7 @@
           },
           {
             "icon": {
-              "path": "/images/theme/icons/mail.svg",
+              "path": "/images/icons/mail.svg",
               "width": 24,
               "height": 26
             },
@@ -422,7 +422,7 @@
           },
           {
             "icon": {
-              "path": "/images/theme/icons/marker.svg",
+              "path": "/images/icons/marker.svg",
               "width": 28,
               "height": 34
             },

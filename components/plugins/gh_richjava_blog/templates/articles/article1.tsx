@@ -1,8 +1,8 @@
 import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
-import { Tag } from "components/plugins/gh_richjava_blog/shared";
-import { urlForImage } from "builtjs-utils";
+import { Tag } from "@/components/plugins/gh_richjava_blog/shared";
+import { urlForImage } from "@/builtjs-utils";
 import BlockContent from '@sanity/block-content-to-react';
 
 export default function Article1({ content }: any) {

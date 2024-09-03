@@ -212,7 +212,8 @@
           "relation": "oneToMany",
           "target": "tag"
         }
-      }
+      },
+      "namespace": "gh_richjava_blog"
     },
     {
       "name": "tag",
@@ -227,7 +228,8 @@
           "targetField": "name",
           "required": true
         }
-      }
+      },
+      "namespace": "gh_richjava_blog"
     }
   ],
   "pages": [
@@ -413,7 +415,7 @@
         "pageTitle": "Home | Corporate Tailwind Built.JS Theme",
         "description": "Home page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -443,7 +445,7 @@
         "heading": "Lorem ipsum dolor sit amet dev",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image-square.png",
+          "path": "/images/image-square.png",
           "width": 768,
           "height": 768
         },
@@ -602,7 +604,7 @@
         "pageTitle": "Services | Corporate Tailwind Built.JS Theme",
         "description": "Services page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -632,7 +634,7 @@
         "heading": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -673,7 +675,7 @@
         "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
         "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
         "image": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -700,7 +702,7 @@
         "pageTitle": "About | Corporate Tailwind Built.JS Theme",
         "description": "About page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -730,7 +732,7 @@
         "heading": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image-square.png",
+          "path": "/images/image-square.png",
           "width": 1000,
           "height": 1000
         },
@@ -805,7 +807,7 @@
         "pageTitle": "Contact | Corporate Tailwind Built.JS Theme",
         "description": "Contact page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -838,7 +840,7 @@
         "contextualLinks": [
           {
             "icon": {
-              "path": "/images/theme/icons/phone.svg",
+              "path": "/images/icons/phone.svg",
               "width": 24,
               "height": 26
             },
@@ -848,7 +850,7 @@
           },
           {
             "icon": {
-              "path": "/images/theme/icons/mail.svg",
+              "path": "/images/icons/mail.svg",
               "width": 24,
               "height": 26
             },
@@ -858,7 +860,7 @@
           },
           {
             "icon": {
-              "path": "/images/theme/icons/marker.svg",
+              "path": "/images/icons/marker.svg",
               "width": 28,
               "height": 34
             },
@@ -1106,8 +1108,8 @@
       "category": "banners",
       "description": "Full width banner with centered content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/banners/banner1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/banners/banner1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner1.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner1"
@@ -1118,8 +1120,8 @@
       "category": "banners",
       "description": "Full width banner with left aligned content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/banners/banner2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/banners/banner2.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner2.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner2.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner2"
@@ -1130,8 +1132,8 @@
       "category": "banners",
       "description": "Full width banner with two offset columns.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/banners/banner3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/banners/banner3.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner3.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner3.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner3.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner3"
@@ -1142,8 +1144,8 @@
       "category": "banners",
       "description": "Banner with centered content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/banners/banner4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/banners/banner4.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner4.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner4.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner4.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner4"
@@ -1154,8 +1156,8 @@
       "category": "banners",
       "description": "Banner with two offset columns.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/banners/banner5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/banners/banner5.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner5.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner5.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner5.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner5"
@@ -1166,8 +1168,8 @@
       "category": "blocks",
       "description": "Text block with left aligned content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/blocks/block1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/blocks/block1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block1.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block1"
@@ -1178,8 +1180,8 @@
       "category": "blocks",
       "description": "Text block with centered content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/blocks/block2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/blocks/block2.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block2.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block2.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block2"
@@ -1190,8 +1192,8 @@
       "category": "blocks",
       "description": "Text block with two equal columns and left aligned content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/blocks/block3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/blocks/block3.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block3.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block3.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block3.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block3"
@@ -1202,8 +1204,8 @@
       "category": "blocks",
       "description": "Text block with two equal columns and centered content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/blocks/block4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/blocks/block4.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block4.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block4.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block4.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block4"
@@ -1214,8 +1216,8 @@
       "category": "blocks",
       "description": "Text block with two equal columns and split content",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/blocks/block5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/blocks/block5.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block5.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block5.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block5.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block5"
@@ -1226,8 +1228,8 @@
       "category": "cards",
       "description": "Cards with three equal columns and left aligned content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/cards1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/cards1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards1.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards1"
@@ -1238,8 +1240,8 @@
       "category": "cards",
       "description": "Cards with three equal columns and centered content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/cards2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/cards2.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards2.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards2.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards2"
@@ -1250,8 +1252,8 @@
       "category": "cards",
       "description": "Cards with three equal columns, left aligned content and a background colour.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/cards3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/cards3.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards3.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards3.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards3.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards3"
@@ -1262,8 +1264,8 @@
       "category": "cards",
       "description": "Cards with three equal columns, centered content and a background colour.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/cards4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/cards4.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards4.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards4.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards4.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards4"
@@ -1274,8 +1276,8 @@
       "category": "cards",
       "description": "Cards with three equal columns, left aligned content and an image.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/cards5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/cards5.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards5.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards5.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards5.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards5"
@@ -1286,8 +1288,8 @@
       "category": "cards",
       "description": "Takes a collection of authors. Cards with three equal columns, left aligned content and an image.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/profile-cards1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/cards/profile-cards1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/profile-cards1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/profile-cards1.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/profile-cards1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#profile-cards1"
@@ -1298,8 +1300,8 @@
       "category": "covers",
       "description": "Full viewport cover with text content and a supporting image.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/covers/cover1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/covers/cover1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover1.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover1"
@@ -1310,8 +1312,8 @@
       "category": "covers",
       "description": "Full viewport cover with text content and a circle supporting image.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/covers/cover2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/covers/cover2.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover2.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover2.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover2"
@@ -1322,8 +1324,8 @@
       "category": "covers",
       "description": "Full viewport cover with text content and a full height supporting image.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/covers/cover3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/covers/cover3.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover3.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover3.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover3.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover3"
@@ -1334,8 +1336,8 @@
       "category": "covers",
       "description": "Full viewport cover with centered text content and supporting image.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/covers/cover4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/covers/cover4.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover4.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover4.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover4.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover4"
@@ -1346,8 +1348,8 @@
       "category": "covers",
       "description": "Full viewport cover with text content and a full width and height background image.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/covers/cover5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/covers/cover5.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover5.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover5.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover5.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover5"
@@ -1358,8 +1360,8 @@
       "category": "lists",
       "description": "List of items with two equal columns and reversed even rows.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/lists/list1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/lists/list1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/lists/list1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/lists/list1.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/lists/list1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/lists#list1"
@@ -1370,8 +1372,8 @@
       "category": "lists",
       "description": "List of items with two equal columns and reversed odd rows.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/lists/list2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/lists/list2.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/lists/list2.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/lists/list2.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/lists/list2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/lists#list2"
@@ -1382,8 +1384,8 @@
       "category": "forms",
       "description": "Contact details with two equal columns and form fields.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/forms/form1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/forms/form1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/forms/form1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/forms/form1.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/forms/form1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/forms#form-1"
@@ -1394,8 +1396,8 @@
       "category": "forms",
       "description": "Contact details with two equal columns and form fields.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/forms/form2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/forms/form2.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/forms/form2.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/forms/form2.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/forms/form2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/forms#form2"
@@ -1406,8 +1408,8 @@
       "category": "articles",
       "description": "Article section with hero image for introducing authors.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/articles/profile-article1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/theme/templates/articles/profile-article1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/articles/profile-article1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/articles/profile-article1.png"
       },
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/articles/profile-article1.tsx",
       "demoUrl": ""
@@ -1574,7 +1576,12 @@
         "image": {
           "path": "/images/plugins/gh_richjava_blog/image.png",
           "width": 1280,
-          "height": 768
+          "height": 768,
+          "repo": {
+            "owner": "richjava",
+            "repo": "blog",
+            "provider": "gh"
+          }
         },
         "date": "2023-06-03",
         "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
@@ -1618,7 +1625,12 @@
         "image": {
           "path": "/images/plugins/gh_richjava_blog/image.png",
           "width": 1280,
-          "height": 768
+          "height": 768,
+          "repo": {
+            "owner": "richjava",
+            "repo": "blog",
+            "provider": "gh"
+          }
         },
         "date": "2023-06-03",
         "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb61",
@@ -1663,7 +1675,12 @@
         "image": {
           "path": "/images/plugins/gh_richjava_blog/image.png",
           "width": 1280,
-          "height": 768
+          "height": 768,
+          "repo": {
+            "owner": "richjava",
+            "repo": "blog",
+            "provider": "gh"
+          }
         },
         "date": "2023-06-03",
         "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
@@ -1772,7 +1789,7 @@
         ],
         "position": "Writer",
         "profileImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 48,
           "height": 48
         }
@@ -1798,7 +1815,7 @@
         ],
         "position": "Writer",
         "profileImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 48,
           "height": 48
         }
@@ -1824,7 +1841,7 @@
         ],
         "position": "Writer",
         "profileImage": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 48,
           "height": 48
         }
@@ -1855,7 +1872,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -1877,7 +1894,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -1899,7 +1916,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -1923,7 +1940,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -1945,7 +1962,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -1967,7 +1984,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
-          "path": "/images/theme/image.png",
+          "path": "/images/image.png",
           "width": 1280,
           "height": 768
         },
@@ -2008,7 +2025,7 @@
         "_type": "social-link",
         "heading": "Facebook",
         "icon": {
-          "path": "/images/theme/icons/facebook.svg",
+          "path": "/images/icons/facebook.svg",
           "width": 24,
           "height": 24
         },
@@ -2018,7 +2035,7 @@
         "_type": "social-link",
         "heading": "Twitter",
         "icon": {
-          "path": "/images/theme/icons/twitter.svg",
+          "path": "/images/icons/twitter.svg",
           "width": 30,
           "height": 24
         },
@@ -2028,7 +2045,7 @@
         "_type": "social-link",
         "heading": "Instagram",
         "icon": {
-          "path": "/images/theme/icons/instagram.svg",
+          "path": "/images/icons/instagram.svg",
           "width": 24,
           "height": 24
         },
@@ -2038,7 +2055,7 @@
         "_type": "social-link",
         "heading": "Youtube",
         "icon": {
-          "path": "/images/theme/icons/youtube.svg",
+          "path": "/images/icons/youtube.svg",
           "width": 32,
           "height": 24
         },

@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { urlForImage } from "builtjs-utils";
+import { urlForImage } from "@/builtjs-utils";
 
 export default function Seo({ content }:any) {
   let { data = null } = { ...content };
