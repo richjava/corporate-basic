@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { urlForImage, collectionSlug, entrySlug } from "builtjs-utils";
+import { urlForImage, collectionSlug, entrySlug } from "@/builtjs-utils";
 
 export default function Cards5({ content }: any) {
   if (!content) return <></>;

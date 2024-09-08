@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { urlForImage, widthForImage, heightForImage } from "builtjs-utils";
-import ModeToggleBtn from "components/shared/mode-toggle-btn";
+import { urlForImage, widthForImage, heightForImage } from "@/builtjs-utils";
+import ModeToggleBtn from "@/components/shared/mode-toggle-btn";
 
 export default function Header2({ content }: any) {
   const router = useRouter();

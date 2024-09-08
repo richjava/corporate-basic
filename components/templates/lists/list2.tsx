@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { urlForImage, collectionSlug, entrySlug } from "builtjs-utils";
+import { urlForImage, collectionSlug, entrySlug } from "@/builtjs-utils";
 import Image from "next/image";
 
 export default function List2({ content, router }: any) {

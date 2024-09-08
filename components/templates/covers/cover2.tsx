@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { urlForImage, widthForImage, heightForImage } from "builtjs-utils";
-import { ButtonLink, Preheading } from "components/elements";
+import { urlForImage, widthForImage, heightForImage } from "@/builtjs-utils";
+import { ButtonLink, Preheading } from "@/components/elements";
 
 export default function Cover2({ content }: any) {
   if (!content) return <></>;

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { urlForImage } from "builtjs-utils";
+import { urlForImage } from "@/builtjs-utils";
 import BlockContent from '@sanity/block-content-to-react';
 
 export default function ProfileArticle1({ content }:any) {

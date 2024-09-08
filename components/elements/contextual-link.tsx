@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { urlForImage, widthForImage, heightForImage, entrySlug } from "builtjs-utils";
+import { urlForImage, widthForImage, heightForImage, entrySlug } from "@/builtjs-utils";
 
 export default function ContextualLink({ data }:any) {
   if (!data) return <></>;

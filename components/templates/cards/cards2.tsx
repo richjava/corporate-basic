@@ -1,4 +1,4 @@
-import { ButtonLink, Preheading } from "components/elements";
+import { ButtonLink, Preheading } from "@/components/elements";
 
 export default function Cards2({ content }: any) {
   if (!content) return <></>;

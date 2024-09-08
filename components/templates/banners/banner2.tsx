@@ -1,4 +1,4 @@
-import { ButtonLink } from "components/elements";
+import { ButtonLink } from "@/components/elements";
 
 export default function Banner2({ content }:any) {
   if (!content) return <></>;

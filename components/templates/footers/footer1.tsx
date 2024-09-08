@@ -1,4 +1,4 @@
-import SocialLink from "components/shared/social-link";
+import SocialLink from "@/components/shared/social-link";
 
 export default function Footer1({ content }: any) {
   if (!content) return <></>;

@@ -3,8 +3,8 @@ import {
   Field,
   ContextualLink,
   Button,
-} from "components/elements";
-import SocialLink from "components/shared/social-link";
+} from "@/components/elements";
+import SocialLink from "@/components/shared/social-link";
 
 export default function Form1({ content }: any) {
   if (!content) return <></>;

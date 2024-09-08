@@ -1,4 +1,4 @@
-import { ButtonLink, Preheading } from "components/elements";
+import { ButtonLink, Preheading } from "@/components/elements";
 
 export default function Block5({ content }: any) {
   if (!content) return <></>;
