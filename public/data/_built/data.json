@@ -24,7 +24,8 @@
           "target": "post",
           "mappedBy": "author"
         }
-      }
+      },
+      "namespace": "gh_richjava_blog"
     },
     {
       "name": "profile",
@@ -49,127 +50,8 @@
         "profileImage": {
           "type": "image"
         }
-      }
-    },
-    {
-      "name": "primaryMenuItem",
-      "title": "Primary Menu Item",
-      "fields": {
-        "slug": {
-          "type": "uid",
-          "targetField": "label",
-          "required": true
-        },
-        "label": {
-          "type": "string",
-          "required": true
-        },
-        "url": {
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
-      }
-    },
-    {
-      "name": "benefit",
-      "title": "Benefit",
-      "fields": {
-        "preheading": {
-          "type": "element",
-          "repeatable": false,
-          "element": "preheading"
-        },
-        "title": {
-          "type": "string"
-        },
-        "slug": {
-          "type": "uid",
-          "targetField": "title",
-          "required": true
-        },
-        "blurb": {
-          "type": "text"
-        },
-        "image": {
-          "type": "image"
-        },
-        "buttonLinks": {
-          "type": "element",
-          "repeatable": true,
-          "element": "buttonLink"
-        }
-      }
-    },
-    {
-      "name": "feature",
-      "title": "Feature",
-      "fields": {
-        "preheading": {
-          "type": "element",
-          "repeatable": false,
-          "element": "preheading"
-        },
-        "title": {
-          "type": "string"
-        },
-        "slug": {
-          "type": "uid",
-          "targetField": "title",
-          "required": true
-        },
-        "blurb": {
-          "type": "text"
-        },
-        "image": {
-          "type": "image"
-        },
-        "buttonLinks": {
-          "type": "element",
-          "repeatable": true,
-          "element": "buttonLink"
-        }
-      }
-    },
-    {
-      "name": "service",
-      "title": "Service",
-      "fields": {
-        "title": {
-          "type": "string"
-        },
-        "slug": {
-          "type": "uid",
-          "targetField": "title",
-          "required": true
-        },
-        "description": {
-          "type": "text"
-        },
-        "image": {
-          "type": "image"
-        }
-      }
-    },
-    {
-      "name": "socialLink",
-      "title": "Social Link",
-      "fields": {
-        "heading": {
-          "type": "string"
-        },
-        "slug": {
-          "type": "uid",
-          "targetField": "heading",
-          "required": true
-        },
-        "icon": {
-          "type": "image"
-        },
-        "url": {
-          "type": "string"
-        }
-      }
+      },
+      "namespace": "gh_richjava_blog"
     },
     {
       "name": "post",
@@ -230,6 +112,27 @@
         }
       },
       "namespace": "gh_richjava_blog"
+    },
+    {
+      "name": "primaryMenuItem",
+      "title": "Primary Menu Item",
+      "fields": {
+        "slug": {
+          "type": "uid",
+          "targetField": "label",
+          "required": true
+        },
+        "label": {
+          "type": "string",
+          "required": true
+        },
+        "url": {
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      },
+      "namespace": "gh_richjava_blog"
     }
   ],
   "pages": [
@@ -238,22 +141,7 @@
       "title": "Home",
       "demoSections": [
         {
-          "name": "homeSeo"
-        },
-        {
-          "name": "mainLanding"
-        },
-        {
-          "name": "featuresList"
-        },
-        {
-          "name": "benefitsList"
-        },
-        {
           "name": "blogTeaser"
-        },
-        {
-          "name": "aboutTeaser"
         }
       ]
     },
@@ -301,70 +189,6 @@
           "name": "blogRelatedArticles"
         }
       ]
-    },
-    {
-      "name": "services",
-      "title": "Services",
-      "demoSections": [
-        {
-          "name": "servicesSeo"
-        },
-        {
-          "name": "servicesLanding"
-        },
-        {
-          "name": "servicesBlock"
-        },
-        {
-          "name": "contactTeaser"
-        }
-      ]
-    },
-    {
-      "name": "about",
-      "title": "About",
-      "demoSections": [
-        {
-          "name": "aboutSeo"
-        },
-        {
-          "name": "aboutLanding"
-        },
-        {
-          "name": "team"
-        }
-      ]
-    },
-    {
-      "name": "authorArticle",
-      "title": "Author Article",
-      "contentType": {
-        "name": "author",
-        "config": {
-          "populate": [
-            {
-              "name": "profile"
-            }
-          ]
-        }
-      },
-      "demoSections": [
-        {
-          "name": "authorArticleLanding"
-        }
-      ]
-    },
-    {
-      "name": "contact",
-      "title": "Contact",
-      "demoSections": [
-        {
-          "name": "contactSeo"
-        },
-        {
-          "name": "contactLanding"
-        }
-      ]
     }
   ],
   "sections": [
@@ -382,7 +206,8 @@
       "position": "start",
       "collections": {
         "primaryMenuItem": {}
-      }
+      },
+      "namespace": "gh_richjava_blog"
     },
     {
       "name": "footer",
@@ -396,505 +221,7 @@
         "name": "footer1"
       },
       "position": "end",
-      "collections": {
-        "primaryMenuItem": {},
-        "socialLink": {}
-      }
-    },
-    {
-      "name": "homeSeo",
-      "title": "Home SEO",
-      "templates": [
-        "seo"
-      ],
-      "defaultTemplate": {
-        "name": "seo"
-      },
-      "type": "head",
-      "data": {
-        "pageTitle": "Home | Corporate Tailwind Built.JS Theme",
-        "description": "Home page for a site built with the Corporate Tailwind Built.JS Theme.",
-        "shareImage": {
-          "path": "/images/image.png",
-          "width": 1280,
-          "height": 768
-        },
-        "twitterCardType": "summary",
-        "twitterUsername": ""
-      }
-    },
-    {
-      "name": "mainLanding",
-      "title": "Main Landing",
-      "description": "The home page landing area, containing the main call-to-action.",
-      "templates": [
-        "cover1",
-        "cover2",
-        "cover3",
-        "cover4",
-        "cover5"
-      ],
-      "defaultTemplate": {
-        "name": "cover1"
-      },
-      "data": {
-        "preheading": {
-          "text": "Preheading",
-          "type": "plain"
-        },
-        "heading": "Lorem ipsum dolor sit amet dev",
-        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "image": {
-          "path": "/images/image-square.png",
-          "width": 768,
-          "height": 768
-        },
-        "buttonLinks": [
-          {
-            "url": "/services",
-            "label": "Button",
-            "type": "primary"
-          },
-          {
-            "url": "/contact",
-            "label": "Button",
-            "type": "secondary"
-          }
-        ]
-      }
-    },
-    {
-      "name": "featuresList",
-      "title": "Features List",
-      "description": "A list of unique features the company offers.",
-      "templates": [
-        "cards1",
-        "cards2",
-        "cards3",
-        "cards4",
-        "cards-5"
-      ],
-      "defaultTemplate": {
-        "name": "cards1"
-      },
-      "collections": {
-        "feature": {}
-      }
-    },
-    {
-      "name": "contactTeaser",
-      "title": "Contact Teaser",
-      "description": "A contact call-to-action to encourage users to make contact.",
-      "templates": [
-        "banner1",
-        "banner2",
-        "banner3",
-        "banner4",
-        "banner5"
-      ],
-      "defaultTemplate": {
-        "name": "banner1"
-      },
-      "data": {
-        "preheading": {
-          "text": "Preheading",
-          "type": "line"
-        },
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "buttonLinks": [
-          {
-            "url": "/contact",
-            "label": "Button",
-            "type": "primary"
-          }
-        ]
-      },
-      "variants": {
-        "backgroundColor": "darkest"
-      }
-    },
-    {
-      "name": "benefitsList",
-      "title": "Benefits List",
-      "description": "A list of benefits the company provides.",
-      "templates": [
-        "list1",
-        "list2"
-      ],
-      "defaultTemplate": {
-        "name": "list1"
-      },
-      "collections": {
-        "benefit": {}
-      }
-    },
-    {
-      "name": "aboutTeaser",
-      "title": "Home About Teaser",
-      "description": "A small teaser about the company.",
-      "templates": [
-        "block1",
-        "block2",
-        "block3",
-        "block4",
-        "block5"
-      ],
-      "defaultTemplate": {
-        "name": "block1"
-      },
-      "data": {
-        "preheading": {
-          "text": "Preheading",
-          "type": "dot"
-        },
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
-        "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
-        "buttonLinks": [
-          {
-            "url": "/about",
-            "label": "Button",
-            "type": "primary"
-          }
-        ]
-      }
-    },
-    {
-      "name": "team",
-      "title": "Team",
-      "description": "An informational section about the people in the company.",
-      "templates": [
-        "profileCards1"
-      ],
-      "defaultTemplate": {
-        "name": "profileCards1"
-      },
-      "data": {
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
-      },
-      "collections": {
-        "author": {
-          "config": {
-            "populate": [
-              {
-                "name": "profile"
-              }
-            ],
-            "limit": 3
-          },
-          "article": {
-            "name": "authorArticle"
-          }
-        }
-      }
-    },
-    {
-      "name": "servicesSeo",
-      "title": "Services SEO",
-      "templates": [
-        "seo"
-      ],
-      "defaultTemplate": {
-        "name": "seo"
-      },
-      "type": "head",
-      "data": {
-        "pageTitle": "Services | Corporate Tailwind Built.JS Theme",
-        "description": "Services page for a site built with the Corporate Tailwind Built.JS Theme.",
-        "shareImage": {
-          "path": "/images/image.png",
-          "width": 1280,
-          "height": 768
-        },
-        "twitterCardType": "summary",
-        "twitterUsername": ""
-      }
-    },
-    {
-      "name": "servicesLanding",
-      "title": "Services Landing",
-      "description": "The services page landing area.",
-      "templates": [
-        "cover1",
-        "cover2",
-        "cover3",
-        "cover4",
-        "cover5"
-      ],
-      "defaultTemplate": {
-        "name": "cover3"
-      },
-      "data": {
-        "preheading": {
-          "text": "Preheading",
-          "type": "plain"
-        },
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "image": {
-          "path": "/images/image.png",
-          "width": 1280,
-          "height": 768
-        },
-        "buttonLinks": [
-          {
-            "url": "/services",
-            "label": "Button",
-            "type": "primary"
-          },
-          {
-            "url": "/about",
-            "label": "Button",
-            "type": "secondary"
-          }
-        ]
-      }
-    },
-    {
-      "name": "servicesBlock",
-      "title": "Services Block",
-      "description": "An informational section about the services.",
-      "templates": [
-        "block1",
-        "block2",
-        "block3",
-        "block4",
-        "block5"
-      ],
-      "defaultTemplate": {
-        "name": "block3"
-      },
-      "data": {
-        "preheading": {
-          "text": "Preheading",
-          "type": "dot"
-        },
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
-        "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
-        "image": {
-          "path": "/images/image.png",
-          "width": 1280,
-          "height": 768
-        },
-        "buttonLinks": [
-          {
-            "url": "/services",
-            "label": "Button",
-            "type": "primary"
-          }
-        ]
-      }
-    },
-    {
-      "name": "aboutSeo",
-      "title": "About SEO",
-      "templates": [
-        "seo"
-      ],
-      "defaultTemplate": {
-        "name": "seo"
-      },
-      "type": "head",
-      "data": {
-        "pageTitle": "About | Corporate Tailwind Built.JS Theme",
-        "description": "About page for a site built with the Corporate Tailwind Built.JS Theme.",
-        "shareImage": {
-          "path": "/images/image.png",
-          "width": 1280,
-          "height": 768
-        },
-        "twitterCardType": "summary",
-        "twitterUsername": ""
-      }
-    },
-    {
-      "name": "aboutLanding",
-      "title": "About Landing",
-      "description": "The about page landing area, conveying convey trust and relatability.",
-      "templates": [
-        "cover1",
-        "cover2",
-        "cover3",
-        "cover4",
-        "cover5"
-      ],
-      "defaultTemplate": {
-        "name": "cover2"
-      },
-      "data": {
-        "preheading": {
-          "text": "Preheading",
-          "type": "line"
-        },
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "image": {
-          "path": "/images/image-square.png",
-          "width": 1000,
-          "height": 1000
-        },
-        "buttonLinks": [
-          {
-            "url": "/about",
-            "label": "Button",
-            "type": "primary"
-          },
-          {
-            "url": "/services",
-            "label": "Button",
-            "type": "secondary"
-          }
-        ]
-      }
-    },
-    {
-      "name": "aboutText",
-      "title": "About Text",
-      "description": "An informational section about the company.",
-      "templates": [
-        "block1",
-        "block2",
-        "block3",
-        "block4",
-        "block5"
-      ],
-      "defaultTemplate": {
-        "name": "block2"
-      },
-      "data": {
-        "preheading": {
-          "text": "Preheading",
-          "type": "dot",
-          "alignment": "center"
-        },
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
-        "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
-        "buttonLinks": [
-          {
-            "url": "/about",
-            "label": "Button",
-            "type": "primary"
-          }
-        ]
-      }
-    },
-    {
-      "name": "authorArticleLanding",
-      "title": "Author Article Landing",
-      "description": "The author detail page.",
-      "templates": [
-        "profileArticle1"
-      ],
-      "defaultTemplate": {
-        "name": "profileArticle1"
-      }
-    },
-    {
-      "name": "contactSeo",
-      "title": "Contact SEO",
-      "templates": [
-        "seo"
-      ],
-      "defaultTemplate": {
-        "name": "seo"
-      },
-      "type": "head",
-      "data": {
-        "pageTitle": "Contact | Corporate Tailwind Built.JS Theme",
-        "description": "Contact page for a site built with the Corporate Tailwind Built.JS Theme.",
-        "shareImage": {
-          "path": "/images/image.png",
-          "width": 1280,
-          "height": 768
-        },
-        "twitterCardType": "summary",
-        "twitterUsername": ""
-      }
-    },
-    {
-      "name": "contactLanding",
-      "title": "Contact Landing",
-      "description": "The contact page landing area, providing relevant contact details.",
-      "templates": [
-        "form1",
-        "form2"
-      ],
-      "defaultTemplate": {
-        "name": "form1"
-      },
-      "data": {
-        "preheading": {
-          "text": "Preheading",
-          "type": "plain"
-        },
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "button": {
-          "label": "Send",
-          "type": "primary"
-        },
-        "contextualLinks": [
-          {
-            "icon": {
-              "path": "/images/icons/phone.svg",
-              "width": 24,
-              "height": 26
-            },
-            "text": "Monday - Friday 9am - 5pm",
-            "label": "0800 123 4567",
-            "url": "tel:08001234567"
-          },
-          {
-            "icon": {
-              "path": "/images/icons/mail.svg",
-              "width": 24,
-              "height": 26
-            },
-            "text": "General Enquiries",
-            "label": "info@companyname.co.nz",
-            "url": "mailto:info@companyname.co.nz"
-          },
-          {
-            "icon": {
-              "path": "/images/icons/marker.svg",
-              "width": 28,
-              "height": 34
-            },
-            "text": "123 Example Street, Suburb, Christchurch, 8011 New Zealand",
-            "label": "Get Directions",
-            "url": "https://www.google.com/maps/place/123+Example+Street,+Suburb,+Christchurch,+8011+New+Zealand"
-          }
-        ],
-        "fields": [
-          {
-            "label": "Full name",
-            "name": "fullName",
-            "type": "text"
-          },
-          {
-            "label": "Telephone",
-            "name": "tel",
-            "type": "text"
-          },
-          {
-            "label": "Email",
-            "name": "email",
-            "type": "text"
-          },
-          {
-            "label": "Message",
-            "name": "message",
-            "type": "longtext"
-          }
-        ]
-      },
-      "collections": {
-        "socialLink": {}
-      }
+      "namespace": "gh_richjava_blog"
     },
     {
       "name": "blogSeo",
@@ -1068,358 +395,6 @@
       "title": "Header 1",
       "category": "headers",
       "description": "Simple header with justified logo and nav links.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/headers/header1.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/headers#header1"
-    },
-    {
-      "name": "header2",
-      "title": "Header 2",
-      "category": "headers",
-      "description": "Simple header with a logo followed by nav links.",
-      "repoUrl": "https://github.com/richjava/corporate/tree/main/src/components/templates/headers/header2",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/headers#header2"
-    },
-    {
-      "name": "footer1",
-      "title": "Footer 1",
-      "category": "footers",
-      "description": "Simple footer with centered content and social links.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/footers/footer1.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/footers#footer1"
-    },
-    {
-      "name": "footer2",
-      "title": "Footer 2",
-      "category": "footers",
-      "description": "Simple footer with two equal columns and social links.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/footers/footer2.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/footers#footer2"
-    },
-    {
-      "name": "seo",
-      "title": "SEO",
-      "category": "head",
-      "description": "Define SEO meta titles, meta descriptions and social media meta data.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/head/seo.tsx"
-    },
-    {
-      "name": "banner1",
-      "title": "Banner 1",
-      "category": "banners",
-      "description": "Full width banner with centered content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner1.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner1.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner1"
-    },
-    {
-      "name": "banner2",
-      "title": "Banner 2",
-      "category": "banners",
-      "description": "Full width banner with left aligned content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner2.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner2.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner2"
-    },
-    {
-      "name": "banner3",
-      "title": "Banner 3",
-      "category": "banners",
-      "description": "Full width banner with two offset columns.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner3.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner3.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner3"
-    },
-    {
-      "name": "banner4",
-      "title": "Banner 4",
-      "category": "banners",
-      "description": "Banner with centered content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner4.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner4.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner4"
-    },
-    {
-      "name": "banner5",
-      "title": "Banner 5",
-      "category": "banners",
-      "description": "Banner with two offset columns.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/banners/banner5.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner5.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner5"
-    },
-    {
-      "name": "block1",
-      "title": "Block 1",
-      "category": "blocks",
-      "description": "Text block with left aligned content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block1.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block1.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block1"
-    },
-    {
-      "name": "block2",
-      "title": "Block 2",
-      "category": "blocks",
-      "description": "Text block with centered content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block2.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block2.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block2"
-    },
-    {
-      "name": "block3",
-      "title": "Block 3",
-      "category": "blocks",
-      "description": "Text block with two equal columns and left aligned content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block3.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block3.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block3"
-    },
-    {
-      "name": "block4",
-      "title": "Block 4",
-      "category": "blocks",
-      "description": "Text block with two equal columns and centered content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block4.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block4.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block4"
-    },
-    {
-      "name": "block5",
-      "title": "Block 5",
-      "category": "blocks",
-      "description": "Text block with two equal columns and split content",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/blocks/block5.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block5.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block5"
-    },
-    {
-      "name": "cards1",
-      "title": "Cards 1",
-      "category": "cards",
-      "description": "Cards with three equal columns and left aligned content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards1.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards1.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards1"
-    },
-    {
-      "name": "cards2",
-      "title": "Cards 2",
-      "category": "cards",
-      "description": "Cards with three equal columns and centered content.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards2.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards2.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards2"
-    },
-    {
-      "name": "cards3",
-      "title": "Cards 3",
-      "category": "cards",
-      "description": "Cards with three equal columns, left aligned content and a background colour.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards3.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards3.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards3"
-    },
-    {
-      "name": "cards4",
-      "title": "Cards 4",
-      "category": "cards",
-      "description": "Cards with three equal columns, centered content and a background colour.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards4.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards4.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards4"
-    },
-    {
-      "name": "cards5",
-      "title": "Cards 5",
-      "category": "cards",
-      "description": "Cards with three equal columns, left aligned content and an image.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/cards5.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards5.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards5"
-    },
-    {
-      "name": "profileCards1",
-      "title": "Profile Cards 1",
-      "category": "cards",
-      "description": "Takes a collection of authors. Cards with three equal columns, left aligned content and an image.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/profile-cards1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/cards/profile-cards1.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/profile-cards1.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#profile-cards1"
-    },
-    {
-      "name": "cover1",
-      "title": "Cover 1",
-      "category": "covers",
-      "description": "Full viewport cover with text content and a supporting image.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover1.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover1.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover1"
-    },
-    {
-      "name": "cover2",
-      "title": "Cover 2",
-      "category": "covers",
-      "description": "Full viewport cover with text content and a circle supporting image.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover2.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover2.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover2"
-    },
-    {
-      "name": "cover3",
-      "title": "Cover 3",
-      "category": "covers",
-      "description": "Full viewport cover with text content and a full height supporting image.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover3.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover3.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover3.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover3"
-    },
-    {
-      "name": "cover4",
-      "title": "Cover 4",
-      "category": "covers",
-      "description": "Full viewport cover with centered text content and supporting image.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover4.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover4.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover4.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover4"
-    },
-    {
-      "name": "cover5",
-      "title": "Cover 5",
-      "category": "covers",
-      "description": "Full viewport cover with text content and a full width and height background image.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover5.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/covers/cover5.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover5.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover5"
-    },
-    {
-      "name": "list1",
-      "title": "List 1",
-      "category": "lists",
-      "description": "List of items with two equal columns and reversed even rows.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/lists/list1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/lists/list1.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/lists/list1.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/lists#list1"
-    },
-    {
-      "name": "list2",
-      "title": "List 2",
-      "category": "lists",
-      "description": "List of items with two equal columns and reversed odd rows.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/lists/list2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/lists/list2.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/lists/list2.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/lists#list2"
-    },
-    {
-      "name": "form1",
-      "title": "Form 1",
-      "category": "forms",
-      "description": "Contact details with two equal columns and form fields.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/forms/form1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/forms/form1.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/forms/form1.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/forms#form-1"
-    },
-    {
-      "name": "form2",
-      "title": "Form 2",
-      "category": "forms",
-      "description": "Contact details with two equal columns and form fields.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/forms/form2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/forms/form2.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/forms/form2.tsx",
-      "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/forms#form2"
-    },
-    {
-      "name": "profileArticle1",
-      "title": "Profile Article 1",
-      "category": "articles",
-      "description": "Article section with hero image for introducing authors.",
-      "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/articles/profile-article1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/corporate/public/images/templates/articles/profile-article1.png"
-      },
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/articles/profile-article1.tsx",
-      "demoUrl": ""
-    },
-    {
-      "name": "header1",
-      "title": "Header 1",
-      "category": "headers",
-      "isDemo": true,
-      "description": "Simple header with justified logo and nav links.",
       "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/gh_richjava_blog/templates/headers/header1.tsx",
       "demoUrl": "",
       "namespace": "gh_richjava_blog"
@@ -1428,7 +403,6 @@
       "name": "footer1",
       "title": "Footer 1",
       "category": "footers",
-      "isDemo": true,
       "description": "Simple footer with centered content and social links.",
       "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/gh_richjava_blog/templates/footers/footer1.tsx",
       "demoUrl": "",
@@ -1448,8 +422,8 @@
       "category": "lists",
       "description": "List item with two offset columns and split content.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/theme/templates/lists/list1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/theme/templates/lists/list1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/templates/lists/list1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/templates/lists/list1.png"
       },
       "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/gh_richjava_blog/templates/lists/list1.tsx",
       "demoUrl": "",
@@ -1461,8 +435,8 @@
       "category": "lists",
       "description": "List of items with three equal columns, left aligned content and an image.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/theme/templates/lists/list2.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/theme/templates/lists/list2.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/templates/lists/list2.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/templates/lists/list2.png"
       },
       "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/gh_richjava_blog/templates/lists/list2.tsx",
       "demoUrl": "",
@@ -1474,8 +448,8 @@
       "category": "articles",
       "description": "Article section with hero image.",
       "images": {
-        "thumb": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/theme/templates/articles/article1.png",
-        "lrg": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/theme/templates/articles/article1.png"
+        "thumb": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/templates/articles/article1.png",
+        "lrg": "https://cdn.jsdelivr.net/gh/richjava/blog/public/images/templates/articles/article1.png"
       },
       "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/gh_richjava_blog/templates/articles/article1.tsx",
       "demoUrl": "",
@@ -1484,23 +458,9 @@
   ],
   "layout": {
     "contentIndex": 1,
-    "sections": [
-      {
-        "name": "header"
-      },
-      {
-        "name": "footer"
-      }
-    ]
+    "sections": [{"name":"header"},{"name":"footer"}]
   },
-  "global": {
-    "name": "Corporate Tailwind",
-    "logo": {
-      "path": "/images/theme/builtjs.svg",
-      "width": 45,
-      "height": 45
-    }
-  },
+  "global": {},
   "collections": {
     "authors": [
       {
@@ -1789,6 +749,7 @@
         ],
         "position": "Writer",
         "profileImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 48,
           "height": 48
@@ -1815,6 +776,7 @@
         ],
         "position": "Writer",
         "profileImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 48,
           "height": 48
@@ -1841,6 +803,7 @@
         ],
         "position": "Writer",
         "profileImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 48,
           "height": 48
@@ -1872,6 +835,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -1894,6 +858,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -1916,6 +881,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -1940,6 +906,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -1962,6 +929,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -1984,6 +952,7 @@
         "title": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -2025,6 +994,7 @@
         "_type": "social-link",
         "heading": "Facebook",
         "icon": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878791/facebook_uxho5o.svg",
           "path": "/images/icons/facebook.svg",
           "width": 24,
           "height": 24
@@ -2035,6 +1005,7 @@
         "_type": "social-link",
         "heading": "Twitter",
         "icon": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878788/twitter_xf9l9q.svg",
           "path": "/images/icons/twitter.svg",
           "width": 30,
           "height": 24
@@ -2045,6 +1016,7 @@
         "_type": "social-link",
         "heading": "Instagram",
         "icon": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878783/instagram_nn2ske.svg",
           "path": "/images/icons/instagram.svg",
           "width": 24,
           "height": 24
@@ -2055,6 +1027,7 @@
         "_type": "social-link",
         "heading": "Youtube",
         "icon": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878785/youtube_bcxtcu.svg",
           "path": "/images/icons/youtube.svg",
           "width": 32,
           "height": 24

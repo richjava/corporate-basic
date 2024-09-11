@@ -41,6 +41,7 @@
         "pageTitle": "Home | Corporate Tailwind Built.JS Theme",
         "description": "Home page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -65,6 +66,7 @@
         "heading": "Lorem ipsum dolor sit amet dev",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image-square.png",
           "width": 768,
           "height": 768
@@ -199,6 +201,7 @@
         "pageTitle": "Services | Corporate Tailwind Built.JS Theme",
         "description": "Services page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -223,6 +226,7 @@
         "heading": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -258,6 +262,7 @@
         "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
         "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
         "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -283,6 +288,7 @@
         "pageTitle": "About | Corporate Tailwind Built.JS Theme",
         "description": "About page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -307,6 +313,7 @@
         "heading": "Lorem ipsum dolor sit amet",
         "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878796/image-square_khojsy.png",
           "path": "/images/image-square.png",
           "width": 1000,
           "height": 1000
@@ -372,6 +379,7 @@
         "pageTitle": "Contact | Corporate Tailwind Built.JS Theme",
         "description": "Contact page for a site built with the Corporate Tailwind Built.JS Theme.",
         "shareImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
           "width": 1280,
           "height": 768
@@ -402,6 +410,7 @@
         "contextualLinks": [
           {
             "icon": {
+              "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878786/phone_fssnwl.svg",
               "path": "/images/icons/phone.svg",
               "width": 24,
               "height": 26
@@ -412,6 +421,7 @@
           },
           {
             "icon": {
+              "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878783/mail_fb9cii.svg",
               "path": "/images/icons/mail.svg",
               "width": 24,
               "height": 26
@@ -422,6 +432,7 @@
           },
           {
             "icon": {
+              "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878790/marker_qetlio.svg",
               "path": "/images/icons/marker.svg",
               "width": 28,
               "height": 34

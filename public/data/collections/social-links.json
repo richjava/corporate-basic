@@ -4,6 +4,7 @@
       "_type": "social-link",
       "heading": "Facebook",
       "icon": {
+        "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878791/facebook_uxho5o.svg",
         "path": "/images/icons/facebook.svg",
         "width": 24,
         "height": 24
@@ -14,6 +15,7 @@
       "_type": "social-link",
       "heading": "Twitter",
       "icon": {
+        "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878788/twitter_xf9l9q.svg",
         "path": "/images/icons/twitter.svg",
         "width": 30,
         "height": 24
@@ -24,6 +26,7 @@
       "_type": "social-link",
       "heading": "Instagram",
       "icon": {
+        "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878783/instagram_nn2ske.svg",
         "path": "/images/icons/instagram.svg",
         "width": 24,
         "height": 24
@@ -34,6 +37,7 @@
       "_type": "social-link",
       "heading": "Youtube",
       "icon": {
+        "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878785/youtube_bcxtcu.svg",
         "path": "/images/icons/youtube.svg",
         "width": 32,
         "height": 24

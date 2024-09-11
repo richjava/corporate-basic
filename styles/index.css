@@ -5,35 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Custom base styles */
 @layer base {
-  h1,
-  h2,
-  h3 {
-    @apply mb-6 font-bold text-black dark:text-white;
-  }
-
-  p {
-    @apply mb-4 text-gray-600 text-paragraph-md dark:text-gray-200;
-  }
-
-  img {
-    @apply rounded-md;
-  }
-
-  header,
-  article,
-  section,
-  aside,
-  footer {
-    @apply dark:bg-gray-800;
-  }
-
-  main > section,
-  main > article {
-    @apply px-4 py-20;
-  }
 }
 
 /* Custom components */
@@ -43,3 +16,5 @@
 /* Custom utilities */
 @layer utilities {
 }
+
+

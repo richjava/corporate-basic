@@ -10,6 +10,7 @@
       "title": "Lorem ipsum dolor sit amet",
       "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image": {
+        "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
         "path": "/images/image.png",
         "width": 1280,
         "height": 768
@@ -32,6 +33,7 @@
       "title": "Lorem ipsum dolor sit amet",
       "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image": {
+        "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
         "path": "/images/image.png",
         "width": 1280,
         "height": 768
@@ -54,6 +56,7 @@
       "title": "Lorem ipsum dolor sit amet",
       "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "image": {
+        "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
         "path": "/images/image.png",
         "width": 1280,
         "height": 768
