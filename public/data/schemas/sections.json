@@ -1,108 +1,63 @@
 {
   "sections": {
-    "header": {
-      "name": "header",
-      "fields": {}
-    },
-    "footer": {
-      "name": "footer",
-      "fields": {}
-    },
+    "header": { "name": "header", "type": "layout" },
+    "footer": { "name": "footer", "type": "layout" },
     "homeSeo": {
       "name": "homeSeo",
+      "type": "head",
       "fields": {
-        "pageTitle": {
-          "type": "string"
-        },
-        "description": {
-          "type": "text"
-        },
-        "shareImage": {
-          "type": "image"
-        },
-        "twitterCardType": {
-          "type": "string"
-        },
-        "twitterUsername": {
-          "type": "string"
-        }
+        "pageTitle": { "type": "string" },
+        "description": { "type": "text" },
+        "shareImage": { "type": "image" },
+        "twitterCardType": { "type": "string" },
+        "twitterUsername": { "type": "string" }
       }
     },
     "contactSeo": {
       "name": "contactSeo",
+      "type": "head",
       "fields": {
-        "pageTitle": {
-          "type": "string"
-        },
-        "description": {
-          "type": "text"
-        },
-        "shareImage": {
-          "type": "image"
-        },
-        "twitterCardType": {
-          "type": "string"
-        },
-        "twitterUsername": {
-          "type": "string"
-        }
+        "pageTitle": { "type": "string" },
+        "description": { "type": "text" },
+        "shareImage": { "type": "image" },
+        "twitterCardType": { "type": "string" },
+        "twitterUsername": { "type": "string" }
       }
     },
     "aboutSeo": {
       "name": "aboutSeo",
+      "type": "head",
       "fields": {
-        "pageTitle": {
-          "type": "string"
-        },
-        "description": {
-          "type": "text"
-        },
-        "shareImage": {
-          "type": "image"
-        },
-        "twitterCardType": {
-          "type": "string"
-        },
-        "twitterUsername": {
-          "type": "string"
-        }
+        "pageTitle": { "type": "string" },
+        "description": { "type": "text" },
+        "shareImage": { "type": "image" },
+        "twitterCardType": { "type": "string" },
+        "twitterUsername": { "type": "string" }
       }
     },
     "servicesSeo": {
       "name": "servicesSeo",
+      "type": "head",
       "fields": {
-        "pageTitle": {
-          "type": "string"
-        },
-        "description": {
-          "type": "text"
-        },
-        "shareImage": {
-          "type": "image"
-        },
-        "twitterCardType": {
-          "type": "string"
-        },
-        "twitterUsername": {
-          "type": "string"
-        }
+        "pageTitle": { "type": "string" },
+        "description": { "type": "text" },
+        "shareImage": { "type": "image" },
+        "twitterCardType": { "type": "string" },
+        "twitterUsername": { "type": "string" }
       }
     },
     "mainLanding": {
       "name": "mainLanding",
+      "type": "body",
       "fields": {
         "preheading": {
           "type": "element",
           "repeatable": false,
           "element": "preheading"
         },
-        "heading": {
-          "type": "string"
-        },
+        "heading": { "type": "string" },
         "blurb": { "type": "text" },
-        "image": {
-          "type": "image"
-        },
+        "image": { "type": "image" },
         "buttonLinks": {
           "type": "element",
           "repeatable": true,
@@ -112,26 +67,21 @@
     },
     "contactLanding": {
       "name": "contactLanding",
+      "type": "body",
       "fields": {
         "preheading": {
           "type": "element",
           "repeatable": false,
           "element": "preheading"
         },
-        "heading": {
-          "type": "string"
-        },
+        "heading": { "type": "string" },
         "blurb": { "type": "text" },
         "contextualLinks": {
           "type": "element",
           "repeatable": true,
           "element": "contextualLink"
         },
-        "fields": {
-          "type": "element",
-          "repeatable": true,
-          "element": "field"
-        },
+        "fields": { "type": "element", "repeatable": true, "element": "field" },
         "button": {
           "type": "element",
           "repeatable": false,
@@ -139,12 +89,10 @@
         }
       }
     },
-    "featuresList": {
-      "name": "featuresList",
-      "fields": {}
-    },
+    "featuresList": { "name": "featuresList", "type": "body" },
     "contactTeaser": {
       "name": "contactTeaser",
+      "type": "body",
       "fields": {
         "preheading": {
           "type": "element",
@@ -157,13 +105,11 @@
           "repeatable": true,
           "element": "buttonLink"
         }
-      },
-      "variants": {
-        "backgroundColor": "darkest"
       }
     },
     "aboutTeaser": {
       "name": "aboutTeaser",
+      "type": "body",
       "fields": {
         "preheading": {
           "type": "element",
@@ -182,6 +128,7 @@
     },
     "team": {
       "name": "team",
+      "type": "body",
       "fields": {
         "preheading": {
           "type": "element",
@@ -198,12 +145,10 @@
         }
       }
     },
-    "benefitsList": {
-      "name": "benefitsList",
-      "fields": {}
-    },
+    "benefitsList": { "name": "benefitsList", "type": "body" },
     "servicesLanding": {
       "name": "servicesLanding",
+      "type": "body",
       "fields": {
         "preheading": {
           "type": "element",
@@ -212,35 +157,12 @@
         },
         "heading": { "type": "string" },
         "blurb": { "type": "text" },
-        "image": {
-          "type": "image"
-        }
+        "image": { "type": "image" }
       }
     },
     "servicesBlock": {
       "name": "servicesBlock",
-      "fields": {
-        "preheading": {
-          "type": "element",
-          "repeatable": false,
-          "element": "preheading"
-        },
-        "heading": {
-          "type": "string"
-        },
-        "blurb1": {
-          "type": "text"
-        },
-        "blurb2": {
-          "type": "text"
-        },
-        "image": {
-          "type": "image"
-        }
-      }
-    },
-    "aboutLanding": {
-      "name": "aboutLanding",
+      "type": "body",
       "fields": {
         "preheading": {
           "type": "element",
@@ -248,12 +170,23 @@
           "element": "preheading"
         },
         "heading": { "type": "string" },
-        "blurb": {
-          "type": "text"
+        "blurb1": { "type": "text" },
+        "blurb2": { "type": "text" },
+        "image": { "type": "image" }
+      }
+    },
+    "aboutLanding": {
+      "name": "aboutLanding",
+      "type": "body",
+      "fields": {
+        "preheading": {
+          "type": "element",
+          "repeatable": false,
+          "element": "preheading"
         },
-        "image": {
-          "type": "image"
-        },
+        "heading": { "type": "string" },
+        "blurb": { "type": "text" },
+        "image": { "type": "image" },
         "buttonLinks": {
           "type": "element",
           "repeatable": true,
@@ -263,19 +196,13 @@
     },
     "aboutText": {
       "name": "aboutText",
+      "type": "body",
       "fields": {
         "heading": { "type": "string" },
-        "blurb1": {
-          "type": "text"
-        },
-        "blurb2": {
-          "type": "text"
-        }
+        "blurb1": { "type": "text" },
+        "blurb2": { "type": "text" }
       }
     },
-    "authorArticleLanding": {
-      "name": "authorArticleLanding",
-      "fields": {}
-    }
+    "authorArticleLanding": { "name": "authorArticleLanding", "type": "body" }
   }
 }

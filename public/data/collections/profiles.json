@@ -24,7 +24,10 @@
         "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
         "path": "/images/image.png",
         "width": 48,
-        "height": 48
+        "height": 48,
+        "type": "image",
+        "_key": "8oRJHzbD0",
+        "attributeName": "profileImage"
       }
     },
     {
@@ -51,9 +54,13 @@
         "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
         "path": "/images/image.png",
         "width": 48,
-        "height": 48
+        "height": 48,
+        "type": "image",
+        "_key": "18KdVROXcA",
+        "attributeName": "profileImage"
       }
-    },{
+    },
+    {
       "_id": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb62",
       "_type": "profile",
       "title": "Profile for Joe",
@@ -77,7 +84,10 @@
         "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
         "path": "/images/image.png",
         "width": 48,
-        "height": 48
+        "height": 48,
+        "type": "image",
+        "_key": "TlRmoABfA9",
+        "attributeName": "profileImage"
       }
     }
   ]

@@ -9,7 +9,7 @@ export default function Footer1() {
             target="_blank"
             rel="noreferrer noopener"
           >
-            Built with Built.JS
+            Built with Built
           </a>
         </div>
       </div>

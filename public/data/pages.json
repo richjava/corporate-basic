@@ -1,32 +1,15 @@
 {
   "pages": [
-    {
-      "name": "home",
-      "title": "Home"
-    },
-    {
-      "name": "services",
-      "title": "Services"
-    },
-    {
-      "name": "about",
-      "title": "About"
-    },
+    { "name": "home" },
+    { "name": "services" },
+    { "name": "about" },
     {
       "name": "authorArticle",
-      "title": "Author Article",
       "contentType": {
         "name": "author",
-        "config": {
-          "populate": [{
-            "name": "profile"
-          }]
-        }
+        "config": { "populate": [{ "name": "profile" }] }
       }
     },
-    {
-      "name": "contact",
-      "title": "Contact"
-    }
+    { "name": "contact" }
   ]
 }

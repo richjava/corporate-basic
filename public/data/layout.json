@@ -1,13 +1,6 @@
 {
   "layout": {
-    "contentIndex": 1,
-    "sections": [
-      {
-        "name": "header"
-      },
-      {
-        "name": "footer"
-      }
-    ]
+    "sections": [{ "name": "header" }, { "name": "footer" }],
+    "contentIndex": 1
   }
 }

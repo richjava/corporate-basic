@@ -4,6 +4,7 @@
       "name": "header1",
       "title": "Header 1",
       "category": "headers",
+      "namespace": "gh_richjava_corporate",
       "description": "Simple header with justified logo and nav links.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/headers/header1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/headers#header1"
@@ -12,6 +13,7 @@
       "name": "header2",
       "title": "Header 2",
       "category": "headers",
+      "namespace": "gh_richjava_corporate",
       "description": "Simple header with a logo followed by nav links.",
       "repoUrl": "https://github.com/richjava/corporate/tree/main/src/components/templates/headers/header2",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/headers#header2"
@@ -20,6 +22,7 @@
       "name": "footer1",
       "title": "Footer 1",
       "category": "footers",
+      "namespace": "gh_richjava_corporate",
       "description": "Simple footer with centered content and social links.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/footers/footer1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/footers#footer1"
@@ -28,6 +31,7 @@
       "name": "footer2",
       "title": "Footer 2",
       "category": "footers",
+      "namespace": "gh_richjava_corporate",
       "description": "Simple footer with two equal columns and social links.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/footers/footer2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/footers#footer2"
@@ -36,6 +40,7 @@
       "name": "seo",
       "title": "SEO",
       "category": "head",
+      "namespace": "gh_richjava_corporate",
       "description": "Define SEO meta titles, meta descriptions and social media meta data.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/head/seo.tsx"
     },
@@ -43,11 +48,9 @@
       "name": "banner1",
       "title": "Banner 1",
       "category": "banners",
+      "namespace": "gh_richjava_corporate",
       "description": "Full width banner with centered content.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878892/banner1_agmnah.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878892/banner1_agmnah.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878892/banner1_agmnah.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner1"
     },
@@ -55,11 +58,9 @@
       "name": "banner2",
       "title": "Banner 2",
       "category": "banners",
+      "namespace": "gh_richjava_corporate",
       "description": "Full width banner with left aligned content.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878882/banner2_q9vib8.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878882/banner2_q9vib8.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878882/banner2_q9vib8.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner2"
     },
@@ -67,11 +68,9 @@
       "name": "banner3",
       "title": "Banner 3",
       "category": "banners",
+      "namespace": "gh_richjava_corporate",
       "description": "Full width banner with two offset columns.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/banner3_gdq2oo.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/banner3_gdq2oo.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/banner3_gdq2oo.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner3.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner3"
     },
@@ -79,11 +78,9 @@
       "name": "banner4",
       "title": "Banner 4",
       "category": "banners",
+      "namespace": "gh_richjava_corporate",
       "description": "Banner with centered content.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878890/banner4_kkytf8.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878890/banner4_kkytf8.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878890/banner4_kkytf8.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner4.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner4"
     },
@@ -91,11 +88,9 @@
       "name": "banner5",
       "title": "Banner 5",
       "category": "banners",
+      "namespace": "gh_richjava_corporate",
       "description": "Banner with two offset columns.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878887/banner5_mfu7oy.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878887/banner5_mfu7oy.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878887/banner5_mfu7oy.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner5.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/banners#banner5"
     },
@@ -103,11 +98,9 @@
       "name": "block1",
       "title": "Block 1",
       "category": "blocks",
+      "namespace": "gh_richjava_corporate",
       "description": "Text block with left aligned content.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878843/block1_smb2xd.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878843/block1_smb2xd.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878843/block1_smb2xd.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block1"
     },
@@ -115,11 +108,9 @@
       "name": "block2",
       "title": "Block 2",
       "category": "blocks",
+      "namespace": "gh_richjava_corporate",
       "description": "Text block with centered content.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878839/block2_kk8bqi.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878839/block2_kk8bqi.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878839/block2_kk8bqi.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block2"
     },
@@ -127,11 +118,9 @@
       "name": "block3",
       "title": "Block 3",
       "category": "blocks",
+      "namespace": "gh_richjava_corporate",
       "description": "Text block with two equal columns and left aligned content.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878842/block3_exu2lc.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878842/block3_exu2lc.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878842/block3_exu2lc.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block3.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block3"
     },
@@ -139,11 +128,9 @@
       "name": "block4",
       "title": "Block 4",
       "category": "blocks",
+      "namespace": "gh_richjava_corporate",
       "description": "Text block with two equal columns and centered content.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878844/block4_hdaaiz.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878844/block4_hdaaiz.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878844/block4_hdaaiz.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block4.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block4"
     },
@@ -151,11 +138,9 @@
       "name": "block5",
       "title": "Block 5",
       "category": "blocks",
+      "namespace": "gh_richjava_corporate",
       "description": "Text block with two equal columns and split content",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878846/block5_vy4xnh.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878846/block5_vy4xnh.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878846/block5_vy4xnh.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block5.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/blocks#block5"
     },
@@ -163,11 +148,9 @@
       "name": "cards1",
       "title": "Cards 1",
       "category": "cards",
+      "namespace": "gh_richjava_corporate",
       "description": "Cards with three equal columns and left aligned content.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878875/cards1_cpzq8p.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878875/cards1_cpzq8p.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878875/cards1_cpzq8p.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards1"
     },
@@ -175,11 +158,9 @@
       "name": "cards2",
       "title": "Cards 2",
       "category": "cards",
+      "namespace": "gh_richjava_corporate",
       "description": "Cards with three equal columns and centered content.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878877/cards2_c6za9h.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878877/cards2_c6za9h.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878877/cards2_c6za9h.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards2"
     },
@@ -187,11 +168,9 @@
       "name": "cards3",
       "title": "Cards 3",
       "category": "cards",
+      "namespace": "gh_richjava_corporate",
       "description": "Cards with three equal columns, left aligned content and a background colour.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878879/cards3_r2g41v.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878879/cards3_r2g41v.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878879/cards3_r2g41v.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards3.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards3"
     },
@@ -199,11 +178,9 @@
       "name": "cards4",
       "title": "Cards 4",
       "category": "cards",
+      "namespace": "gh_richjava_corporate",
       "description": "Cards with three equal columns, centered content and a background colour.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878871/cards4_sdeorh.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878871/cards4_sdeorh.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878871/cards4_sdeorh.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards4.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards4"
     },
@@ -211,11 +188,9 @@
       "name": "cards5",
       "title": "Cards 5",
       "category": "cards",
+      "namespace": "gh_richjava_corporate",
       "description": "Cards with three equal columns, left aligned content and an image.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878874/cards5_hvuunv.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878874/cards5_hvuunv.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878874/cards5_hvuunv.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards5.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#cards5"
     },
@@ -223,11 +198,9 @@
       "name": "profileCards1",
       "title": "Profile Cards 1",
       "category": "cards",
+      "namespace": "gh_richjava_corporate",
       "description": "Takes a collection of authors. Cards with three equal columns, left aligned content and an image.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878880/profile-cards1_pifmdj.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878880/profile-cards1_pifmdj.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878880/profile-cards1_pifmdj.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/profile-cards1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/cards#profile-cards1"
     },
@@ -235,11 +208,9 @@
       "name": "cover1",
       "title": "Cover 1",
       "category": "covers",
+      "namespace": "gh_richjava_corporate",
       "description": "Full viewport cover with text content and a supporting image.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878863/cover1_mzktvz.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878863/cover1_mzktvz.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878863/cover1_mzktvz.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover1"
     },
@@ -247,11 +218,9 @@
       "name": "cover2",
       "title": "Cover 2",
       "category": "covers",
+      "namespace": "gh_richjava_corporate",
       "description": "Full viewport cover with text content and a circle supporting image.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878866/cover2_kauqyl.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878866/cover2_kauqyl.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878866/cover2_kauqyl.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover2"
     },
@@ -259,11 +228,9 @@
       "name": "cover3",
       "title": "Cover 3",
       "category": "covers",
+      "namespace": "gh_richjava_corporate",
       "description": "Full viewport cover with text content and a full height supporting image.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878865/cover3_xuvwbs.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878865/cover3_xuvwbs.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878865/cover3_xuvwbs.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover3.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover3"
     },
@@ -271,11 +238,9 @@
       "name": "cover4",
       "title": "Cover 4",
       "category": "covers",
+      "namespace": "gh_richjava_corporate",
       "description": "Full viewport cover with centered text content and supporting image.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878861/cover4_x03mqw.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878861/cover4_x03mqw.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878861/cover4_x03mqw.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover4.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover4"
     },
@@ -283,11 +248,9 @@
       "name": "cover5",
       "title": "Cover 5",
       "category": "covers",
+      "namespace": "gh_richjava_corporate",
       "description": "Full viewport cover with text content and a full width and height background image.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878854/cover5_nwtta9.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878854/cover5_nwtta9.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878854/cover5_nwtta9.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover5.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/covers#cover5"
     },
@@ -295,11 +258,9 @@
       "name": "list1",
       "title": "List 1",
       "category": "lists",
+      "namespace": "gh_richjava_corporate",
       "description": "List of items with two equal columns and reversed even rows.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878853/list1_aazspj.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878853/list1_aazspj.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878853/list1_aazspj.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/lists/list1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/lists#list1"
     },
@@ -307,11 +268,9 @@
       "name": "list2",
       "title": "List 2",
       "category": "lists",
+      "namespace": "gh_richjava_corporate",
       "description": "List of items with two equal columns and reversed odd rows.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878852/list2_ohyoby.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878852/list2_ohyoby.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878852/list2_ohyoby.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/lists/list2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/lists#list2"
     },
@@ -319,11 +278,9 @@
       "name": "form1",
       "title": "Form 1",
       "category": "forms",
+      "namespace": "gh_richjava_corporate",
       "description": "Contact details with two equal columns and form fields.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878847/form1_zjmwvf.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878847/form1_zjmwvf.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878847/form1_zjmwvf.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/forms/form1.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/forms#form-1"
     },
@@ -331,11 +288,9 @@
       "name": "form2",
       "title": "Form 2",
       "category": "forms",
+      "namespace": "gh_richjava_corporate",
       "description": "Contact details with two equal columns and form fields.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878850/form2_ian0kz.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878850/form2_ian0kz.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878850/form2_ian0kz.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/forms/form2.tsx",
       "demoUrl": "https://builtjs-theme-corporate.vercel.app/template/forms#form2"
     },
@@ -343,11 +298,9 @@
       "name": "profileArticle1",
       "title": "Profile Article 1",
       "category": "articles",
+      "namespace": "gh_richjava_corporate",
       "description": "Article section with hero image for introducing authors.",
-      "images": {
-        "thumb": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/profile-article1_qkfnzw.png",
-        "lrg": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/profile-article1_qkfnzw.png"
-      },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/profile-article1_qkfnzw.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/articles/profile-article1.tsx",
       "demoUrl": ""
     }

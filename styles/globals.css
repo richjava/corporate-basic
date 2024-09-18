@@ -30,6 +30,7 @@
 .heading-sm {
   @apply text-heading-sm leading-heading-sm;
 }
+
 .heading-md {
   @apply text-heading-md leading-heading-md;
 }
@@ -78,4 +79,51 @@
 
 .paragraph-lg {
   @apply text-paragraph-lg leading-paragraph-lg;
+}
+
+.btn {
+  @apply inline-block px-5 py-3 text-center transition-all duration-200 ease-in-out border-2 rounded-md;
+}
+
+.btn-primary {
+  @apply text-white bg-accent border-accent btn hover:bg-accent-hover hover:border-accent-hover dark:bg-white dark:text-accent dark:border-white dark:hover:bg-gray-300 dark:hover:border-gray-300;
+}
+
+.btn-secondary {
+  @apply text-accent border-accent btn hover:bg-accent-hover hover:text-white hover:border-accent-hover dark:border-gray-300 dark:text-white dark:hover:text-white dark:hover:border-white;
+}
+
+.btn:first-of-type + .btn {
+  @apply ml-3;
+}
+
+.preheading {
+  @apply relative block mb-4 text-sm font-light tracking-widest text-gray-400 uppercase dark:text-gray-400;
+}
+
+.preheading.center {
+  max-width: max-content;
+  @apply mx-auto;
+}
+
+.preheading.line {
+  @apply pl-10;
+}
+
+.preheading.dot {
+  @apply pl-5;
+}
+
+.preheading.line::before,
+.preheading.dot::before {
+  content: "";
+  @apply absolute left-0 -translate-y-1/2 transform-gpu top-1/2;
+}
+
+.preheading.line::before {
+  @apply border-t border-gray-400 w-7;
+}
+
+.preheading.dot::before {
+  @apply w-1.5 h-1.5 bg-gray-400 rounded-full;
 }

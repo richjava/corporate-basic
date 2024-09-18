@@ -48,11 +48,11 @@ export default function Header1({ content }: any) {
                     <li
                       key={menuItem.label}
                       className={
-                        router.pathname == menuItem.url ? "active" : ""
+                        `rounded ${router.pathname == menuItem.url ? "bg-white" : ""}`
                       }
                     >
                       <Link
-                        className="flex justify-center w-full p-3 text-gray-600 transition duration-200 ease-in-out rounded-sm dark:text-gray-200 hover:text-gray-900 hover:bg-secondary dark:hover:text-gray-800 md:w-auto"
+                        className={`flex justify-center w-full p-3 text-gray-600 transition duration-200 ease-in-out rounded-sm hover:text-gray-900 hover:bg-secondary dark:hover:text-gray-800 md:w-auto ${router.pathname == menuItem.url ? `dark:text-gray-900`: `dark:text-gray-200`}`}
                         href={menuItem.url}
                       >
                         {menuItem.label}

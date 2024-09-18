@@ -2,153 +2,66 @@
   "modulePages": [
     {
       "name": "contactBase",
-      "description": "Contact page base sections",
-      "page": {
-        "name": "contact"
-      },
+      "page": { "name": "contact" },
       "sections": [
-        {
-          "name": "contactSeo",
-          "position": 0
-        },
-        {
-          "name": "contactLanding",
-          "position": 1
-        }
+        { "name": "contactSeo", "position": 1 },
+        { "name": "contactLanding", "position": 1 }
       ]
     },
     {
       "name": "servicesContactTeaser",
-      "description": "Teaser for Contact page on Services page",
-      "page": {
-        "name": "services"
-      },
-      "sections": [
-        {
-          "name": "contactTeaser",
-          "position": 4
-        }
-      ]
+      "page": { "name": "services" },
+      "sections": [{ "name": "contactTeaser", "position": 4 }]
     },
     {
       "name": "homeBase",
-      "description": "Home page base sections",
-      "page": {
-        "name": "home"
-      },
+      "page": { "name": "home" },
       "sections": [
-        {
-          "name": "homeSeo",
-          "position": 0
-        },
-        {
-          "name": "mainLanding",
-          "position": 1
-        }
+        { "name": "homeSeo", "position": 1 },
+        { "name": "mainLanding", "position": 1 }
       ]
     },
     {
       "name": "servicesBase",
-      "description": "Services page base sections",
-      "page": {
-        "name": "services"
-      },
+      "page": { "name": "services" },
       "sections": [
-        {
-          "name": "servicesSeo",
-          "position": 0
-        },
-        {
-          "name": "servicesLanding",
-          "position": 1
-        },
-        {
-          "name": "servicesBlock",
-          "position": 3
-        }
+        { "name": "servicesSeo", "position": 1 },
+        { "name": "servicesLanding", "position": 1 },
+        { "name": "servicesBlock", "position": 3 }
       ]
     },
     {
       "name": "homeFeatures",
-      "description": "Features list on Home page",
-      "page": {
-        "name": "home"
-      },
-      "sections": [
-        {
-          "name": "featuresList",
-          "position": 3
-        }
-      ]
+      "page": { "name": "home" },
+      "sections": [{ "name": "featuresList", "position": 3 }]
     },
     {
       "name": "homeBenefits",
-      "description": "Benefits list on Home page",
-      "page": {
-        "name": "home"
-      },
-      "sections": [
-        {
-          "name": "benefitsList",
-          "position": 5
-        }
-      ]
+      "page": { "name": "home" },
+      "sections": [{ "name": "benefitsList", "position": 5 }]
     },
     {
       "name": "aboutBase",
-      "description": "About page base sections",
-      "page": {
-        "name": "about"
-      },
+      "page": { "name": "about" },
       "sections": [
-        {
-          "name": "aboutSeo",
-          "position": 0
-        },
-        {
-          "name": "aboutLanding",
-          "position": 1
-        }
+        { "name": "aboutSeo", "position": 1 },
+        { "name": "aboutLanding", "position": 1 }
       ]
     },
     {
       "name": "homeAboutTeaser",
-      "description": "About page teaser on Home page",
-      "page": {
-        "name": "home"
-      },
-      "sections": [
-        {
-          "name": "aboutTeaser",
-          "position": 9
-        }
-      ]
+      "page": { "name": "home" },
+      "sections": [{ "name": "aboutTeaser", "position": 9 }]
     },
     {
       "name": "aboutTeam",
-      "description": "About page team section",
-      "page": {
-        "name": "about"
-      },
-      "sections": [
-        {
-          "name": "team",
-          "position": 3
-        }
-      ]
+      "page": { "name": "about" },
+      "sections": [{ "name": "team", "position": 3 }]
     },
     {
       "name": "authorArticle",
-      "description": "Author detail page sections",
-      "page": {
-        "name": "authorArticle"
-      },
-      "sections": [
-        {
-          "name": "authorArticleLanding",
-          "position": 2
-        }
-      ]
+      "page": { "name": "authorArticle" },
+      "sections": [{ "name": "authorArticleLanding", "position": 2 }]
     }
   ]
 }

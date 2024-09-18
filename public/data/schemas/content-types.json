@@ -2,92 +2,53 @@
   "contentTypes": [
     {
       "name": "author",
-      "title": "Author",
-      "dataPosition": 2,
       "fields": {
-        "fullName": {
-          "type": "string"
-        },
-        "slug": {
-          "type": "uid",
-          "targetField": "fullName",
-          "required": true
-        },
+        "fullName": { "type": "string" },
+        "slug": { "type": "uid", "targetField": "fullName", "required": true },
         "profile": {
           "type": "relation",
           "relation": "oneToOne",
           "target": "profile"
+        },
+        "posts": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "post",
+          "mappedBy": "author",
+          "modules": ["blog"]
         }
       }
     },
     {
       "name": "profile",
-      "title": "Profile",
-      "dataPosition": 1,
       "fields": {
-        "title": {
-          "type": "string",
-          "required": false
-        },
-        "excerpt": {
-          "type": "text",
-          "required": false
-        },
-        "bio": {
-          "type": "portabletext"
-        },
-        "position": {
-          "type": "string",
-          "required": false
-        },
-        "profileImage": {
-          "type": "image"
-        }
+        "title": { "type": "string", "required": false },
+        "excerpt": { "type": "text", "required": false },
+        "bio": { "type": "portabletext" },
+        "position": { "type": "string", "required": false },
+        "profileImage": { "type": "image" }
       }
     },
     {
       "name": "primaryMenuItem",
-      "title": "Primary Menu Item",
       "fields": {
-        "slug": {
-          "type": "uid",
-          "targetField": "label",
-          "required": true
-        },
-        "label": {
-          "type": "string",
-          "required": true
-        },
-        "url": {
-          "type": "string",
-          "unique": true,
-          "required": true
-        }
+        "slug": { "type": "uid", "targetField": "label", "required": true },
+        "label": { "type": "string", "required": true },
+        "url": { "type": "string", "unique": true, "required": true }
       }
     },
     {
       "name": "benefit",
-      "title": "Benefit",
       "fields": {
         "preheading": {
           "type": "element",
           "repeatable": false,
           "element": "preheading"
         },
-        "title": {
-          "type": "string"
-        },
-        "slug": {
-          "type": "uid",
-          "targetField": "title",
-          "required": true
-        },
-        "blurb": {
-          "type": "text"
-        },
-        "image": {
-          "type": "image"
-        },
+        "title": { "type": "string" },
+        "slug": { "type": "uid", "targetField": "title", "required": true },
+        "blurb": { "type": "text" },
+        "image": { "type": "image" },
         "buttonLinks": {
           "type": "element",
           "repeatable": true,
@@ -97,27 +58,16 @@
     },
     {
       "name": "feature",
-      "title": "Feature",
       "fields": {
         "preheading": {
           "type": "element",
           "repeatable": false,
           "element": "preheading"
         },
-        "title": {
-          "type": "string"
-        },
-        "slug": {
-          "type": "uid",
-          "targetField": "title",
-          "required": true
-        },
-        "blurb": {
-          "type": "text"
-        },
-        "image": {
-          "type": "image"
-        },
+        "title": { "type": "string" },
+        "slug": { "type": "uid", "targetField": "title", "required": true },
+        "blurb": { "type": "text" },
+        "image": { "type": "image" },
         "buttonLinks": {
           "type": "element",
           "repeatable": true,
@@ -127,42 +77,20 @@
     },
     {
       "name": "service",
-      "title": "Service",
       "fields": {
-        "title": {
-          "type": "string"
-        },
-        "slug": {
-          "type": "uid",
-          "targetField": "title",
-          "required": true
-        },
-        "description": {
-          "type": "text"
-        },
-        "image": {
-          "type": "image"
-        }
+        "title": { "type": "string" },
+        "slug": { "type": "uid", "targetField": "title", "required": true },
+        "description": { "type": "text" },
+        "image": { "type": "image" }
       }
     },
     {
       "name": "socialLink",
-      "title": "Social Link",
       "fields": {
-        "heading": {
-          "type": "string"
-        },
-        "slug": {
-          "type": "uid",
-          "targetField": "heading",
-          "required": true
-        },
-        "icon": {
-          "type": "image"
-        },
-        "url": {
-          "type": "string"
-        }
+        "heading": { "type": "string" },
+        "slug": { "type": "uid", "targetField": "heading", "required": true },
+        "icon": { "type": "image" },
+        "url": { "type": "string" }
       }
     }
   ]

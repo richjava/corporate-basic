@@ -4,98 +4,49 @@
       "name": "buttonLink",
       "title": "Button Link",
       "fields": {
-        "slug": {
-          "type": "uid",
-          "targetField": "label",
-          "required": true
-        },
-        "label": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        }
+        "slug": { "type": "uid", "targetField": "label", "required": true },
+        "label": { "type": "string" },
+        "url": { "type": "string" },
+        "type": { "type": "string" }
       }
     },
     {
       "name": "button",
       "title": "Button",
       "fields": {
-        "slug": {
-          "type": "uid",
-          "targetField": "label",
-          "required": true
-        },
-        "label": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        }
+        "slug": { "type": "uid", "targetField": "label", "required": true },
+        "label": { "type": "string" },
+        "type": { "type": "string" }
       }
     },
     {
       "name": "contextualLink",
-      "displayName": "Contextual Link",
+      "title": "Contextual Link",
       "fields": {
-        "slug": {
-          "type": "uid",
-          "targetField": "label",
-          "required": true
-        },
-        "icon": {
-          "type": "image"
-        },
-        "text": {
-          "type": "string"
-        },
-        "label": {
-          "type": "string"
-        },
-        "url": {
-          "type": "string"
-        }
+        "slug": { "type": "uid", "targetField": "label", "required": true },
+        "icon": { "type": "image" },
+        "text": { "type": "string" },
+        "label": { "type": "string" },
+        "url": { "type": "string" }
       }
     },
     {
       "name": "field",
       "title": "Field",
       "fields": {
-        "slug": {
-          "type": "uid",
-          "targetField": "label",
-          "required": true
-        },
-        "label": {
-          "type": "string"
-        },
-        "name": {
-          "type": "string"
-        },
-        "type": {
-          "type": "string"
-        }
+        "slug": { "type": "uid", "targetField": "label", "required": true },
+        "label": { "type": "string" },
+        "name": { "type": "string" },
+        "type": { "type": "string" }
       }
     },
     {
       "name": "preheading",
       "title": "Preheading",
       "fields": {
-        "slug": {
-          "type": "uid",
-          "targetField": "text",
-          "required": true
-        },
-        "text": {
-          "type": "string"
-        },
-        "type": {
-          "type": "enumeration",
-          "values": ["line", "dot", "plain"]
-        }
+        "slug": { "type": "uid", "targetField": "text", "required": true },
+        "text": { "type": "string" },
+        "type": { "type": "enumeration", "values": ["line", "dot", "plain"] }
       }
     }
   ]

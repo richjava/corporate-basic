@@ -1,46 +1,62 @@
 {
   "data": [
     {
-      "_type": "social-link",
+      "_id": "social-link-RNAsCRr8eGq",
+      "_type": "socialLink",
       "heading": "Facebook",
       "icon": {
         "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878791/facebook_uxho5o.svg",
         "path": "/images/icons/facebook.svg",
         "width": 24,
-        "height": 24
+        "height": 24,
+        "type": "image",
+        "_key": "TvyzicfCOB",
+        "attributeName": "icon"
       },
       "url": "https://facebook.com"
     },
     {
-      "_type": "social-link",
+      "_id": "social-link-S24nCa7gexM",
+      "_type": "socialLink",
       "heading": "Twitter",
       "icon": {
         "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878788/twitter_xf9l9q.svg",
         "path": "/images/icons/twitter.svg",
         "width": 30,
-        "height": 24
+        "height": 24,
+        "type": "image",
+        "_key": "7lXPmn8Uxz",
+        "attributeName": "icon"
       },
       "url": "https://twitter.com"
     },
     {
-      "_type": "social-link",
+      "_id": "social-link-mi2i88XiWW1",
+      "_type": "socialLink",
       "heading": "Instagram",
       "icon": {
         "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878783/instagram_nn2ske.svg",
         "path": "/images/icons/instagram.svg",
         "width": 24,
-        "height": 24
+        "height": 24,
+        "type": "image",
+        "_key": "5ePFnWhBiV",
+        "attributeName": "icon"
       },
       "url": "https://instagram.com"
     },
     {
-      "_type": "social-link",
+      "_id": "social-link-JYz_lVn1JGV",
+      "_type": "socialLink",
       "heading": "Youtube",
       "icon": {
         "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878785/youtube_bcxtcu.svg",
         "path": "/images/icons/youtube.svg",
         "width": 32,
-        "height": 24
+        "height": 24,
+        "type": "image",
+        "_key": "-AUA0Zg9iM",
+        "attributeName": "icon"
       },
       "url": "https://youtube.com"
     }
