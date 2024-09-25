@@ -33,13 +33,6 @@
       "required": false
     },
     {
-      "title": "Team",
-      "description": "Provides information about the team members",
-      "name": "team",
-      "modulePages": [{ "name": "aboutTeam" }, { "name": "authorArticle" }],
-      "required": false
-    },
-    {
       "title": "Services",
       "description": "Provides information about main services",
       "name": "services",
