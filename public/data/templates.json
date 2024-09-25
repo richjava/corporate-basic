@@ -6,7 +6,7 @@
       "category": "headers",
       "namespace": "gh_richjava_corporate",
       "description": "Simple header with justified logo and nav links.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/headers/header1.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/headers/header1.tsx"
     },
     {
       "name": "header2",
@@ -22,7 +22,7 @@
       "category": "footers",
       "namespace": "gh_richjava_corporate",
       "description": "Simple footer with centered content and social links.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/footers/footer1.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/footers/footer1.tsx"
     },
     {
       "name": "footer2",
@@ -30,7 +30,7 @@
       "category": "footers",
       "namespace": "gh_richjava_corporate",
       "description": "Simple footer with two equal columns and social links.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/footers/footer2.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/footers/footer2.tsx"
     },
     {
       "name": "seo",
@@ -38,7 +38,7 @@
       "category": "head",
       "namespace": "gh_richjava_corporate",
       "description": "Define SEO meta titles, meta descriptions and social media meta data.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/head/seo.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/head/seo.tsx"
     },
     {
       "name": "banner1",
@@ -47,7 +47,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Full width banner with centered content.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878892/banner1_agmnah.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner1.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/banners/banner1.tsx"
     },
     {
       "name": "banner2",
@@ -56,7 +56,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Full width banner with left aligned content.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878882/banner2_q9vib8.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner2.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/banners/banner2.tsx"
     },
     {
       "name": "banner3",
@@ -65,7 +65,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Full width banner with two offset columns.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/banner3_gdq2oo.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner3.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/banners/banner3.tsx"
     },
     {
       "name": "banner4",
@@ -74,7 +74,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Banner with centered content.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878890/banner4_kkytf8.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner4.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/banners/banner4.tsx"
     },
     {
       "name": "banner5",
@@ -83,7 +83,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Banner with two offset columns.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878887/banner5_mfu7oy.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner5.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/banners/banner5.tsx"
     },
     {
       "name": "block1",
@@ -92,7 +92,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Text block with left aligned content.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878843/block1_smb2xd.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block1.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/blocks/block1.tsx"
     },
     {
       "name": "block2",
@@ -101,7 +101,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Text block with centered content.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878839/block2_kk8bqi.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block2.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/blocks/block2.tsx"
     },
     {
       "name": "block3",
@@ -110,7 +110,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Text block with two equal columns and left aligned content.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878842/block3_exu2lc.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block3.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/blocks/block3.tsx"
     },
     {
       "name": "block4",
@@ -119,7 +119,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Text block with two equal columns and centered content.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878844/block4_hdaaiz.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block4.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/blocks/block4.tsx"
     },
     {
       "name": "block5",
@@ -128,7 +128,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Text block with two equal columns and split content",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878846/block5_vy4xnh.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block5.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/blocks/block5.tsx"
     },
     {
       "name": "cards1",
@@ -137,7 +137,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Cards with three equal columns and left aligned content.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878875/cards1_cpzq8p.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards1.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards1.tsx"
     },
     {
       "name": "cards2",
@@ -146,7 +146,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Cards with three equal columns and centered content.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878877/cards2_c6za9h.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards2.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards2.tsx"
     },
     {
       "name": "cards3",
@@ -155,7 +155,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Cards with three equal columns, left aligned content and a background colour.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878879/cards3_r2g41v.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards3.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards3.tsx"
     },
     {
       "name": "cards4",
@@ -164,7 +164,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Cards with three equal columns, centered content and a background colour.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878871/cards4_sdeorh.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards4.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards4.tsx"
     },
     {
       "name": "cards5",
@@ -173,7 +173,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Cards with three equal columns, left aligned content and an image.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878874/cards5_hvuunv.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards5.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards5.tsx"
     },
     {
       "name": "profileCards1",
@@ -182,7 +182,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Takes a collection of authors. Cards with three equal columns, left aligned content and an image.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878880/profile-cards1_pifmdj.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/profile-cards1.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/profile-cards1.tsx"
     },
     {
       "name": "cover1",
@@ -191,7 +191,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Full viewport cover with text content and a supporting image.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878863/cover1_mzktvz.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover1.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/covers/cover1.tsx"
     },
     {
       "name": "cover2",
@@ -200,7 +200,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Full viewport cover with text content and a circle supporting image.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878866/cover2_kauqyl.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover2.tsx",
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/covers/cover2.tsx",
     },
     {
       "name": "cover3",
@@ -209,7 +209,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Full viewport cover with text content and a full height supporting image.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878865/cover3_xuvwbs.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover3.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/covers/cover3.tsx"
     },
     {
       "name": "cover4",
@@ -218,7 +218,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Full viewport cover with centered text content and supporting image.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878861/cover4_x03mqw.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover4.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/covers/cover4.tsx"
     },
     {
       "name": "cover5",
@@ -227,7 +227,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Full viewport cover with text content and a full width and height background image.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878854/cover5_nwtta9.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover5.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/covers/cover5.tsx"
     },
     {
       "name": "list1",
@@ -236,7 +236,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "List of items with two equal columns and reversed even rows.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878853/list1_aazspj.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/lists/list1.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/lists/list1.tsx"
     },
     {
       "name": "list2",
@@ -245,7 +245,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "List of items with two equal columns and reversed odd rows.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878852/list2_ohyoby.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/lists/list2.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/lists/list2.tsx"
     },
     {
       "name": "form1",
@@ -254,7 +254,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Contact details with two equal columns and form fields.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878847/form1_zjmwvf.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/forms/form1.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/forms/form1.tsx"
     },
     {
       "name": "form2",
@@ -263,7 +263,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Contact details with two equal columns and form fields.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878850/form2_ian0kz.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/forms/form2.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/forms/form2.tsx"
     },
     {
       "name": "profileArticle1",
@@ -272,7 +272,7 @@
       "namespace": "gh_richjava_corporate",
       "description": "Article section with hero image for introducing authors.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/profile-article1_qkfnzw.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/articles/profile-article1.tsx"
+      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/articles/profile-article1.tsx"
     }
   ]
 }
