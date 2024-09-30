@@ -11,12 +11,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        //Primary and secondary colors
-        primary: "#e5e7eb",
-        secondary: "#f3f4f6",
-
-        // Accent colors (uses hsl values defined in styles/globals.css)
-        accent:
+        "background": "var(--background)",
+        "foreground": "var(--foreground)",
+        "primary": "var(--primary)",
+        "primary-foreground": "var(--primary-foreground)",
+        "secondary": "var(--secondary)",
+        "secondary-foreground": "var(--secondary-foreground)",
+        "muted": "var(--muted)",
+        "muted-foreground": "var(--muted-foreground)",
+        "accent":
           "hsl(var(--hue-accent),var(--saturation-accent),var(--lightness-accent))",
         "accent-hover":
           "hsl(var(--hue-accent),var(--saturation-accent),calc(var(--lightness-accent) + 10%))",
@@ -24,70 +27,70 @@ module.exports = {
           "hsl(var(--hue-accent),var(--saturation-accent),calc(var(--lightness-accent) - 10%))",
         "accent-disabled":
           "hsl(var(--hue-accent),var(--saturation-accent),calc(var(--lightness-accent) + 30%))",
-
+        "border": "var(--border)",
         // Other colors
-        current: "currentColor",
+        "current": "currentColor",
       },
       fontFamily: {
-        sans: ["IBM Plex Sans", ...defaultTheme.fontFamily.sans],
-        display: ["Arial", ...defaultTheme.fontFamily.sans],
+        sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],
+        display: ["var(--font-display)", ...defaultTheme.fontFamily.sans],
       },
       fontSize: {
         // Display sizes
-        "display-xs": "2.25rem", // 36px
-        "display-sm": "2.75rem", // 44px
-        "display-md": "3.25rem", // 52px
-        "display-lg": "6rem", // 96px
+        "display-xs": "var(--text-display-xs)",
+        "display-sm": "var(--text-display-sm)",
+        "display-md": "var(--text-display-md)",
+        "display-lg": "var(--text-display-lg)",
 
         // Heading sizes
 
-        "heading-xs": "1.25rem", // 20px
-        "heading-sm": "1.5rem", // 24px
-        "heading-md": "2.375rem", // 38px
-        "heading-lg": "2rem", // 32px
-        "heading-xl": "2.25rem", // 36px
-        "heading-xxl": "2.5rem", // 40px
+        "heading-xs": "var(--text-heading-xs)",
+        "heading-sm": "var(--text-heading-sm)",
+        "heading-md": "var(--text-heading-md)",
+        "heading-lg": "var(--text-heading-lg)",
+        "heading-xl": "var(--text-heading-xl)",
+        "heading-xxl": "var(--text-heading-xxl)",
 
         // Label sizes
 
-        "label-xs": "0.75rem", // 12px
-        "label-sm": "0.875rem", // 14px
-        "label-md": "1rem", // 16px
-        "label-lg": "1.125rem", // 18px
+        "label-xs": "var(--text-label-xs)",
+        "label-sm": "var(--text-label-sm)",
+        "label-md": "var(--text-label-md)",
+        "label-lg": "var(--text-label-lg)",
 
         // Paragraph sizes
 
-        "paragraph-xs": "0.75rem", // 12px
-        "paragraph-sm": "0.875rem", // 14px
-        "paragraph-md": "1rem", // 16px
-        "paragraph-lg": "1.125rem", // 18px
+        "paragraph-xs": "var(--text-paragraph-xs)",
+        "paragraph-sm": "var(--text-paragraph-sm)",
+        "paragraph-md": "var(--text-paragraph-md)",
+        "paragraph-lg": "var(--text-paragraph-lg)",
       },
       lineHeight: {
         // Display line heights
-        "display-xs": "2.75rem", // 44px
-        "display-sm": "3.25rem", // 52px
-        "display-md": "4rem", // 64px
-        "display-lg": "7rem", // 112px
+        "display-xs": "var(--leading-display-xs)",
+        "display-sm": "var(--leading-display-sm)",
+        "display-md": "var(--leading-display-md)",
+        "display-lg": "var(--leading-display-lg)",
 
         // Heading line heights
-        "heading-xs": "1.75rem", // 28px
-        "heading-sm": "2rem", // 32px
-        "heading-md": "2.25rem", // 36px
-        "heading-lg": "2.5rem", // 40px
-        "heading-xl": "2.75rem", // 44px
-        "heading-xxl": "3.25rem", // 52px
+        "heading-xs": "var(--leading-heading-xs)",
+        "heading-sm": "var(--leading-heading-sm)",
+        "heading-md": "var(--leading-heading-md)",
+        "heading-lg": "var(--leading-heading-lg)",
+        "heading-xl": "var(--leading-heading-xl)",
+        "heading-xxl": "var(--leading-heading-xxl)",
 
         // Label line heights
-        "label-xs": "1", // 16px
-        "label-sm": "1", // 16px
-        "label-md": "1.25rem", // 20px
-        "label-lg": "1.5rem", // 24px
+        "label-xs": "var(--leading-label-xs)",
+        "label-sm": "var(--leading-label-sm)",
+        "label-md": "var(--leading-label-md)",
+        "label-lg": "var(--leading-label-lg)",
 
         // Paragraph line heights
-        "paragraph-xs": "1.25rem", // 20px
-        "paragraph-sm": "1.25rem", // 20px
-        "paragraph-md": "1.5rem", // 24px
-        "paragraph-lg": "1.75rem", // 28px
+        "paragraph-xs": "var(--leading-paragraph-xs)",
+        "paragraph-sm": "var(--leading-paragraph-sm)",
+        "paragraph-md": "var(--leading-paragraph-md)",
+        "paragraph-lg": "var(--leading-paragraph-lg)",
       },
     },
   },

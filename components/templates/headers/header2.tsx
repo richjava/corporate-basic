@@ -53,7 +53,7 @@ export default function Header2({ content }: any) {
                       }
                     >
                       <Link
-                        className="flex justify-center w-full p-3 text-gray-600 transition duration-200 ease-in-out rounded-sm dark:text-gray-200 hover:text-gray-900 hover:bg-secondary dark:hover:text-gray-800 md:w-auto"
+                        className="flex justify-center w-full p-3 text-gray-600 transition duration-200 ease-in-out rounded-sm dark:text-gray-200 hover:text-gray-900 hover:bg-secondary dark:hover:text-gray-200 md:w-auto"
                         href={menuItem.url}
                       >
                         {menuItem.label}

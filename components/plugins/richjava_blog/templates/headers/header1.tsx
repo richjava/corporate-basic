@@ -49,11 +49,11 @@ export default function Header1({ content }: any) {
                     <li
                       key={menuItem.label}
                       className={
-                        router.pathname == menuItem.url ? "active" : ""
+                        router.pathname == menuItem.url ? "active" : "dark:hover:text-gray-200"
                       }
                     >
                       <Link
-                        className="flex justify-center w-full p-3 text-gray-600 transition duration-200 ease-in-out rounded-md dark:text-gray-200 hover:text-gray-900 hover:bg-gray-400 dark:hover:text-gray-800 md:w-auto"
+                        className="flex justify-center w-full p-3 text-gray-600 transition duration-200 ease-in-out rounded-md dark:text-gray-200 md:w-auto"
                         href={menuItem.url}
                       >
                         {menuItem.label}
