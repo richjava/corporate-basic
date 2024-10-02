@@ -1052,7 +1052,7 @@
     {
       "title": "Header 1",
       "name": "header1",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "headers",
       "description": "Simple header with justified logo and nav links.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/headers/header1.tsx",
@@ -1061,7 +1061,7 @@
     {
       "title": "Footer 1",
       "name": "footer1",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "footers",
       "description": "Simple footer with centered content and social links.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/footers/footer1.tsx",
@@ -1070,7 +1070,7 @@
     {
       "title": "SEO",
       "name": "seo",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "head",
       "description": "Define SEO meta titles, meta descriptions and social media meta data.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/head/seo.tsx"
@@ -1078,7 +1078,7 @@
     {
       "title": "Banner 1",
       "name": "banner1",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "banners",
       "description": "Full width banner with centered content.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/banners/banner1.tsx",
@@ -1087,7 +1087,7 @@
     {
       "title": "Block 1",
       "name": "block1",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "blocks",
       "description": "Text block with left aligned content.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block1.tsx",
@@ -1096,7 +1096,7 @@
     {
       "title": "Block 3",
       "name": "block3",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "blocks",
       "description": "Text block with two equal columns and left aligned content.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/blocks/block3.tsx",
@@ -1105,7 +1105,7 @@
     {
       "title": "Cards 1",
       "name": "cards1",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "cards",
       "description": "Cards with three equal columns and left aligned content.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/cards1.tsx",
@@ -1114,7 +1114,7 @@
     {
       "title": "Profile Cards 1",
       "name": "profileCards1",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "cards",
       "description": "Takes a collection of authors. Cards with three equal columns, left aligned content and an image.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/cards/profile-cards1.tsx",
@@ -1123,7 +1123,7 @@
     {
       "title": "Cover 1",
       "name": "cover1",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "covers",
       "description": "Full viewport cover with text content and a supporting image.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover1.tsx",
@@ -1132,7 +1132,7 @@
     {
       "title": "Cover 2",
       "name": "cover2",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "covers",
       "description": "Full viewport cover with text content and a circle supporting image.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover2.tsx",
@@ -1141,7 +1141,7 @@
     {
       "title": "Cover 3",
       "name": "cover3",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "covers",
       "description": "Full viewport cover with text content and a full height supporting image.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/covers/cover3.tsx",
@@ -1150,7 +1150,7 @@
     {
       "title": "List 1",
       "name": "list1",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "lists",
       "description": "List of items with two equal columns and reversed even rows.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/lists/list1.tsx",
@@ -1159,7 +1159,7 @@
     {
       "title": "Form 1",
       "name": "form1",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "forms",
       "description": "Contact details with two equal columns and form fields.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/forms/form1.tsx",
@@ -1168,7 +1168,7 @@
     {
       "title": "Profile Article 1",
       "name": "profileArticle1",
-      "namespace": "richjava_corporate",
+      "namespace": "richjava_corporate-basic",
       "category": "articles",
       "description": "Article section with hero image for introducing authors.",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/src/components/templates/articles/profile-article1.tsx"

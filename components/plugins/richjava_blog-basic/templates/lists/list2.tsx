@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { format } from "date-fns";
 import { urlForImage, collectionSlug, entrySlug } from "@/builtjs-utils";
-import { Tag } from "@/components/plugins/richjava_blog/shared";
+import { Tag } from "@/components/plugins/richjava_blog-basic/shared";
 
 export default function List2({ content }: any) {
   if (!content) return <></>;

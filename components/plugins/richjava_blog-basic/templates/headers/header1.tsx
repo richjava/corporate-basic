@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { urlForImage, widthForImage, heightForImage } from "@/builtjs-utils";
-import ModeToggleBtn from "@/components/plugins/richjava_blog/shared/mode-toggle-btn";
+import ModeToggleBtn from "@/components/plugins/richjava_blog-basic/shared/mode-toggle-btn";
 
 export default function Header1({ content }: any) {
   const router = useRouter();
@@ -49,11 +49,11 @@ export default function Header1({ content }: any) {
                     <li
                       key={menuItem.label}
                       className={
-                        router.pathname == menuItem.url ? "active" : "dark:hover:text-gray-200"
+                        `rounded ${router.pathname == menuItem.url ? "bg-gray-300 dark:bg-white" : ""}`
                       }
                     >
                       <Link
-                        className="flex justify-center w-full p-3 text-gray-600 transition duration-200 ease-in-out rounded-md dark:text-gray-200 md:w-auto"
+                        className={`flex justify-center w-full p-3 text-gray-600 transition duration-200 ease-in-out rounded-sm hover:text-gray-900 md:w-auto ${router.pathname == menuItem.url ? `dark:text-gray-900 dark:text-black`: `dark:text-gray-200 dark:hover:text-white`}`}
                         href={menuItem.url}
                       >
                         {menuItem.label}

@@ -11,15 +11,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "background": "var(--background)",
-        "foreground": "var(--foreground)",
-        "primary": "var(--primary)",
-        "primary-foreground": "var(--primary-foreground)",
-        "secondary": "var(--secondary)",
-        "secondary-foreground": "var(--secondary-foreground)",
-        "muted": "var(--muted)",
-        "muted-foreground": "var(--muted-foreground)",
-        "accent":
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent:
           "hsl(var(--hue-accent),var(--saturation-accent),var(--lightness-accent))",
         "accent-hover":
           "hsl(var(--hue-accent),var(--saturation-accent),calc(var(--lightness-accent) + 10%))",
@@ -27,9 +33,9 @@ module.exports = {
           "hsl(var(--hue-accent),var(--saturation-accent),calc(var(--lightness-accent) - 10%))",
         "accent-disabled":
           "hsl(var(--hue-accent),var(--saturation-accent),calc(var(--lightness-accent) + 30%))",
-        "border": "var(--border)",
+        border: "var(--border)",
         // Other colors
-        "current": "currentColor",
+        current: "currentColor",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],
@@ -91,6 +97,10 @@ module.exports = {
         "paragraph-sm": "var(--leading-paragraph-sm)",
         "paragraph-md": "var(--leading-paragraph-md)",
         "paragraph-lg": "var(--leading-paragraph-lg)",
+      },
+      borderRadius: {
+        DEFAULT: "var(--corner-primary)",
+        lg: "var(--corner-primary-lg)",
       },
     },
   },
