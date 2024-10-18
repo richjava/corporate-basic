@@ -5,6 +5,7 @@ const { publicRuntimeConfig } = getConfig();
 export async function getComponentMap(sections:any) {
   return new Promise(async (resolve) => {
     const map:any = {};
+    debugger
     for (let i = 0; i < sections.length; i++) {
       if(!sections[i].template){
         continue;

@@ -1,7 +1,7 @@
 {
   "global": {
     "fields": {
-      "name": { "default": "Corporate Tailwind", "type": "string" },
+      "name": { "default": "Corporate Basic", "type": "string" },
       "logo": { "type": "image" }
     }
   }

@@ -25,8 +25,8 @@
       "name": "homeSeo",
       "title": "Home SEO",
       "data": {
-        "pageTitle": "Home | Corporate Tailwind Built.JS Theme",
-        "description": "Home page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "pageTitle": "Home | Corporate Basic Built.JS Theme",
+        "description": "Home page for a site built with the Corporate Basic Built.JS Theme.",
         "shareImage": {
           "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
@@ -46,8 +46,8 @@
       "name": "contactSeo",
       "title": "Contact SEO",
       "data": {
-        "pageTitle": "Contact | Corporate Tailwind Built.JS Theme",
-        "description": "Contact page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "pageTitle": "Contact | Corporate Basic Built.JS Theme",
+        "description": "Contact page for a site built with the Corporate Basic Built.JS Theme.",
         "shareImage": {
           "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
@@ -67,8 +67,8 @@
       "name": "aboutSeo",
       "title": "About SEO",
       "data": {
-        "pageTitle": "About | Corporate Tailwind Built.JS Theme",
-        "description": "About page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "pageTitle": "About | Corporate Basic Built.JS Theme",
+        "description": "About page for a site built with the Corporate Basic Built.JS Theme.",
         "shareImage": {
           "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",
@@ -88,8 +88,8 @@
       "name": "servicesSeo",
       "title": "Services SEO",
       "data": {
-        "pageTitle": "Services | Corporate Tailwind Built.JS Theme",
-        "description": "Services page for a site built with the Corporate Tailwind Built.JS Theme.",
+        "pageTitle": "Services | Corporate Basic Built.JS Theme",
+        "description": "Services page for a site built with the Corporate Basic Built.JS Theme.",
         "shareImage": {
           "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",

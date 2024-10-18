@@ -5,7 +5,7 @@
       "page": { "name": "contact" },
       "sections": [
         { "name": "contactSeo", "position": 1 },
-        { "name": "contactLanding", "position": 1 }
+        { "name": "contactLanding", "position": 2 }
       ]
     },
     {
@@ -18,7 +18,7 @@
       "page": { "name": "home" },
       "sections": [
         { "name": "homeSeo", "position": 1 },
-        { "name": "mainLanding", "position": 1 }
+        { "name": "mainLanding", "position": 2 }
       ]
     },
     {
@@ -26,7 +26,7 @@
       "page": { "name": "services" },
       "sections": [
         { "name": "servicesSeo", "position": 1 },
-        { "name": "servicesLanding", "position": 1 },
+        { "name": "servicesLanding", "position": 2 },
         { "name": "servicesBlock", "position": 3 }
       ]
     },

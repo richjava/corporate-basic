@@ -2,7 +2,6 @@ import SocialLink from "@/components/shared/social-link";
 
 export default function Footer1({ content }: any) {
   if (!content) return <></>;
-  console.log({content})
   let { collections = null } = { ...content };
   let primaryMenuItems = [];
   if (collections && collections["primaryMenuItem"]) {
