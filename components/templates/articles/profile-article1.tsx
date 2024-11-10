@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { urlForImage } from "@/builtjs-utils";
-import BlockContent from '@sanity/block-content-to-react';
+import { PortableText } from '@portabletext/react'
 
 export default function ProfileArticle1({ content }:any) {
   if (!content) return <></>;
@@ -31,7 +31,7 @@ export default function ProfileArticle1({ content }:any) {
            
             </div>
           </div>}
-          <BlockContent blocks={profile?.bio} />
+          <PortableText value={profile?.bio} />
 
         </div>
       )}
