@@ -204,7 +204,7 @@
 }
 
 .preheading {
-  @apply relative block mb-4 text-sm font-light tracking-widest text-gray-400 uppercase dark:text-gray-400;
+  @apply relative block text-sm font-light tracking-widest text-gray-400 uppercase dark:text-gray-400;
 }
 
 .preheading.center {

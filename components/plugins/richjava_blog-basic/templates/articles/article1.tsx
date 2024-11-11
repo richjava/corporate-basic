@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Tag } from "@/components/plugins/richjava_blog-basic/shared";
 import { urlForImage } from "@/builtjs-utils";
-import BlockContent from '@sanity/block-content-to-react';
+import { PortableText } from '@portabletext/react';
 
 export default function Article1({ content }: any) {
   if (!content) return <></>;
@@ -18,7 +18,7 @@ export default function Article1({ content }: any) {
         <div className="max-w-screen-xl mx-auto">
           <header className="max-w-4xl mx-auto">
             <div className="flex items-center mb-4">
-              <p className="mb-0 capitalize paragraph-sm preheading">
+              <p className="mb-0 capitalize preheading paragraph-sm">
                 {format(new Date(entry.date), "dd LLLL yyyy")}
               </p>
               <span className="mx-3 text-gray-100">|</span>
@@ -57,8 +57,8 @@ export default function Article1({ content }: any) {
               alt={entry.title}
             />
           </div>
-          <BlockContent className="max-w-2xl mx-auto" blocks={entry.content} />
-          <div className="max-w-2xl mx-auto">
+          <PortableText className="max-w-2xl mx-auto" value={entry.content} />
+          <div className="pt-5">
             {entry.tags && (
               <div className="grid grid-flow-col gap-2 mb-4 auto-cols-max">
                 {entry.tags.map((tag: any) => {
