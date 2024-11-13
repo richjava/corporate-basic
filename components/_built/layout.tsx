@@ -9,18 +9,20 @@ const Layout = (props: any) => {
     // content-slot
     <>
       <div className="test">
-        {page &&
-          layoutComps.length > 0 &&
-          layoutComps.map((Section: any, i: number) => {
-            return (
-              <div key={i}>
-                <Section content={page.layout.sections[i].content} />
-                {i === page.layout.contentIndex - 1 && (
-                  <main id="main">{children}</main>
-                )}
-              </div>
-            );
-          })}
+        <div className="test">
+          {page &&
+            layoutComps.length > 0 &&
+            layoutComps.map((Section: any, i: number) => {
+              return (
+                <div key={i}>
+                  <Section content={page.layout.sections[i].content} />
+                  {i === page.layout.contentIndex - 1 && (
+                    <main id="main">{children}</main>
+                  )}
+                </div>
+              );
+            })}
+        </div>
       </div>
     </>
     // end-content-slot

@@ -1,0 +1,235 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom base styles */
+@layer base {
+  :root {
+    /* Color global vars */
+    --hue-accent: 220;
+    --saturation-accent: 9%;
+    --lightness-accent: 46%;
+
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+    --primary: 220 9% 46%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --border: 214.3 31.8% 91.4%;
+
+    /* Font size global vars */
+
+    --text-display-xs: 2.25rem; /* 36px */
+    --text-display-sm: 2.75rem; /* 44px */
+    --text-display-md: 3.25rem; /* 52px */
+    --text-display-lg: 6rem; /* 96px */
+    --text-heading-xs: 1.25rem; /* 20px */
+    --text-heading-sm: 1.5rem; /* 24px */
+    --text-heading-md: 2.375rem; /* 38px */
+    --text-heading-lg: 2rem; /* 32px */
+    --text-heading-xl: 2.25rem; /* 36px */
+    --text-heading-xxl: 2.5rem; /* 40px */
+    --text-label-xs: 0.75rem; /* 12px */
+    --text-label-sm: 0.875rem; /* 14px */
+    --text-label-md: 1rem; /* 16px */
+    --text-label-lg: 1.125rem; /* 18px */
+    --text-paragraph-xs: 0.75rem; /* 12px */
+    --text-paragraph-sm: 0.875rem; /* 14px */
+    --text-paragraph-md: 1rem; /* 16px */
+    --text-paragraph-lg: 1.125rem; /* 18px */
+
+    /* Line height global vars */
+
+    --leading-display-xs: 2.75rem; /* 44px */
+    --leading-display-sm: 3.25rem; /* 52px */
+    --leading-display-md: 4rem; /* 64px */
+    --leading-display-lg: 7rem; /* 112px */
+    --leading-heading-xs: 1.75rem; /* 28px */
+    --leading-heading-sm: 2rem; /* 32px */
+    --leading-heading-md: 2.25rem; /* 36px */
+    --leading-heading-lg: 2.5rem; /* 40px */
+    --leading-heading-xl: 2.75rem; /* 44px */
+    --leading-heading-xxl: 3.25rem; /* 52px */
+    --leading-label-xs: 1rem; /* 16px */
+    --leading-label-sm: 1rem; /* 16px */
+    --leading-label-md: 1.25rem; /* 20px */
+    --leading-label-lg: 1.5rem; /* 24px */
+    --leading-paragraph-xs: 1.25rem; /* 20px */
+    --leading-paragraph-sm: 1.25rem; /* 20px */
+    --leading-paragraph-md: 1.5rem; /* 24px */
+    --leading-paragraph-lg: 1.75rem; /* 28px */
+
+    --font-sans: "IBM Plex Sans";
+    --font-display: "Arial";
+
+    /* Corners */
+
+    --corner-primary: 4px;
+    --corner-primary-lg: 10px;
+  }
+
+  /* Element base styles */
+  h1,
+  h2,
+  h3 {
+    @apply mb-6 font-bold text-black dark:text-white;
+  }
+
+  p {
+    @apply mb-4 text-gray-600 text-paragraph-md dark:text-gray-200;
+  }
+
+  img {
+    @apply rounded-md;
+  }
+
+  header,
+  article,
+  section,
+  aside,
+  footer {
+    @apply dark:bg-gray-800;
+  }
+
+  main > section,
+  main > article {
+    @apply px-4 py-20;
+  }
+}
+
+/* Custom components */
+@layer components {
+}
+
+/* Custom utilities */
+@layer utilities {
+}
+
+/* Typography styles */
+/* Display styles */
+.display-xs {
+  @apply font-display text-display-xs leading-display-xs;
+}
+
+.display-sm {
+  @apply font-display text-display-sm leading-display-sm;
+}
+
+.display-md {
+  @apply font-display text-display-md leading-display-md;
+}
+
+.display-lg {
+  @apply font-display text-display-lg leading-display-lg;
+}
+
+/* Heading styles */
+.heading-xs {
+  @apply text-heading-xs leading-heading-xs;
+}
+
+.heading-sm {
+  @apply text-heading-sm leading-heading-sm;
+}
+
+.heading-md {
+  @apply text-heading-md leading-heading-md;
+}
+
+.heading-lg {
+  @apply text-heading-lg leading-heading-lg;
+}
+
+.heading-xl {
+  @apply text-heading-xl leading-heading-xl;
+}
+
+.heading-xxl {
+  @apply text-heading-xxl leading-heading-xxl;
+}
+
+/* Label styles */
+.label-xs {
+  @apply text-label-xs leading-label-xs;
+}
+
+.label-sm {
+  @apply text-label-sm leading-label-sm;
+}
+
+.label-md {
+  @apply text-label-md leading-label-md;
+}
+
+.label-lg {
+  @apply text-label-lg leading-label-lg;
+}
+
+/* Paragraph styles */
+.paragraph-xs {
+  @apply text-paragraph-xs leading-paragraph-xs;
+}
+
+.paragraph-sm {
+  @apply text-paragraph-sm leading-paragraph-sm;
+}
+
+.paragraph-md {
+  @apply text-paragraph-md leading-paragraph-md;
+}
+
+.paragraph-lg {
+  @apply text-paragraph-lg leading-paragraph-lg;
+}
+
+.btn {
+  @apply inline-block px-5 py-3 text-center transition-all duration-200 ease-in-out border-2 rounded-md;
+}
+
+.btn-primary {
+  @apply text-white bg-accent border-accent btn hover:bg-accent-hover hover:border-accent-hover dark:bg-white dark:text-accent dark:border-white dark:hover:bg-gray-300 dark:hover:border-gray-300;
+}
+
+.btn-secondary {
+  @apply text-accent border-accent btn hover:bg-accent-hover hover:text-white hover:border-accent-hover dark:border-gray-300 dark:text-white dark:hover:text-white dark:hover:border-white;
+}
+
+.btn:first-of-type + .btn {
+  @apply ml-3;
+}
+
+.preheading {
+  @apply relative block text-sm font-light tracking-widest text-gray-400 uppercase dark:text-gray-400;
+}
+
+.preheading.center {
+  max-width: max-content;
+  @apply mx-auto;
+}
+
+.preheading.line {
+  @apply pl-10;
+}
+
+.preheading.dot {
+  @apply pl-5;
+}
+
+.preheading.line::before,
+.preheading.dot::before {
+  content: "";
+  @apply absolute left-0 -translate-y-1/2 transform-gpu top-1/2;
+}
+
+.preheading.line::before {
+  @apply border-t border-gray-400 w-7;
+}
+
+.preheading.dot::before {
+  @apply w-1.5 h-1.5 bg-gray-400 rounded-full;
+}

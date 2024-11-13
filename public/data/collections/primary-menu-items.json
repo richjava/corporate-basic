@@ -8,13 +8,6 @@
       "url": "/services"
     },
     {
-      "_id": "primary-menu-item-m4rlBDgzy7",
-      "_type": "primaryMenuItem",
-      "slug": "about",
-      "label": "About",
-      "url": "/about"
-    },
-    {
       "_id": "primary-menu-item-eBrdqsMmeq",
       "_type": "primaryMenuItem",
       "slug": "contact",

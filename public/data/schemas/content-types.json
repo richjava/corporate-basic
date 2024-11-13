@@ -1,35 +1,6 @@
 {
   "contentTypes": [
     {
-      "name": "author",
-      "fields": {
-        "fullName": { "type": "string" },
-        "slug": { "type": "uid", "targetField": "fullName", "required": true },
-        "profile": {
-          "type": "relation",
-          "relation": "oneToOne",
-          "target": "profile"
-        },
-        "posts": {
-          "type": "relation",
-          "relation": "oneToMany",
-          "target": "post",
-          "mappedBy": "author",
-          "modules": ["blog"]
-        }
-      }
-    },
-    {
-      "name": "profile",
-      "fields": {
-        "title": { "type": "string", "required": false },
-        "excerpt": { "type": "text", "required": false },
-        "bio": { "type": "portabletext" },
-        "position": { "type": "string", "required": false },
-        "profileImage": { "type": "image" }
-      }
-    },
-    {
       "name": "primaryMenuItem",
       "fields": {
         "slug": { "type": "uid", "targetField": "label", "required": true },

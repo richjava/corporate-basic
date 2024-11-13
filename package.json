@@ -11,7 +11,7 @@
   "dependencies": {
     "@builtjs/theme": "^1.2.20",
     "@next/font": "13.1.1",
-    "@sanity/block-content-to-react": "^3.0.0",
+    "@portabletext/react": "^3.1.0",
     "@types/node": "18.11.18",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.10",
@@ -25,7 +25,8 @@
     "postcss-import": "^16.1.0",
     "react": "^18",
     "react-dom": "^18",
-    "react-native-fetch-blob": "^0.10.8"
+    "react-native-fetch-blob": "^0.10.8",
+    "react-native-fs": "^2.20.0"
   },
   "devDependencies": {
     "@types/node": "^20",

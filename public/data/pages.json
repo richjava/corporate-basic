@@ -2,14 +2,6 @@
   "pages": [
     { "name": "home" },
     { "name": "services" },
-    { "name": "about" },
-    {
-      "name": "authorArticle",
-      "contentType": {
-        "name": "author",
-        "config": { "populate": [{ "name": "profile" }] }
-      }
-    },
     { "name": "contact" }
   ]
 }

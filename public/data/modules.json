@@ -18,21 +18,6 @@
       "required": false
     },
     {
-      "title": "About",
-      "description": "Provides information related to the organisation",
-      "name": "about",
-      "modulePages": [{ "name": "aboutBase" }, { "name": "homeAboutTeaser" }],
-      "required": false,
-      "modules": [{ "name": "team" }]
-    },
-    {
-      "title": "Team",
-      "description": "Provides information about the team members",
-      "name": "team",
-      "modulePages": [{ "name": "aboutTeam" }, { "name": "authorArticle" }],
-      "required": false
-    },
-    {
       "title": "Services",
       "description": "Provides information about main services",
       "name": "services",

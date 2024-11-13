@@ -213,38 +213,6 @@
       "collections": {}
     },
     {
-      "name": "aboutTeaser",
-      "title": "Home About Teaser",
-      "description": "A small teaser about the company.",
-      "data": {
-        "preheading": { "text": "Preheading", "type": "dot" },
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
-        "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
-        "buttonLinks": [
-          { "url": "/about", "label": "Button", "type": "primary" }
-        ]
-      },
-      "templates": ["block1", "block3"],
-      "type": "body",
-      "defaultTemplate": { "name": "block1" },
-      "collections": {}
-    },
-    {
-      "name": "team",
-      "title": "Team",
-      "description": "An informational section about the people in the company.",
-      "data": { "heading": "Lorem ipsum dolor sit amet" },
-      "templates": ["profileCards1"],
-      "type": "body",
-      "defaultTemplate": { "name": "profileCards1" },
-      "collections": {
-        "author": {
-          "config": { "limit": 3, "populate": [{ "name": "profile" }] }
-        }
-      }
-    },
-    {
       "name": "benefitsList",
       "title": "Benefits List",
       "description": "A list of benefits the company provides.",
@@ -296,55 +264,6 @@
       "templates": ["block1", "block3"],
       "type": "body",
       "defaultTemplate": { "name": "block3" },
-      "collections": {}
-    },
-    {
-      "name": "aboutLanding",
-      "title": "About Landing",
-      "description": "The about page landing area, conveying convey trust and relatability.",
-      "data": {
-        "preheading": { "text": "Preheading", "type": "line" },
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "image": {
-          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878796/image-square_khojsy.png",
-          "path": "/images/image-square.png",
-          "width": 1000,
-          "height": 1000,
-          "type": "image",
-          "attributeName": "image"
-        },
-        "buttonLinks": [
-          { "url": "/about", "label": "Button", "type": "primary" },
-          { "url": "/services", "label": "Button", "type": "secondary" }
-        ]
-      },
-      "templates": ["cover1", "cover2", "cover3"],
-      "type": "body",
-      "defaultTemplate": { "name": "cover2" },
-      "collections": {}
-    },
-    {
-      "name": "aboutText",
-      "title": "About Text",
-      "description": "An informational section about the company.",
-      "data": {
-        "heading": "Lorem ipsum dolor sit amet",
-        "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
-        "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
-      },
-      "templates": ["block1", "block3"],
-      "type": "body",
-      "defaultTemplate": { "name": "block1" },
-      "collections": {}
-    },
-    {
-      "name": "authorArticleLanding",
-      "title": "Author Article Landing",
-      "description": "The author detail page.",
-      "templates": ["profileArticle1"],
-      "type": "body",
-      "defaultTemplate": { "name": "profileArticle1" },
       "collections": {}
     }
   ]

@@ -6,7 +6,7 @@
     "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878838/theme_tjckpi.png",
     "demoUrl": "https://builtjs-theme-corporate.vercel.app",
     "repoUrl": "https://github.com/richjava/corporate-basic",
-    "plugins": ["richjava_blog-basic"],
+    "plugins": ["richjava_blog-basic", "richjava_about-basic"],
     "designSystem": "basic"
   }
 }
