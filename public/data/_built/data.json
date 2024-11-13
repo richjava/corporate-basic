@@ -1011,18 +1011,7 @@
           "type": "image",
           "attributeName": "image"
         },
-        "buttonLinks": [
-          {
-            "url": "/about",
-            "label": "Button",
-            "type": "primary"
-          },
-          {
-            "url": "/services",
-            "label": "Button",
-            "type": "secondary"
-          }
-        ]
+        "buttonLinks": []
       },
       "templates": [
         "cover1",
