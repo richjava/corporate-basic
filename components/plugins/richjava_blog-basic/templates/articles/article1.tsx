@@ -18,7 +18,7 @@ export default function Article1({ content }: any) {
         <div className="max-w-screen-xl mx-auto">
           <header className="max-w-4xl mx-auto">
             <div className="flex items-center mb-4">
-              <p className="mb-0 capitalize paragraph-sm preheading">
+              <p className="mb-0 capitalize preheading paragraph-sm">
                 {format(new Date(entry.date), "dd LLLL yyyy")}
               </p>
               <span className="mx-3 text-gray-100">|</span>
@@ -57,7 +57,11 @@ export default function Article1({ content }: any) {
               alt={entry.title}
             />
           </div>
+<<<<<<< HEAD
           <PortableText value={entry.content} />
+=======
+          <PortableText className="max-w-2xl mx-auto" value={entry.content} />
+>>>>>>> about-plugin-bu
           <div className="pt-5">
             {entry.tags && (
               <div className="grid grid-flow-col gap-2 mb-4 auto-cols-max">

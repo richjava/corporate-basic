@@ -43,14 +43,14 @@ export default function List1({ content }: any) {
               )}
               <div className="flex items-center mb-4">
                 {heroPost.date && (
-                  <p className="mb-0 capitalize paragraph-2 preheading">
+                  <p className="capitalize paragraph-2 preheading">
                     {format(new Date(heroPost.date), "dd LLLL yyyy")}
                   </p>
                 )}
                 <span className="mx-3 text-gray-100">|</span>
                 {heroPost.category && (
                   <Link className="no-underline hover:underline" href={`/`}>
-                    <p className="mb-0 capitalize paragraph-2">
+                    <p className="capitalize paragraph-2">
                       {heroPost.category}
                     </p>
                   </Link>

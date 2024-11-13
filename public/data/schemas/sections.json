@@ -24,17 +24,6 @@
         "twitterUsername": { "type": "string" }
       }
     },
-    "aboutSeo": {
-      "name": "aboutSeo",
-      "type": "head",
-      "fields": {
-        "pageTitle": { "type": "string" },
-        "description": { "type": "text" },
-        "shareImage": { "type": "image" },
-        "twitterCardType": { "type": "string" },
-        "twitterUsername": { "type": "string" }
-      }
-    },
     "servicesSeo": {
       "name": "servicesSeo",
       "type": "head",
@@ -107,44 +96,6 @@
         }
       }
     },
-    "aboutTeaser": {
-      "name": "aboutTeaser",
-      "type": "body",
-      "fields": {
-        "preheading": {
-          "type": "element",
-          "repeatable": false,
-          "element": "preheading"
-        },
-        "heading": { "type": "string" },
-        "blurb1": { "type": "text" },
-        "blurb2": { "type": "text" },
-        "buttonLinks": {
-          "type": "element",
-          "repeatable": true,
-          "element": "buttonLink"
-        }
-      }
-    },
-    "team": {
-      "name": "team",
-      "type": "body",
-      "fields": {
-        "preheading": {
-          "type": "element",
-          "repeatable": false,
-          "element": "preheading"
-        },
-        "heading": { "type": "string" },
-        "blurb1": { "type": "text" },
-        "blurb2": { "type": "text" },
-        "buttonLinks": {
-          "type": "element",
-          "repeatable": true,
-          "element": "buttonLink"
-        }
-      }
-    },
     "benefitsList": { "name": "benefitsList", "type": "body" },
     "servicesLanding": {
       "name": "servicesLanding",
@@ -159,50 +110,6 @@
         "blurb": { "type": "text" },
         "image": { "type": "image" }
       }
-    },
-    "servicesBlock": {
-      "name": "servicesBlock",
-      "type": "body",
-      "fields": {
-        "preheading": {
-          "type": "element",
-          "repeatable": false,
-          "element": "preheading"
-        },
-        "heading": { "type": "string" },
-        "blurb1": { "type": "text" },
-        "blurb2": { "type": "text" },
-        "image": { "type": "image" }
-      }
-    },
-    "aboutLanding": {
-      "name": "aboutLanding",
-      "type": "body",
-      "fields": {
-        "preheading": {
-          "type": "element",
-          "repeatable": false,
-          "element": "preheading"
-        },
-        "heading": { "type": "string" },
-        "blurb": { "type": "text" },
-        "image": { "type": "image" },
-        "buttonLinks": {
-          "type": "element",
-          "repeatable": true,
-          "element": "buttonLink"
-        }
-      }
-    },
-    "aboutText": {
-      "name": "aboutText",
-      "type": "body",
-      "fields": {
-        "heading": { "type": "string" },
-        "blurb1": { "type": "text" },
-        "blurb2": { "type": "text" }
-      }
-    },
-    "authorArticleLanding": { "name": "authorArticleLanding", "type": "body" }
+    }
   }
 }

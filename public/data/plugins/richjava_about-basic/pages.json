@@ -1,0 +1,1 @@
+{"pages":[{"name":"home","title":"Home","demoSections":[{"name":"aboutTeaser"}]},{"name":"about","demoSections":[{"name":"aboutSeo"},{"name":"aboutLanding"},{"name":"team"}]},{"name":"authorArticle","contentType":{"name":"author","config":{"populate":[{"name":"profile"}]}},"demoSections":[{"name":"authorArticleLanding"}]}]}

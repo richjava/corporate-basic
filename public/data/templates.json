@@ -176,15 +176,6 @@
       "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards5.tsx"
     },
     {
-      "name": "profileCards1",
-      "title": "Profile Cards 1",
-      "category": "cards",
-      "namespace": "richjava_corporate-basic",
-      "description": "Takes a collection of authors. Cards with three equal columns, left aligned content and an image.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878880/profile-cards1_pifmdj.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/profile-cards1.tsx"
-    },
-    {
       "name": "cover1",
       "title": "Cover 1",
       "category": "covers",
@@ -264,15 +255,6 @@
       "description": "Contact details with two equal columns and form fields.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878850/form2_ian0kz.png",
       "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/forms/form2.tsx"
-    },
-    {
-      "name": "profileArticle1",
-      "title": "Profile Article 1",
-      "category": "articles",
-      "namespace": "richjava_corporate-basic",
-      "description": "Article section with hero image for introducing authors.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/profile-article1_qkfnzw.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/articles/profile-article1.tsx"
     }
   ]
 }
