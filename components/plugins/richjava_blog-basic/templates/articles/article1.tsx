@@ -57,11 +57,7 @@ export default function Article1({ content }: any) {
               alt={entry.title}
             />
           </div>
-<<<<<<< HEAD
           <PortableText value={entry.content} />
-=======
-          <PortableText className="max-w-2xl mx-auto" value={entry.content} />
->>>>>>> about-plugin-bu
           <div className="pt-5">
             {entry.tags && (
               <div className="grid grid-flow-col gap-2 mb-4 auto-cols-max">
