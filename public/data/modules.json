@@ -13,7 +13,12 @@
       "name": "contact",
       "modulePages": [
         { "name": "contactBase" },
-        { "name": "servicesContactTeaser" }
+        {
+          "name": "servicesContactTeaser",
+          "forModule": {
+            "name": "services"
+          }
+        }
       ],
       "required": false
     },

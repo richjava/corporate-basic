@@ -1,1 +1,14 @@
-{"modules":[{"name":"blog","title":"Blog","description":"Displays informal diary-style entries","modulePages":[{"name":"blogBase"},{"name":"blogArticle"},{"name":"homeBlogTeaser"}]}]}
+{
+  "modules": [
+    {
+      "name": "blog",
+      "title": "Blog",
+      "description": "Displays informal diary-style entries",
+      "modulePages": [
+        { "name": "blogBase" },
+        { "name": "blogArticle" },
+        { "name": "homeBlogTeaser" }
+      ]
+    }
+  ]
+}
