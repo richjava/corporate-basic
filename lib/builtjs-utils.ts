@@ -15,7 +15,7 @@ export async function getComponentMap(sections:any) {
         return '-' + match.toLowerCase();
       });
       map["section" + i] = import(
-        `./components${section.namespace ? `/plugins/${section.namespace}` : ''}/templates/${template.category}/${templateFileName}.tsx`
+        `./../components${section.namespace ? `/plugins/${section.namespace}` : ''}/templates/${template.category}/${templateFileName}.tsx`
       );
     }
     resolve(map);
