@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { urlForImage } from "@/builtjs-utils";
 import { PortableText } from '@portabletext/react'
 
 export default function ProfileArticle1({ content }:any) {
@@ -23,7 +22,7 @@ export default function ProfileArticle1({ content }:any) {
             <div className="h-96">
             <Image
             className="object-cover"
-              src={urlForImage(profile?.profileImage)}
+              src={profile?.profileImage.url}
               fill
               style={{ objectFit: "cover" }}
               alt={author.fullName}

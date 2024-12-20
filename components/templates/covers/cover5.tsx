@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { urlForImage, widthForImage, heightForImage } from "@/builtjs-utils";
 import { ButtonLink, Preheading } from "@/components/elements";
 
 export default function Cover5({ content }: any) {
@@ -13,7 +12,7 @@ export default function Cover5({ content }: any) {
         <div className="absolute top-0 left-0 w-full h-full">
           <Image
             className="rounded-none"
-            src={urlForImage(data?.image)}
+            src={data?.image.url}
             fill
             style={{objectFit:"cover"}}
             alt={data.heading}

@@ -32,8 +32,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "shareImage"
+          "type": "image"
         },
         "twitterCardType": "summary"
       },
@@ -53,8 +52,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "shareImage"
+          "type": "image"
         },
         "twitterCardType": "summary"
       },
@@ -74,8 +72,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "shareImage"
+          "type": "image"
         },
         "twitterCardType": "summary"
       },
@@ -95,8 +92,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "shareImage"
+          "type": "image"
         },
         "twitterCardType": "summary"
       },
@@ -118,8 +114,7 @@
           "path": "/images/image-square.png",
           "width": 768,
           "height": 768,
-          "type": "image",
-          "attributeName": "image"
+          "type": "image"
         },
         "buttonLinks": [
           { "url": "/services", "label": "Button", "type": "primary" },
@@ -234,8 +229,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "image"
+          "type": "image"
         }
       },
       "templates": ["cover1", "cover2", "cover3"],
@@ -257,8 +251,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "image"
+          "type": "image"
         }
       },
       "templates": ["block1", "block3"],

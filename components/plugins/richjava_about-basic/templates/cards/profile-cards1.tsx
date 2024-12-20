@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { urlForImage, collectionSlug, entrySlug } from "@/builtjs-utils";
+import { collectionSlug, entrySlug } from "@/lib/builtjs-utils";
 
 export default function ProfileCards1({ content }: any) {
   if (!content) return <></>;
@@ -27,7 +27,7 @@ export default function ProfileCards1({ content }: any) {
                   <div className="relative w-full h-56 transition-opacity rounded-b-none hover:opacity-80">
                     <Image
                       className="rounded-b-none"
-                      src={urlForImage(author?.profile?.profileImage)}
+                      src={author?.profile?.profileImage.url}
                       fill
                       style={{ objectFit: "cover" }}
                       alt={author.fullName}

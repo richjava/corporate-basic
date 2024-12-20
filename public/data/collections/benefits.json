@@ -13,8 +13,7 @@
         "width": 1280,
         "height": 768,
         "type": "image",
-        "_key": "raZJ7fbJqR",
-        "attributeName": "image"
+        "_key": "raZJ7fbJqR"
       },
       "buttonLinks": [{ "url": "/about", "label": "Button", "type": "primary" }]
     },
@@ -31,8 +30,7 @@
         "width": 1280,
         "height": 768,
         "type": "image",
-        "_key": "8Q0xCj5ji1",
-        "attributeName": "image"
+        "_key": "8Q0xCj5ji1"
       },
       "buttonLinks": [{ "url": "/about", "label": "Button", "type": "primary" }]
     },
@@ -49,8 +47,7 @@
         "width": 1280,
         "height": 768,
         "type": "image",
-        "_key": "mtG_L-Fo9I",
-        "attributeName": "image"
+        "_key": "mtG_L-Fo9I"
       },
       "buttonLinks": [{ "url": "/about", "label": "Button", "type": "primary" }]
     }

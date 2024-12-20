@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { urlForImage, widthForImage, heightForImage } from "@/builtjs-utils";
 import { ButtonLink, Preheading } from "@/components/elements";
 
 export default function Cover3({ content }: any) {
@@ -12,7 +11,7 @@ export default function Cover3({ content }: any) {
         <div className="relative py-64 lg:h-full lg:order-last">
           <Image
             className="rounded-none"
-            src={urlForImage(data?.image)}
+            src={data?.image.url}
             fill
             style={{ objectFit: "cover" }}
             alt={data.heading}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { urlForImage, widthForImage, heightForImage } from "@/builtjs-utils";
+import { widthForImage, heightForImage } from "@/lib/builtjs-utils";
 import { ButtonLink, Preheading } from "@/components/plugins/richjava_about-basic/elements";
 
 export default function Cover2({ content }: any) {
@@ -13,7 +13,7 @@ export default function Cover2({ content }: any) {
           <div className="p-4 lg:order-last">
             <Image
               className="rounded-full"
-              src={urlForImage(data?.image)}
+              src={data?.image.url}
               width={widthForImage(data?.image)}
               height={heightForImage(data?.image)}
               style={{ objectFit: "cover" }}

@@ -231,7 +231,6 @@
   "pages": [
     {
       "name": "home",
-      "title": "Home",
       "demoSections": [
         {
           "name": "homeSeo"
@@ -252,7 +251,6 @@
     },
     {
       "name": "blog",
-      "title": "Blog",
       "demoSections": [
         {
           "name": "blogSeo"
@@ -267,7 +265,6 @@
     },
     {
       "name": "blogArticle",
-      "title": "Blog Article",
       "contentType": {
         "name": "post",
         "config": {
@@ -297,7 +294,6 @@
     },
     {
       "name": "home",
-      "title": "Home",
       "demoSections": [
         {
           "name": "homeSeo"
@@ -426,8 +422,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "shareImage"
+          "type": "image"
         },
         "twitterCardType": "summary"
       },
@@ -451,8 +446,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "shareImage"
+          "type": "image"
         },
         "twitterCardType": "summary"
       },
@@ -476,8 +470,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "shareImage"
+          "type": "image"
         },
         "twitterCardType": "summary"
       },
@@ -501,8 +494,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "shareImage"
+          "type": "image"
         },
         "twitterCardType": "summary"
       },
@@ -531,8 +523,7 @@
           "path": "/images/image-square.png",
           "width": 768,
           "height": 768,
-          "type": "image",
-          "attributeName": "image"
+          "type": "image"
         },
         "buttonLinks": [
           {
@@ -721,8 +712,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "image"
+          "type": "image"
         }
       },
       "templates": [
@@ -753,8 +743,7 @@
           "path": "/images/image.png",
           "width": 1280,
           "height": 768,
-          "type": "image",
-          "attributeName": "image"
+          "type": "image"
         }
       },
       "templates": [
@@ -995,7 +984,7 @@
     {
       "name": "aboutLanding",
       "title": "About Landing",
-      "description": "The about page landing area, conveying convey trust and relatability.",
+      "description": "The about page landing area, conveying trust and relatability.",
       "data": {
         "preheading": {
           "text": "Preheading",
@@ -1008,8 +997,7 @@
           "path": "/images/image-square.png",
           "width": 1000,
           "height": 1000,
-          "type": "image",
-          "attributeName": "image"
+          "type": "image"
         },
         "buttonLinks": []
       },
@@ -1539,17 +1527,6 @@
     ],
     "contentIndex": 1
   },
-  "global": {
-    "name": "Corporate Basic",
-    "logo": {
-      "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878836/builtjs_mluhyw.svg",
-      "path": "/images/theme/builtjs.svg",
-      "width": 45,
-      "height": 45,
-      "type": "image",
-      "attributeName": "logo"
-    }
-  },
   "collections": {
     "authors": [
       {
@@ -1835,8 +1812,7 @@
           "width": 48,
           "height": 48,
           "type": "image",
-          "_key": "8oRJHzbD0",
-          "attributeName": "profileImage"
+          "_key": "8oRJHzbD0"
         }
       },
       {
@@ -1865,8 +1841,7 @@
           "width": 48,
           "height": 48,
           "type": "image",
-          "_key": "18KdVROXcA",
-          "attributeName": "profileImage"
+          "_key": "18KdVROXcA"
         }
       },
       {
@@ -1895,8 +1870,7 @@
           "width": 48,
           "height": 48,
           "type": "image",
-          "_key": "TlRmoABfA9",
-          "attributeName": "profileImage"
+          "_key": "TlRmoABfA9"
         }
       }
     ],
@@ -1931,8 +1905,7 @@
           "width": 1280,
           "height": 768,
           "type": "image",
-          "_key": "raZJ7fbJqR",
-          "attributeName": "image"
+          "_key": "raZJ7fbJqR"
         },
         "buttonLinks": [
           {
@@ -1958,8 +1931,7 @@
           "width": 1280,
           "height": 768,
           "type": "image",
-          "_key": "8Q0xCj5ji1",
-          "attributeName": "image"
+          "_key": "8Q0xCj5ji1"
         },
         "buttonLinks": [
           {
@@ -1985,8 +1957,7 @@
           "width": 1280,
           "height": 768,
           "type": "image",
-          "_key": "mtG_L-Fo9I",
-          "attributeName": "image"
+          "_key": "mtG_L-Fo9I"
         },
         "buttonLinks": [
           {
@@ -2014,8 +1985,7 @@
           "width": 1280,
           "height": 768,
           "type": "image",
-          "_key": "-eoykVkLu_",
-          "attributeName": "image"
+          "_key": "-eoykVkLu_"
         },
         "buttonLinks": [
           {
@@ -2041,8 +2011,7 @@
           "width": 1280,
           "height": 768,
           "type": "image",
-          "_key": "hiW2sMjLAN",
-          "attributeName": "image"
+          "_key": "hiW2sMjLAN"
         },
         "buttonLinks": [
           {
@@ -2068,8 +2037,7 @@
           "width": 1280,
           "height": 768,
           "type": "image",
-          "_key": "zNfobYN6Kx",
-          "attributeName": "image"
+          "_key": "zNfobYN6Kx"
         },
         "buttonLinks": [
           {
@@ -2114,8 +2082,7 @@
           "width": 24,
           "height": 24,
           "type": "image",
-          "_key": "TvyzicfCOB",
-          "attributeName": "icon"
+          "_key": "TvyzicfCOB"
         },
         "url": "https://facebook.com"
       },
@@ -2129,8 +2096,7 @@
           "width": 30,
           "height": 24,
           "type": "image",
-          "_key": "7lXPmn8Uxz",
-          "attributeName": "icon"
+          "_key": "7lXPmn8Uxz"
         },
         "url": "https://twitter.com"
       },
@@ -2144,8 +2110,7 @@
           "width": 24,
           "height": 24,
           "type": "image",
-          "_key": "5ePFnWhBiV",
-          "attributeName": "icon"
+          "_key": "5ePFnWhBiV"
         },
         "url": "https://instagram.com"
       },
@@ -2159,8 +2124,7 @@
           "width": 32,
           "height": 24,
           "type": "image",
-          "_key": "-AUA0Zg9iM",
-          "attributeName": "icon"
+          "_key": "-AUA0Zg9iM"
         },
         "url": "https://youtube.com"
       }
@@ -2169,5 +2133,15 @@
   "plugins": [
     "richjava_blog-basic",
     "richjava_about-basic"
-  ]
+  ],
+  "global": {
+    "name": "Corporate Basic",
+    "logo": {
+      "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878836/builtjs_mluhyw.svg",
+      "path": "/images/theme/builtjs.svg",
+      "width": 45,
+      "height": 45,
+      "type": "image"
+    }
+  }
 }

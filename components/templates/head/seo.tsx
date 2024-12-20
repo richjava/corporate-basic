@@ -1,9 +1,8 @@
 import Head from "next/head";
-import { urlForImage } from "@/builtjs-utils";
 
 export default function Seo( {content}:any ) {
   let { data = {} } = { ...content };
-  let shareImage = urlForImage(data?.shareImage);
+  let shareImage = data?.shareImage.url;
   return (
     <>
       {data && (

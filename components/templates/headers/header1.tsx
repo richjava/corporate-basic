@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { urlForImage, widthForImage, heightForImage } from "@/builtjs-utils";
+import { widthForImage, heightForImage } from "@/lib/builtjs-utils";
 import ModeToggleBtn from "@/components/shared/mode-toggle-btn";
 
 export default function Header1({ content }: any) {
@@ -25,7 +25,7 @@ export default function Header1({ content }: any) {
             <Link className="flex items-center pr-10 mr-auto" href="/">
               <span className="relative w-10">
                 <Image
-                  src={urlForImage(global?.logo)}
+                  src={global?.logo.url}
                   width={widthForImage(global?.logo)}
                   height={heightForImage(global?.logo)}
                   style={{ objectFit: "cover" }}

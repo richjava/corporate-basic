@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { urlForImage, widthForImage, heightForImage } from "@/builtjs-utils";
+import { widthForImage, heightForImage } from "@/lib/builtjs-utils";
 import ModeToggleBtn from "@/components/plugins/richjava_blog-basic/shared/mode-toggle-btn";
 
 export default function Header1({ content }: any) {
@@ -26,7 +26,7 @@ export default function Header1({ content }: any) {
               <span className="relative w-10">
                 <Image
                   className="text-gray-100 bg-white fill-current dark:bg-gray-800"
-                  src={urlForImage(global?.logo)}
+                  src={global?.logo.url}
                   width={widthForImage(global?.logo)}
                   height={heightForImage(global?.logo)}
                   style={{ objectFit: "cover" }}

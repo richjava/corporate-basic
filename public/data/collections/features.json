@@ -13,8 +13,7 @@
         "width": 1280,
         "height": 768,
         "type": "image",
-        "_key": "-eoykVkLu_",
-        "attributeName": "image"
+        "_key": "-eoykVkLu_"
       },
       "buttonLinks": [{ "url": "/about", "label": "Button", "type": "primary" }]
     },
@@ -31,8 +30,7 @@
         "width": 1280,
         "height": 768,
         "type": "image",
-        "_key": "hiW2sMjLAN",
-        "attributeName": "image"
+        "_key": "hiW2sMjLAN"
       },
       "buttonLinks": [{ "url": "/about", "label": "Button", "type": "primary" }]
     },
@@ -49,8 +47,7 @@
         "width": 1280,
         "height": 768,
         "type": "image",
-        "_key": "zNfobYN6Kx",
-        "attributeName": "image"
+        "_key": "zNfobYN6Kx"
       },
       "buttonLinks": [{ "url": "/about", "label": "Button", "type": "primary" }]
     }

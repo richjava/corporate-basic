@@ -2,7 +2,6 @@ import { format } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import { Tag } from "@/components/plugins/richjava_blog-basic/shared";
-import { urlForImage } from "@/builtjs-utils";
 import { PortableText } from '@portabletext/react';
 
 export default function Article1({ content }: any) {
@@ -32,7 +31,7 @@ export default function Article1({ content }: any) {
                 <div className="relative w-12 h-12 mr-4 text-white">
                   <Image
                     className="rounded-full"
-                    src={urlForImage(author.profile.profileImage)}
+                    src={author.profile.profileImage.url}
                     fill
                     style={{ objectFit: "cover" }}
                     alt={author.fullName}
@@ -51,13 +50,13 @@ export default function Article1({ content }: any) {
           </header>
           <div className="relative my-20 h-96">
             <Image
-              src={urlForImage(entry.image)}
+              src={entry.image.url}
               fill
               style={{ objectFit: "cover" }}
               alt={entry.title}
             />
           </div>
-          <PortableText value={entry.content} />
+          <PortableText className="max-w-2xl mx-auto" value={entry.content} />
           <div className="pt-5">
             {entry.tags && (
               <div className="grid grid-flow-col gap-2 mb-4 auto-cols-max">

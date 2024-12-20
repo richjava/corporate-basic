@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { urlForImage, widthForImage, heightForImage } from "@/builtjs-utils";
+import { widthForImage, heightForImage } from "@/lib/builtjs-utils";
 import { ButtonLink, Preheading } from "@/components/plugins/richjava_about-basic/elements";
 
 export default function List1({ content }: any) {
@@ -26,7 +26,7 @@ export default function List1({ content }: any) {
                     {entry.image && (
                       <Image
                         className="bg-secondary rounded-md"
-                        src={urlForImage(entry.image)}
+                        src={entry.image.url}
                         width={widthForImage(entry.image)}
                         height={heightForImage(entry.image)}
                         style={{ objectFit: "cover" }}

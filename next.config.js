@@ -2,13 +2,20 @@
 const nextConfig = {
   reactStrictMode: true,
   publicRuntimeConfig: {
-    API_URL: '',
-    BACKEND_URL: '',
+    NAMESPACE: "richjava_corporate-basic",
   },
-  webpack: function (config) {
-    Object.assign(config.module, {
-      noParse: [/alasql/]
-    });
-    return config;
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com', // Cloudinary
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com', // Unsplash
+      },
+    ],
   },
-}
+};
+
+module.exports = nextConfig;

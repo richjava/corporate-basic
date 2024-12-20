@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { format } from "date-fns";
-import { urlForImage, collectionSlug, entrySlug } from "@/builtjs-utils";
+import { collectionSlug, entrySlug } from "@/lib/builtjs-utils";
 import { Tag } from "@/components/plugins/richjava_blog-basic/shared";
 
 export default function List2({ content }: any) {
@@ -29,7 +29,7 @@ export default function List2({ content }: any) {
                         <div className="relative mb-6 transition-opacity h-96 lg:h-56 hover:opacity-80">
                           <Image
                             className="bg-gray-400 rounded-lg"
-                            src={urlForImage(entry.image)}
+                            src={entry.image.url}
                             fill
                             style={{ objectFit: "cover" }}
                             alt={entry.title}

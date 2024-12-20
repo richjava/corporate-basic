@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useRouter} from 'next/router';
 import { useParams } from 'next/navigation'
 import Layout from '@/components/plugins/richjava_about-basic/layout';
-import {getComponents} from '@/builtjs-utils';
+import {getComponents} from '@/lib/builtjs-utils';
 import { setupCrumbs } from ".";
 const {transformPage, fetchEntry, fetchEntries} = require('@builtjs/theme');
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { urlForImage, widthForImage, heightForImage, entrySlug } from "@/builtjs-utils";
+import { widthForImage, heightForImage, entrySlug } from "@/lib/builtjs-utils";
 
 export default function SocialLink({ data }:any) {
   if (!data) return <></>;
@@ -9,7 +9,7 @@ export default function SocialLink({ data }:any) {
         <Image
           height={heightForImage(data?.icon)}
           width={widthForImage(data?.icon)}
-          src={urlForImage(data?.icon)}
+          src={data?.icon.url}
           alt={entrySlug(data)}
         />
     </Link>

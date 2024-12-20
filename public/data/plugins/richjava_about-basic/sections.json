@@ -1,1 +1,128 @@
-{"sections":[{"name":"header","title":"Header","type":"layout","description":"The header contains the company logo, main site navigation and often a call-to-action button.","templates":["header1"],"defaultTemplate":{"name":"header1"},"position":"start","collections":{"primaryMenuItem":{}},"namespace":"richjava_about-basic"},{"name":"footer","title":"Footer","type":"layout","description":"The footer contains secondary site navigation.","templates":["footer1"],"defaultTemplate":{"name":"footer1"},"position":"end","namespace":"richjava_about-basic"},{"name":"aboutSeo","title":"About SEO","data":{"pageTitle":"About","description":"About page.","shareImage":{"url":"https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png","path":"/images/image.png","width":1280,"height":768,"type":"image","attributeName":"shareImage"},"twitterCardType":"summary"},"templates":["seo"],"type":"head","defaultTemplate":{"name":"seo"},"collections":{},"namespace":"richjava_about-basic"},{"name":"aboutTeaser","title":"Home About Teaser","description":"A small teaser about the company.","data":{"preheading":{"text":"Preheading","type":"dot"},"heading":"Lorem ipsum dolor sit amet","blurb1":"Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.","blurb2":"Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.","buttonLinks":[{"url":"/about","label":"Button","type":"primary"}]},"templates":["block1","block3"],"type":"body","defaultTemplate":{"name":"block1"},"collections":{},"namespace":"richjava_about-basic"},{"name":"team","title":"Team","description":"An informational section about the people in the company.","data":{"heading":"Lorem ipsum dolor sit amet"},"templates":["profileCards1"],"type":"body","defaultTemplate":{"name":"profileCards1"},"collections":{"author":{"config":{"limit":3,"populate":[{"name":"profile"}]}}},"namespace":"richjava_about-basic"},{"name":"aboutLanding","title":"About Landing","description":"The about page landing area, conveying convey trust and relatability.","data":{"preheading":{"text":"Preheading","type":"line"},"heading":"Lorem ipsum dolor sit amet","blurb":"Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.","image":{"url":"https://res.cloudinary.com/dn7feeelf/image/upload/v1725878796/image-square_khojsy.png","path":"/images/image-square.png","width":1000,"height":1000,"type":"image","attributeName":"image"},"buttonLinks":[]},"templates":["cover1","cover2","cover3"],"type":"body","defaultTemplate":{"name":"cover2"},"collections":{},"namespace":"richjava_about-basic"},{"name":"aboutText","title":"About Text","description":"An informational section about the company.","data":{"heading":"Lorem ipsum dolor sit amet","blurb1":"Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.","blurb2":"Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."},"templates":["block1","block3"],"type":"body","defaultTemplate":{"name":"block1"},"collections":{},"namespace":"richjava_about-basic"},{"name":"authorArticleLanding","title":"Author Article Landing","description":"The author detail page.","templates":["profileArticle1"],"type":"body","defaultTemplate":{"name":"profileArticle1"},"collections":{},"namespace":"richjava_about-basic"}]}
+{
+  "sections": [
+    {
+      "name": "header",
+      "title": "Header",
+      "type": "layout",
+      "description": "The header contains the company logo, main site navigation and often a call-to-action button.",
+      "templates": ["header1"],
+      "defaultTemplate": { "name": "header1" },
+      "position": "start",
+      "collections": { "primaryMenuItem": {} },
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "type": "layout",
+      "description": "The footer contains secondary site navigation.",
+      "templates": ["footer1"],
+      "defaultTemplate": { "name": "footer1" },
+      "position": "end",
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "aboutSeo",
+      "title": "About SEO",
+      "data": {
+        "pageTitle": "About",
+        "description": "About page.",
+        "shareImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
+          "path": "/images/image.png",
+          "width": 1280,
+          "height": 768,
+          "type": "image"
+        },
+        "twitterCardType": "summary"
+      },
+      "templates": ["seo"],
+      "type": "head",
+      "defaultTemplate": { "name": "seo" },
+      "collections": {},
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "aboutTeaser",
+      "title": "Home About Teaser",
+      "description": "A small teaser about the company.",
+      "data": {
+        "preheading": { "text": "Preheading", "type": "dot" },
+        "heading": "Lorem ipsum dolor sit amet",
+        "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
+        "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
+        "buttonLinks": [
+          { "url": "/about", "label": "Button", "type": "primary" }
+        ]
+      },
+      "templates": ["block1", "block3"],
+      "type": "body",
+      "defaultTemplate": { "name": "block1" },
+      "collections": {},
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "team",
+      "title": "Team",
+      "description": "An informational section about the people in the company.",
+      "data": { "heading": "Lorem ipsum dolor sit amet" },
+      "templates": ["profileCards1"],
+      "type": "body",
+      "defaultTemplate": { "name": "profileCards1" },
+      "collections": {
+        "author": {
+          "config": { "limit": 3, "populate": [{ "name": "profile" }] }
+        }
+      },
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "aboutLanding",
+      "title": "About Landing",
+      "description": "The about page landing area, conveying trust and relatability.",
+      "data": {
+        "preheading": { "text": "Preheading", "type": "line" },
+        "heading": "Lorem ipsum dolor sit amet",
+        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878796/image-square_khojsy.png",
+          "path": "/images/image-square.png",
+          "width": 1000,
+          "height": 1000,
+          "type": "image"
+        },
+        "buttonLinks": []
+      },
+      "templates": ["cover1", "cover2", "cover3"],
+      "type": "body",
+      "defaultTemplate": { "name": "cover2" },
+      "collections": {},
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "aboutText",
+      "title": "About Text",
+      "description": "An informational section about the company.",
+      "data": {
+        "heading": "Lorem ipsum dolor sit amet",
+        "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
+        "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
+      },
+      "templates": ["block1", "block3"],
+      "type": "body",
+      "defaultTemplate": { "name": "block1" },
+      "collections": {},
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "authorArticleLanding",
+      "title": "Author Article Landing",
+      "description": "The author detail page.",
+      "templates": ["profileArticle1"],
+      "type": "body",
+      "defaultTemplate": { "name": "profileArticle1" },
+      "collections": {},
+      "namespace": "richjava_about-basic"
+    }
+  ]
+}

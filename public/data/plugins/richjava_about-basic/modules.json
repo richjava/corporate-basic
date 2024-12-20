@@ -1,17 +1,1 @@
-{
-  "modules": [
-    {
-      "title": "About",
-      "description": "Provides information related to the organisation",
-      "name": "about",
-      "modulePages": [
-        { "name": "aboutBase" },
-        { "name": "homeAboutTeaser" },
-        { "name": "aboutTeam" },
-        { "name": "authorArticle" }
-      ],
-      "required": false,
-      "modules": [{ "name": "team" }]
-    }
-  ]
-}
+{"modules":[{"name":"about","description":"Provides information related to the organisation","modulePages":[{"name":"aboutBase"},{"name":"homeAboutTeaser"}],"required":false,"modules":[{"name":"team"}]},{"name":"team","description":"Provides information related to members of the organisation","parent":{"name":"about"},"modulePages":[{"name":"aboutTeam"},{"name":"authorArticle"}]}]}

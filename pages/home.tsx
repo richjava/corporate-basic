@@ -6,7 +6,7 @@ import { withRouter } from "next/router";
   
   export async function getStaticProps() {
     const config = await getConfig({
-      pageName: 'about'
+      pageName: 'home'
     });
     return {
       props: { config }

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { urlForImage, widthForImage, heightForImage } from "@/builtjs-utils";
+import { widthForImage, heightForImage } from "@/lib/builtjs-utils";
 import { ButtonLink, Preheading } from "@/components/elements";
 
 export default function Cover1({ content }: any) {
@@ -12,7 +12,7 @@ export default function Cover1({ content }: any) {
         <div className="grid items-center grid-cols-1 gap-x-28 lg:grid-cols-2">
           <div className="px-0 lg:pr-4 lg:order-last">
             <Image
-              src={urlForImage(data?.image)}
+              src={data?.image.url}
               width={widthForImage(data?.image)}
               height={heightForImage(data?.image)}
               style={{ objectFit: "cover" }}

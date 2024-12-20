@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { urlForImage, collectionSlug, entrySlug } from "@/builtjs-utils";
+import { collectionSlug, entrySlug } from "@/lib/builtjs-utils";
 import Image from "next/image";
 
 export default function List2({ content, router }: any) {
@@ -28,7 +28,7 @@ export default function List2({ content, router }: any) {
                         {entry.image && (
                           <Image
                             className="bg-secondaryrounded-md"
-                            src={urlForImage(entry.image)}
+                            src={entry.image.url}
                             fill
                             style={{objectFit:"cover"}}
                             alt={entry.title}
