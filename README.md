@@ -1,8 +1,8 @@
-# Built.js Theme: Corporate
+# Built.js Theme: Corporate Basic
 
 A [Built.js](https://builtjs.com) theme for small business websites with basic Tailwind styling.
 
-Demo: [https://builtjs-theme-corporate.vercel.app/](https://builtjs-theme-corporate.vercel.app/)
+Demo: [https://github.com/richjava/corporate-basic](https://github.com/richjava/corporate-basic)
 
 ### Installation
 1. Install dependencies:
@@ -15,22 +15,13 @@ npm run dev
 ```
 
 ### Pages
-- About
-- Author
-  - Author Article
-- Blog
-- Contact
 - Home
+- About
+- Author Article
+- Blog
+- Blog Article
+- Contact
 - Services
-- Templates
-  - Banners
-  - Blocks
-  - Cards
-  - Covers
-  - Footers
-  - Forms
-  - Headers
-  - Lists
 
 ### Content Types/Collections
 This theme has the following content types/collections:
