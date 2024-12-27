@@ -14,6 +14,11 @@ npm install
 npm run dev
 ```
 
+### Plugins
+This theme uses the following plugins:
+- [richjava_about-basic][https://github.com/richjava/about-basic]
+- [richjava_blog-basic][https://github.com/richjava/blog-basic]
+
 ### Pages
 - Home
 - About
