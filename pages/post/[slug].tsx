@@ -12,7 +12,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
         entryData.entries.map(
           (entry:any) => `/post/${entry.slug}`
         ) ?? [],
-      fallback: true,
+      fallback: false,
     };
   };
   
