@@ -10,7 +10,7 @@ export default function ContextualLink({ data }:any) {
           height={heightForImage(data?.icon)}
           width={widthForImage(data?.icon)}
           src={data?.icon.url}
-          alt={data.text}
+          alt={entrySlug(data)}
         />
       <div className="ml-4">
         <p>{data.text}</p>
