@@ -3,18 +3,5 @@ export const pages = {
   SERVICES: "services",
   AUTHOR_ARTICLE: "authorArticle",
   CONTACT: "contact",
-  ABOUT: "about",
-  COVERS: "covers",
-  BANNERS: "banners",
-  BLOCKS: "blocks",
-  CARDS: "cards",
-  FORMS: "forms",
-  LISTS: "lists",
+  ABOUT: "about"
 };
-
-export const pageTypes = {
-  SITE: "site",
-  TEMPLATE: "template",
-};
-
-export const language = 'typescript';

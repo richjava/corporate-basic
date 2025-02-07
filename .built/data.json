@@ -499,7 +499,7 @@
       },
       "type": "head",
       "data": {
-        "pageTitle": "Blog | Corporate Tailwind Built.JS Theme",
+        "pageTitle": "Blog | Blog Basic Built.js Plugin",
         "description": "Blog page for a site built with the Corporate Tailwind Built.js Theme.",
         "shareImage": {
           "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870601/image_lwgqjo.png",
@@ -689,8 +689,8 @@
       "name": "aboutSeo",
       "title": "About SEO",
       "data": {
-        "pageTitle": "About",
-        "description": "About page.",
+        "pageTitle": "About | About Basic Built.js Plugin",
+        "description": "About page for About Basic Built.js Plugin.",
         "shareImage": {
           "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
           "path": "/images/image.png",

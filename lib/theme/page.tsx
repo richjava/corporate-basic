@@ -1,30 +1,28 @@
-import React, {useEffect, useState} from 'react';
-import {useRouter} from 'next/router';
-import { useParams } from 'next/navigation'
-import Layout from '@/components/plugins/richjava_about-basic/layout';
-import {getComponents} from '@/lib/builtjs-utils';
-import { setupCrumbs } from ".";
-const {transformPage, fetchEntry, fetchEntries} = require('@builtjs/theme');
+import React, { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/router";
+import { useParams } from "next/navigation";
+import Layout from "@/components/plugins/richjava_about-basic/layout";
+import { getComponents } from "@/lib/builtjs-utils";
+import { setupCrumbs } from "@/lib/theme/crumbs";
+const { transformPage, fetchEntry, fetchEntries } = require("@builtjs/theme");
 
-const Page = ({config}: any) => {
-
+const Page = ({ config }: any) => {
   const router = useRouter();
   const params = useParams();
-  const {slug} = router.query;
   const [page, setPage] = useState<any>(null);
   const [sectionComps, setSectionComps] = useState<React.ComponentType[]>([]);
   const [layoutComps, setLayoutComps] = useState<React.ComponentType[]>([]);
-  let [isSetUpCrumbs, setIsSetupCrumbs] = useState(false);
+  const hasSetUpCrumbs = useRef(false);
 
   useEffect(() => {
-    if (!isSetUpCrumbs) {
+    if (!hasSetUpCrumbs.current) {
       setupCrumbs(router);
-      setIsSetupCrumbs(true);
+      hasSetUpCrumbs.current = true;
+      setPage(null);
+      setLayoutComps([]);
+      init();
     }
-    setPage(null);
-    setLayoutComps([]);
-    init();
-  }, [slug]);
+  }, []);
 
   async function init() {
     if (!config) {
@@ -53,10 +51,15 @@ const Page = ({config}: any) => {
               sectionComps.map((Section: any, i: number) => {
                 return (
                   page.sections[i] && (
-                    <Section 
-                    key={i} 
-                    api={page.sections[i].template.doc.type === 'dynamic' ? {fetchEntry, fetchEntries} : null} 
-                    content={page.sections[i].content} />
+                    <Section
+                      key={i}
+                      api={
+                        page.sections[i].template.doc.type === "dynamic"
+                          ? { fetchEntry, fetchEntries }
+                          : null
+                      }
+                      content={page.sections[i].content}
+                    />
                   )
                 );
               })}

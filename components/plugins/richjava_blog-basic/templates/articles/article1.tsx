@@ -17,7 +17,7 @@ export default function Article1({ content }: any) {
       <Head>
         {entry.title && (
           <>
-            <title>{entry.title} | Blog</title>
+            <title>{entry.title} | Blog | Blog Basic Built.js Plugin</title>
             <meta property="og:title" content={entry.title} />
             <meta name="twitter:title" content={entry.title} />
           </>
