@@ -177,7 +177,7 @@
         ],
         "button": { "label": "Send", "type": "primary" }
       },
-      "templates": ["form1"],
+      "templates": ["form1", "form2"],
       "type": "body",
       "defaultTemplate": { "name": "form1" },
       "collections": { "socialLink": { "config": {} } }
@@ -186,7 +186,7 @@
       "name": "featuresList",
       "title": "Features List",
       "description": "A list of unique features the company offers.",
-      "templates": ["cards1"],
+      "templates": ["cards1", "cards2", "cards3", "cards4"],
       "type": "body",
       "defaultTemplate": { "name": "cards1" },
       "collections": { "feature": { "config": {} } }
@@ -202,7 +202,7 @@
           { "url": "/contact", "label": "Button", "type": "primary" }
         ]
       },
-      "templates": ["banner1"],
+      "templates": ["banner1, banner2, banner3, banner4, banner5"],
       "type": "body",
       "defaultTemplate": { "name": "banner1" },
       "collections": {}
@@ -254,7 +254,7 @@
           "type": "image"
         }
       },
-      "templates": ["block1", "block3"],
+      "templates": ["block1", "block2", "block3", "block4", "block5"],
       "type": "body",
       "defaultTemplate": { "name": "block3" },
       "collections": {}
