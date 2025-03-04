@@ -1023,7 +1023,8 @@
         }
       },
       "templates": [
-        "form1"
+        "form1",
+        "form2"
       ],
       "type": "body",
       "defaultTemplate": {
@@ -1040,7 +1041,10 @@
       "title": "Features List",
       "description": "A list of unique features the company offers.",
       "templates": [
-        "cards1"
+        "cards1",
+        "cards2",
+        "cards3",
+        "cards4"
       ],
       "type": "body",
       "defaultTemplate": {
@@ -1071,7 +1075,7 @@
         ]
       },
       "templates": [
-        "banner1"
+        "banner1, banner2, banner3, banner4, banner5"
       ],
       "type": "body",
       "defaultTemplate": {
@@ -1148,7 +1152,10 @@
       },
       "templates": [
         "block1",
-        "block3"
+        "block2",
+        "block3",
+        "block4",
+        "block5"
       ],
       "type": "body",
       "defaultTemplate": {

@@ -5,9 +5,7 @@ import { collectionSlug, entrySlug } from "@/lib/builtjs-utils";
 export default function ProfileCards1({ content }: any) {
   if (!content) return <></>;
   let { collections = null } = { ...content };
-  let data: any = null;
-  const DEFAULT_COLS = 3;
-  const cols = (data && data.columns) || DEFAULT_COLS;
+  const cols = 3;
   if (!collections) {
     throw new Error("No template collections");
   }
@@ -18,7 +16,7 @@ export default function ProfileCards1({ content }: any) {
     <section id="profile-cards-1" className="template">
       <div className="max-w-screen-xl mx-auto">
         <div
-          className={`grid grid-cols-1 gap-x-6 gap-y-16 lg:grid-cols-${cols}`}
+          className={`grid grid-cols-1 gap-x-6 gap-y-16 lg:grid-cols-3`}
         >
           {collection &&
             collection.slice(0, cols).map((author: any, i: number) => (
@@ -34,7 +32,7 @@ export default function ProfileCards1({ content }: any) {
                     />
                   </div>
                 </Link>
-                <div className="p-6 px-8 border border-t-0 rounded-b-lg border-gray-300 dark:border-gray-700">
+                <div className="p-6 px-8 border border-t-0 border-gray-300 rounded-b-lg dark:border-gray-700">
                   <span className={`preheading blank left`}>
                     {author.position}
                   </span>
