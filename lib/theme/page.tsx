@@ -4,7 +4,8 @@ import { useParams } from "next/navigation";
 import Layout from "@/components/plugins/richjava_about-basic/layout";
 import { getComponents } from "@/lib/builtjs-utils";
 import { setupCrumbs } from "@/lib/theme/crumbs";
-const { transformPage, fetchEntry, fetchEntries } = require("@builtjs/theme");
+// const { transformPage, fetchEntry, fetchEntries } = require("@builtjs/theme");
+const { transformPage, fetchEntry, fetchEntries } = require("../../theme");
 
 const Page = ({ config }: any) => {
   const router = useRouter();
