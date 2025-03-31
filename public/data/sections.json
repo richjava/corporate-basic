@@ -195,6 +195,7 @@
       "name": "contactTeaser",
       "title": "Contact Teaser",
       "description": "A contact call-to-action to encourage users to make contact.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878892/banner1_agmnah.png",
       "data": {
         "preheading": { "text": "Preheading", "type": "line" },
         "heading": "Lorem ipsum dolor sit amet",
@@ -211,6 +212,7 @@
       "name": "benefitsList",
       "title": "Benefits List",
       "description": "A list of benefits the company provides.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878853/list1_aazspj.png",
       "templates": ["list1"],
       "type": "body",
       "defaultTemplate": { "name": "list1" },
@@ -220,6 +222,7 @@
       "name": "servicesLanding",
       "title": "Services Landing",
       "description": "The services page landing area.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878865/cover3_xuvwbs.png",
       "data": {
         "preheading": { "text": "Preheading", "type": "plain" },
         "heading": "Lorem ipsum dolor sit amet",
@@ -241,6 +244,7 @@
       "name": "servicesBlock",
       "title": "Services Block",
       "description": "An informational section about the services.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878842/block3_exu2lc.png",
       "data": {
         "preheading": { "text": "Preheading", "type": "dot" },
         "heading": "Lorem ipsum dolor sit amet",

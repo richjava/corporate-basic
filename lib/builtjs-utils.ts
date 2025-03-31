@@ -12,6 +12,7 @@ export async function getComponentMap(sections:any) {
       const section = sections[i];
       const template = section.template.doc;
       const templateFileName = template.name.replace(/[A-Z]/g, function (match: string) {
+        console.log('match...', match)
         return '-' + match.toLowerCase();
       });
       map["section" + i] = import(

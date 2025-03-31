@@ -1,7 +1,121 @@
 {
   "contentTypes": [
     {
+      "name": "author",
+      "title": "Author",
+      "dataPosition": 2,
+      "fields": {
+        "fullName": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "fullName",
+          "required": true
+        },
+        "profile": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "profile"
+        },
+        "posts": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "post",
+          "mappedBy": "author"
+        }
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "profile",
+      "title": "Profile",
+      "dataPosition": 1,
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": false
+        },
+        "excerpt": {
+          "type": "text",
+          "required": false
+        },
+        "bio": {
+          "type": "portabletext"
+        },
+        "position": {
+          "type": "string",
+          "required": false
+        },
+        "profileImage": {
+          "type": "image"
+        }
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "post",
+      "title": "Post",
+      "dataPosition": 3,
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": true
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "title",
+          "required": true
+        },
+        "content": {
+          "type": "portabletext"
+        },
+        "blurb": {
+          "type": "text"
+        },
+        "category": {
+          "type": "text"
+        },
+        "image": {
+          "type": "image"
+        },
+        "date": {
+          "type": "date",
+          "required": true
+        },
+        "author": {
+          "type": "relation",
+          "relation": "manyToOne",
+          "target": "author",
+          "inversedBy": "posts"
+        },
+        "tags": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "tag"
+        }
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "tag",
+      "title": "Tag",
+      "dataPosition": 1,
+      "fields": {
+        "name": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "name",
+          "required": true
+        }
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
       "name": "primaryMenuItem",
+      "title": "Primary Menu Item",
       "fields": {
         "slug": {
           "type": "uid",
@@ -17,7 +131,82 @@
           "unique": true,
           "required": true
         }
-      }
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "author",
+      "title": "Author",
+      "dataPosition": 2,
+      "fields": {
+        "fullName": {
+          "type": "string"
+        },
+        "slug": {
+          "type": "uid",
+          "targetField": "fullName",
+          "required": true
+        },
+        "profile": {
+          "type": "relation",
+          "relation": "oneToOne",
+          "target": "profile"
+        },
+        "posts": {
+          "type": "relation",
+          "relation": "oneToMany",
+          "target": "post",
+          "mappedBy": "author"
+        }
+      },
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "profile",
+      "title": "Profile",
+      "dataPosition": 1,
+      "fields": {
+        "title": {
+          "type": "string",
+          "required": false
+        },
+        "excerpt": {
+          "type": "text",
+          "required": false
+        },
+        "bio": {
+          "type": "portabletext"
+        },
+        "position": {
+          "type": "string",
+          "required": false
+        },
+        "profileImage": {
+          "type": "image"
+        }
+      },
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "primaryMenuItem",
+      "title": "Primary Menu Item",
+      "fields": {
+        "slug": {
+          "type": "uid",
+          "targetField": "label",
+          "required": true
+        },
+        "label": {
+          "type": "string",
+          "required": true
+        },
+        "url": {
+          "type": "string",
+          "unique": true,
+          "required": true
+        }
+      },
+      "namespace": "richjava_about-basic"
     },
     {
       "name": "benefit",
@@ -131,12 +320,28 @@
         },
         {
           "name": "benefitsList"
+        },
+        {
+          "name": "blogTeaser"
+        },
+        {
+          "name": "aboutTeaser"
         }
       ]
     },
     {
       "name": "blog",
-      "demoSections": []
+      "demoSections": [
+        {
+          "name": "blogSeo"
+        },
+        {
+          "name": "blogLanding"
+        },
+        {
+          "name": "postList"
+        }
+      ]
     },
     {
       "name": "blogArticle",
@@ -146,26 +351,89 @@
           "populate": [
             {
               "name": "author",
+              "type": "author",
               "populate": [
                 {
-                  "name": "profile"
+                  "name": "profile",
+                  "type": "profile"
                 }
               ]
             },
             {
-              "name": "tags"
+              "name": "tags",
+              "type": "tag"
             }
           ]
         }
       },
-      "demoSections": []
+      "demoSections": [
+        {
+          "name": "blogArticleLanding"
+        },
+        {
+          "name": "blogRelatedArticles"
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "demoSections": [
+        {
+          "name": "homeSeo"
+        },
+        {
+          "name": "mainLanding"
+        },
+        {
+          "name": "featuresList"
+        },
+        {
+          "name": "benefitsList"
+        },
+        {
+          "name": "blogTeaser"
+        },
+        {
+          "name": "aboutTeaser"
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "demoSections": [
+        {
+          "name": "aboutSeo"
+        },
+        {
+          "name": "aboutLanding"
+        },
+        {
+          "name": "team"
+        }
+      ]
+    },
+    {
+      "name": "authorArticle",
+      "contentType": {
+        "name": "author",
+        "config": {
+          "populate": [
+            {
+              "name": "profile",
+              "type": "profile"
+            }
+          ]
+        }
+      },
+      "demoSections": [
+        {
+          "name": "authorArticleLanding"
+        }
+      ]
     },
     {
       "name": "services",
       "demoSections": [
-        {
-          "name": "contactTeaser"
-        },
         {
           "name": "servicesSeo"
         },
@@ -174,6 +442,9 @@
         },
         {
           "name": "servicesBlock"
+        },
+        {
+          "name": "contactTeaser"
         }
       ]
     },
@@ -193,39 +464,393 @@
     {
       "name": "header",
       "title": "Header",
+      "type": "layout",
       "description": "The header contains the company logo, main site navigation and often a call-to-action button.",
       "templates": [
         "header1"
       ],
-      "type": "layout",
       "defaultTemplate": {
         "name": "header1"
       },
+      "position": "start",
       "collections": {
-        "primaryMenuItem": {
-          "config": {}
-        }
-      }
+        "primaryMenuItem": {}
+      },
+      "namespace": "richjava_blog-basic"
     },
     {
       "name": "footer",
       "title": "Footer",
+      "type": "layout",
       "description": "The footer contains secondary site navigation.",
       "templates": [
         "footer1"
       ],
-      "type": "layout",
       "defaultTemplate": {
         "name": "footer1"
       },
-      "collections": {
-        "primaryMenuItem": {
-          "config": {}
+      "position": "end",
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "blogSeo",
+      "title": "Blog SEO",
+      "templates": [
+        "seo"
+      ],
+      "defaultTemplate": {
+        "name": "seo"
+      },
+      "type": "head",
+      "data": {
+        "pageTitle": "Blog | Blog Basic Built.js Plugin",
+        "description": "Blog page for a site built with the Corporate Tailwind Built.js Theme.",
+        "shareImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870601/image_lwgqjo.png",
+          "path": "/images/plugins/richjava_blog-basic/image.png",
+          "width": 1280,
+          "height": 768
         },
-        "socialLink": {
-          "config": {}
+        "twitterCardType": "summary",
+        "twitterUsername": ""
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "blogTeaser",
+      "title": "Blog Teaser",
+      "description": "A set of blog items on the Home page.",
+      "templates": [
+        "list1",
+        "list2"
+      ],
+      "defaultTemplate": {
+        "name": "list2"
+      },
+      "data": {
+        "columns": 3
+      },
+      "collections": {
+        "post": {
+          "config": {
+            "sort": {
+              "0": "date:asc"
+            },
+            "limit": 3,
+            "populate": [
+              {
+                "name": "tags",
+                "type": "tag"
+              }
+            ]
+          },
+          "article": {
+            "name": "blogArticle"
+          }
         }
-      }
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "blogLanding",
+      "title": "Blog Landing",
+      "description": "The blog page landing area. This area contains the latest published blog post.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870675/list1_ba4rio.png",
+      "templates": [
+        "list1"
+      ],
+      "defaultTemplate": {
+        "name": "list1"
+      },
+      "collections": {
+        "post": {
+          "config": {
+            "sort": {
+              "0": "date:asc"
+            },
+            "limit": 1,
+            "populate": [
+              {
+                "name": "tags",
+                "type": "tag"
+              }
+            ]
+          },
+          "article": {
+            "name": "blogArticle"
+          }
+        }
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "postList",
+      "title": "Blog Item List",
+      "description": "A list of all published blog posts excluding the latest published blog post.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870675/list2_lirwam.png",
+      "templates": [
+        "list1",
+        "list2"
+      ],
+      "defaultTemplate": {
+        "name": "list2"
+      },
+      "collections": {
+        "post": {
+          "config": {
+            "sort": {
+              "0": "date:asc"
+            },
+            "limit": 3,
+            "offset": 1,
+            "populate": [
+              {
+                "name": "tags",
+                "type": "tag"
+              }
+            ]
+          },
+          "article": {
+            "name": "blogArticle"
+          }
+        }
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "blogArticleLanding",
+      "title": "Blog Article Landing",
+      "description": "The blog post article page landing section.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870643/article1_kyaxxq.png",
+      "templates": [
+        "article1"
+      ],
+      "defaultTemplate": {
+        "name": "article1"
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "blogRelatedArticles",
+      "title": "Blog Related Articles",
+      "description": "A list of related articles to and excluding the currently viewed article.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870675/list2_lirwam.png",
+      "templates": [
+        "list1",
+        "list2"
+      ],
+      "defaultTemplate": {
+        "name": "list2"
+      },
+      "data": {
+        "columns": 3
+      },
+      "collections": {
+        "post": {
+          "config": {
+            "sort": {
+              "0": "date:asc"
+            },
+            "limit": 3,
+            "populate": [
+              {
+                "name": "tags",
+                "type": "tag"
+              }
+            ]
+          },
+          "article": {
+            "name": "blogArticle"
+          }
+        }
+      },
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "header",
+      "title": "Header",
+      "type": "layout",
+      "description": "The header contains the company logo, main site navigation and often a call-to-action button.",
+      "templates": [
+        "header1"
+      ],
+      "defaultTemplate": {
+        "name": "header1"
+      },
+      "position": "start",
+      "collections": {
+        "primaryMenuItem": {}
+      },
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "type": "layout",
+      "description": "The footer contains secondary site navigation.",
+      "templates": [
+        "footer1"
+      ],
+      "defaultTemplate": {
+        "name": "footer1"
+      },
+      "position": "end",
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "aboutSeo",
+      "title": "About SEO",
+      "data": {
+        "pageTitle": "About | About Basic Built.js Plugin",
+        "description": "About page for About Basic Built.js Plugin.",
+        "shareImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
+          "path": "/images/image.png",
+          "width": 1280,
+          "height": 768,
+          "type": "image"
+        },
+        "twitterCardType": "summary"
+      },
+      "templates": [
+        "seo"
+      ],
+      "type": "head",
+      "defaultTemplate": {
+        "name": "seo"
+      },
+      "collections": {},
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "aboutTeaser",
+      "title": "Home About Teaser",
+      "description": "A small teaser about the company.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878843/block1_smb2xd.png",
+      "data": {
+        "preheading": {
+          "text": "Preheading",
+          "type": "dot"
+        },
+        "heading": "Lorem ipsum dolor sit amet",
+        "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
+        "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
+        "buttonLinks": [
+          {
+            "url": "/about",
+            "label": "Button",
+            "type": "primary"
+          }
+        ]
+      },
+      "templates": [
+        "block1",
+        "block3"
+      ],
+      "type": "body",
+      "defaultTemplate": {
+        "name": "block1"
+      },
+      "collections": {},
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "team",
+      "title": "Team",
+      "description": "An informational section about the people in the company.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878880/profile-cards1_pifmdj.png",
+      "data": {
+        "heading": "Lorem ipsum dolor sit amet"
+      },
+      "templates": [
+        "profileCards1"
+      ],
+      "type": "body",
+      "defaultTemplate": {
+        "name": "profileCards1"
+      },
+      "collections": {
+        "author": {
+          "config": {
+            "limit": 3,
+            "populate": [
+              {
+                "name": "profile",
+                "type": "profile"
+              }
+            ]
+          }
+        }
+      },
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "aboutLanding",
+      "title": "About Landing",
+      "description": "The about page landing area, conveying trust and relatability.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878866/cover2_kauqyl.png",
+      "data": {
+        "preheading": {
+          "text": "Preheading",
+          "type": "line"
+        },
+        "heading": "Lorem ipsum dolor sit amet",
+        "blurb": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878796/image-square_khojsy.png",
+          "path": "/images/image-square.png",
+          "width": 1000,
+          "height": 1000,
+          "type": "image"
+        },
+        "buttonLinks": []
+      },
+      "templates": [
+        "cover1",
+        "cover2",
+        "cover3"
+      ],
+      "type": "body",
+      "defaultTemplate": {
+        "name": "cover2"
+      },
+      "collections": {},
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "aboutText",
+      "title": "About Text",
+      "description": "An informational section about the company.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878843/block1_smb2xd.png",
+      "data": {
+        "heading": "Lorem ipsum dolor sit amet",
+        "blurb1": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.",
+        "blurb2": "Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident."
+      },
+      "templates": [
+        "block1",
+        "block3"
+      ],
+      "type": "body",
+      "defaultTemplate": {
+        "name": "block1"
+      },
+      "collections": {},
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "authorArticleLanding",
+      "title": "Author Article Landing",
+      "description": "The author detail page.",
+      "templates": [
+        "profileArticle1"
+      ],
+      "type": "body",
+      "defaultTemplate": {
+        "name": "profileArticle1"
+      },
+      "collections": {},
+      "namespace": "richjava_about-basic"
     },
     {
       "name": "homeSeo",
@@ -452,6 +1077,7 @@
       "name": "contactTeaser",
       "title": "Contact Teaser",
       "description": "A contact call-to-action to encourage users to make contact.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878892/banner1_agmnah.png",
       "data": {
         "preheading": {
           "text": "Preheading",
@@ -479,6 +1105,7 @@
       "name": "benefitsList",
       "title": "Benefits List",
       "description": "A list of benefits the company provides.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878853/list1_aazspj.png",
       "templates": [
         "list1"
       ],
@@ -496,6 +1123,7 @@
       "name": "servicesLanding",
       "title": "Services Landing",
       "description": "The services page landing area.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878865/cover3_xuvwbs.png",
       "data": {
         "preheading": {
           "text": "Preheading",
@@ -526,6 +1154,7 @@
       "name": "servicesBlock",
       "title": "Services Block",
       "description": "An informational section about the services.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878842/block3_exu2lc.png",
       "data": {
         "preheading": {
           "text": "Preheading",
@@ -561,257 +1190,211 @@
       "name": "header1",
       "title": "Header 1",
       "category": "headers",
-      "namespace": "richjava_corporate-basic",
       "description": "Simple header with justified logo and nav links.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/headers/header1.tsx"
-    },
-    {
-      "name": "header2",
-      "title": "Header 2",
-      "category": "headers",
-      "namespace": "richjava_corporate-basic",
-      "description": "Simple header with a logo followed by nav links.",
-      "repoUrl": "https://github.com/richjava/corporate/tree/main/src/components/templates/headers/header2"
+      "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/richjava_blog-basic/templates/headers/header1.tsx",
+      "demoUrl": "",
+      "namespace": "richjava_blog-basic"
     },
     {
       "name": "footer1",
       "title": "Footer 1",
       "category": "footers",
-      "namespace": "richjava_corporate-basic",
       "description": "Simple footer with centered content and social links.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/footers/footer1.tsx"
-    },
-    {
-      "name": "footer2",
-      "title": "Footer 2",
-      "category": "footers",
-      "namespace": "richjava_corporate-basic",
-      "description": "Simple footer with two equal columns and social links.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/footers/footer2.tsx"
+      "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/richjava_blog-basic/templates/footers/footer1.tsx",
+      "demoUrl": "",
+      "namespace": "richjava_blog-basic"
     },
     {
       "name": "seo",
       "title": "SEO",
       "category": "head",
-      "namespace": "richjava_corporate-basic",
       "description": "Define SEO meta titles, meta descriptions and social media meta data.",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/head/seo.tsx"
-    },
-    {
-      "name": "banner1",
-      "title": "Banner 1",
-      "category": "banners",
-      "namespace": "richjava_corporate-basic",
-      "description": "Full width banner with centered content.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878892/banner1_agmnah.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/banners/banner1.tsx"
-    },
-    {
-      "name": "banner2",
-      "title": "Banner 2",
-      "category": "banners",
-      "namespace": "richjava_corporate-basic",
-      "description": "Full width banner with left aligned content.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878882/banner2_q9vib8.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/banners/banner2.tsx"
-    },
-    {
-      "name": "banner3",
-      "title": "Banner 3",
-      "category": "banners",
-      "namespace": "richjava_corporate-basic",
-      "description": "Full width banner with two offset columns.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/banner3_gdq2oo.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/banners/banner3.tsx"
-    },
-    {
-      "name": "banner4",
-      "title": "Banner 4",
-      "category": "banners",
-      "namespace": "richjava_corporate-basic",
-      "description": "Banner with centered content.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878890/banner4_kkytf8.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/banners/banner4.tsx"
-    },
-    {
-      "name": "banner5",
-      "title": "Banner 5",
-      "category": "banners",
-      "namespace": "richjava_corporate-basic",
-      "description": "Banner with two offset columns.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878887/banner5_mfu7oy.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/banners/banner5.tsx"
-    },
-    {
-      "name": "block1",
-      "title": "Block 1",
-      "category": "blocks",
-      "namespace": "richjava_corporate-basic",
-      "description": "Text block with left aligned content.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878843/block1_smb2xd.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/blocks/block1.tsx"
-    },
-    {
-      "name": "block2",
-      "title": "Block 2",
-      "category": "blocks",
-      "namespace": "richjava_corporate-basic",
-      "description": "Text block with centered content.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878839/block2_kk8bqi.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/blocks/block2.tsx"
-    },
-    {
-      "name": "block3",
-      "title": "Block 3",
-      "category": "blocks",
-      "namespace": "richjava_corporate-basic",
-      "description": "Text block with two equal columns and left aligned content.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878842/block3_exu2lc.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/blocks/block3.tsx"
-    },
-    {
-      "name": "block4",
-      "title": "Block 4",
-      "category": "blocks",
-      "namespace": "richjava_corporate-basic",
-      "description": "Text block with two equal columns and centered content.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878844/block4_hdaaiz.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/blocks/block4.tsx"
-    },
-    {
-      "name": "block5",
-      "title": "Block 5",
-      "category": "blocks",
-      "namespace": "richjava_corporate-basic",
-      "description": "Text block with two equal columns and split content",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878846/block5_vy4xnh.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/blocks/block5.tsx"
-    },
-    {
-      "name": "cards1",
-      "title": "Cards 1",
-      "category": "cards",
-      "namespace": "richjava_corporate-basic",
-      "description": "Cards with three equal columns and left aligned content.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878875/cards1_cpzq8p.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards1.tsx"
-    },
-    {
-      "name": "cards2",
-      "title": "Cards 2",
-      "category": "cards",
-      "namespace": "richjava_corporate-basic",
-      "description": "Cards with three equal columns and centered content.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878877/cards2_c6za9h.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards2.tsx"
-    },
-    {
-      "name": "cards3",
-      "title": "Cards 3",
-      "category": "cards",
-      "namespace": "richjava_corporate-basic",
-      "description": "Cards with three equal columns, left aligned content and a background colour.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878879/cards3_r2g41v.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards3.tsx"
-    },
-    {
-      "name": "cards4",
-      "title": "Cards 4",
-      "category": "cards",
-      "namespace": "richjava_corporate-basic",
-      "description": "Cards with three equal columns, centered content and a background colour.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878871/cards4_sdeorh.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards4.tsx"
-    },
-    {
-      "name": "cards5",
-      "title": "Cards 5",
-      "category": "cards",
-      "namespace": "richjava_corporate-basic",
-      "description": "Cards with three equal columns, left aligned content and an image.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878874/cards5_hvuunv.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/cards/cards5.tsx"
-    },
-    {
-      "name": "cover1",
-      "title": "Cover 1",
-      "category": "covers",
-      "namespace": "richjava_corporate-basic",
-      "description": "Full viewport cover with text content and a supporting image.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878863/cover1_mzktvz.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/covers/cover1.tsx"
-    },
-    {
-      "name": "cover2",
-      "title": "Cover 2",
-      "category": "covers",
-      "namespace": "richjava_corporate-basic",
-      "description": "Full viewport cover with text content and a circle supporting image.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878866/cover2_kauqyl.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/covers/cover2.tsx"
-    },
-    {
-      "name": "cover3",
-      "title": "Cover 3",
-      "category": "covers",
-      "namespace": "richjava_corporate-basic",
-      "description": "Full viewport cover with text content and a full height supporting image.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878865/cover3_xuvwbs.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/covers/cover3.tsx"
-    },
-    {
-      "name": "cover4",
-      "title": "Cover 4",
-      "category": "covers",
-      "namespace": "richjava_corporate-basic",
-      "description": "Full viewport cover with centered text content and supporting image.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878861/cover4_x03mqw.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/covers/cover4.tsx"
-    },
-    {
-      "name": "cover5",
-      "title": "Cover 5",
-      "category": "covers",
-      "namespace": "richjava_corporate-basic",
-      "description": "Full viewport cover with text content and a full width and height background image.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878854/cover5_nwtta9.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/covers/cover5.tsx"
+      "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/richjava_blog-basic/templates/head/seo.tsx",
+      "namespace": "richjava_blog-basic"
     },
     {
       "name": "list1",
       "title": "List 1",
       "category": "lists",
-      "namespace": "richjava_corporate-basic",
-      "description": "List of items with two equal columns and reversed even rows.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878853/list1_aazspj.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/lists/list1.tsx"
+      "description": "List item with two offset columns and split content.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870675/list1_ba4rio.png",
+      "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/richjava_blog-basic/templates/lists/list1.tsx",
+      "demoUrl": "",
+      "namespace": "richjava_blog-basic"
     },
     {
       "name": "list2",
       "title": "List 2",
       "category": "lists",
-      "namespace": "richjava_corporate-basic",
+      "description": "List of items with three equal columns, left aligned content and an image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870675/list2_lirwam.png",
+      "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/richjava_blog-basic/templates/lists/list2.tsx",
+      "demoUrl": "",
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "article1",
+      "title": "Article 1",
+      "category": "articles",
+      "description": "Article section with hero image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870643/article1_kyaxxq.png",
+      "repoUrl": "https://github.com/richjava/blog/blob/main/components/plugins/richjava_blog-basic/templates/articles/article1.tsx",
+      "demoUrl": "",
+      "namespace": "richjava_blog-basic"
+    },
+    {
+      "name": "header1",
+      "title": "Header 1",
+      "category": "headers",
+      "isDemo": true,
+      "description": "Simple header with justified logo and nav links.",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/plugins/richjava_about-basic/templates/headers/header1.tsx",
+      "demoUrl": "",
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "footer1",
+      "title": "Footer 1",
+      "category": "footers",
+      "isDemo": true,
+      "description": "Simple footer with centered content and social links.",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/plugins/richjava_about-basic/templates/footers/footer1.tsx",
+      "demoUrl": "",
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "seo",
+      "title": "SEO",
+      "category": "head",
+      "description": "Define SEO meta titles, meta descriptions and social media meta data.",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/plugins/richjava_about-basic/templates/head/seo.tsx",
+      "namespace": "richjava_about-basic"
+    },
+    {
+      "name": "block1",
+      "title": "Block 1",
+      "category": "blocks",
+      "namespace": "richjava_about-basic",
+      "description": "Text block with left aligned content.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878843/block1_smb2xd.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/blocks/block1.tsx"
+    },
+    {
+      "name": "block2",
+      "title": "Block 2",
+      "category": "blocks",
+      "namespace": "richjava_about-basic",
+      "description": "Text block with centered content.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878839/block2_kk8bqi.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/blocks/block2.tsx"
+    },
+    {
+      "name": "block3",
+      "title": "Block 3",
+      "category": "blocks",
+      "namespace": "richjava_about-basic",
+      "description": "Text block with two equal columns and left aligned content.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878842/block3_exu2lc.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/blocks/block3.tsx"
+    },
+    {
+      "name": "block4",
+      "title": "Block 4",
+      "category": "blocks",
+      "namespace": "richjava_about-basic",
+      "description": "Text block with two equal columns and centered content.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878844/block4_hdaaiz.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/blocks/block4.tsx"
+    },
+    {
+      "name": "block5",
+      "title": "Block 5",
+      "category": "blocks",
+      "namespace": "richjava_about-basic",
+      "description": "Text block with two equal columns and split content",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878846/block5_vy4xnh.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/blocks/block5.tsx"
+    },
+    {
+      "name": "profileCards1",
+      "title": "Profile Cards 1",
+      "category": "cards",
+      "namespace": "richjava_about-basic",
+      "description": "Takes a collection of authors. Cards with three equal columns, left aligned content and an image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878880/profile-cards1_pifmdj.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/cards/profile-cards1.tsx"
+    },
+    {
+      "name": "cover1",
+      "title": "Cover 1",
+      "category": "covers",
+      "namespace": "richjava_about-basic",
+      "description": "Full viewport cover with text content and a supporting image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878863/cover1_mzktvz.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/covers/cover1.tsx"
+    },
+    {
+      "name": "cover2",
+      "title": "Cover 2",
+      "category": "covers",
+      "namespace": "richjava_about-basic",
+      "description": "Full viewport cover with text content and a circle supporting image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878866/cover2_kauqyl.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/covers/cover2.tsx"
+    },
+    {
+      "name": "cover3",
+      "title": "Cover 3",
+      "category": "covers",
+      "namespace": "richjava_about-basic",
+      "description": "Full viewport cover with text content and a full height supporting image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878865/cover3_xuvwbs.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/covers/cover3.tsx"
+    },
+    {
+      "name": "cover4",
+      "title": "Cover 4",
+      "category": "covers",
+      "namespace": "richjava_about-basic",
+      "description": "Full viewport cover with centered text content and supporting image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878861/cover4_x03mqw.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/covers/cover4.tsx"
+    },
+    {
+      "name": "cover5",
+      "title": "Cover 5",
+      "category": "covers",
+      "namespace": "richjava_about-basic",
+      "description": "Full viewport cover with text content and a full width and height background image.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878854/cover5_nwtta9.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/covers/cover5.tsx"
+    },
+    {
+      "name": "list1",
+      "title": "List 1",
+      "category": "lists",
+      "namespace": "richjava_about-basic",
+      "description": "List of items with two equal columns and reversed even rows.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878853/list1_aazspj.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/lists/list1.tsx"
+    },
+    {
+      "name": "list2",
+      "title": "List 2",
+      "category": "lists",
+      "namespace": "richjava_about-basic",
       "description": "List of items with two equal columns and reversed odd rows.",
       "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878852/list2_ohyoby.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/lists/list2.tsx"
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/lists/list2.tsx"
     },
     {
-      "name": "form1",
-      "title": "Form 1",
-      "category": "forms",
-      "namespace": "richjava_corporate-basic",
-      "description": "Contact details with two equal columns and form fields.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878847/form1_zjmwvf.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/forms/form1.tsx"
-    },
-    {
-      "name": "form2",
-      "title": "Form 2",
-      "category": "forms",
-      "namespace": "richjava_corporate-basic",
-      "description": "Contact details with two equal columns and form fields.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878850/form2_ian0kz.png",
-      "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/forms/form2.tsx"
+      "name": "profileArticle1",
+      "title": "Profile Article 1",
+      "category": "articles",
+      "namespace": "richjava_about-basic",
+      "description": "Article section with hero image for introducing authors.",
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878886/profile-article1_qkfnzw.png",
+      "repoUrl": "https://github.com/richjava/about-basic/blob/main/components/templates/articles/profile-article1.tsx"
     },
     {
       "name": "header1",
@@ -1084,6 +1667,20 @@
   "collections": {
     "authors": [
       {
+        "_id": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
+        "_type": "author",
+        "slug": "barry-foo",
+        "fullName": "Barry Foo",
+        "profile": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efab70"
+      },
+      {
+        "_id": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb61",
+        "_type": "author",
+        "slug": "jane-doe",
+        "fullName": "Jane Doe",
+        "profile": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efab7g1"
+      },
+      {
         "_id": "author-eb4f3b3c-04ed-4e08-b8fb-6b7db6efcb80",
         "_type": "author",
         "fullName": "Bob Brown",
@@ -1103,6 +1700,326 @@
         "fullName": "Joe Bloggs",
         "slug": "joe-bloggs",
         "profile": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb62"
+      }
+    ],
+    "posts": [
+      {
+        "slug": "lorem-ipsum-dolor",
+        "_type": "post",
+        "title": "Lorem ipsum dolor",
+        "description": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tincidunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+        "content": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "19a60e06f0df224064bcc49031e291a2",
+                "_type": "span",
+                "text": "Congue mauris rhoncus aenean amit. Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet id donec. Ut eu sem integer vitae justo. Faucibus a pellentesque sit amet porttitor eget. Rhoncus mattis rhoncus urna neque viverra justo nec. Vitae suscipit tellus mauris a diam."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291g1",
+            "markDefs": []
+          },
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "19a60e06f0df224064bcc49031e291a4",
+                "_type": "span",
+                "text": "Id eu nisl nunc mi ipsum faucibus. Nulla facilisi nullam vehicula ipsum a arcu cursus. Mi quis hendrerit dolor magna eget est lorem ipsum. Diam ut venenatis tellus in metus vulputate eu scelerisque. Et malesuada fames ac turpis egestas integer. Pharetra sit amet aliquam Elementum sagittis vitae et leo duis ut. Netus et malesuada fames ac turpis egestas. Potenti nullam ac tortor vitae purus faucibus. Tellus mauris a diam maecenas sed. Enim sed faucibus turpis in. At varius vel pharetra vel turpis nunc eget. Rhoncus mattis enim Rhoncus urna neque viverra justo nec ultrices. Id diam maecenas ultricies mi eget mauris pharetra et. Mauris rhoncus aenean vel elit. Lorem ipsum dolor sit amet consectetur. Accumsan sit amet nulla facilisi morbi tempus iaculis. Curabitur vitae nunc sed velit dignissim sodales ut. In egestas erat imperdiet sed euismod nisi. Eleifend mi in nulla posuere sollicitudin. Convallis convallis tellus id interdum velit."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291g2",
+            "markDefs": []
+          }
+        ],
+        "blurb": "Ac tincidunt ex feugiat vel imperdiet urna facilisis a nullam ac magna quis nunc.",
+        "category": "Category",
+        "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870601/image_lwgqjo.png",
+          "width": 1280,
+          "height": 768
+        },
+        "date": "2023-06-03",
+        "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
+        "tags": [
+          "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb70"
+        ]
+      },
+      {
+        "slug": "lorem-ipsum-dolor-sit",
+        "_type": "post",
+        "title": "Lorem ipsum dolor sit",
+        "description": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tincidunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+        "content": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "19a60e06f0df224064bcc49031e291a5",
+                "_type": "span",
+                "text": "Congue mauris rhoncus aenean amit. Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet id donec. Ut eu sem integer vitae justo. Faucibus a pellentesque sit amet porttitor eget. Rhoncus mattis rhoncus urna neque viverra justo nec. Vitae suscipit tellus mauris a diam."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291g3",
+            "markDefs": []
+          },
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "19a60e06f0df224064bcc49031e291a6",
+                "_type": "span",
+                "text": "Id eu nisl nunc mi ipsum faucibus. Nulla facilisi nullam vehicula ipsum a arcu cursus. Mi quis hendrerit dolor magna eget est lorem ipsum. Diam ut venenatis tellus in metus vulputate eu scelerisque. Et malesuada fames ac turpis egestas integer. Pharetra sit amet aliquam Elementum sagittis vitae et leo duis ut. Netus et malesuada fames ac turpis egestas. Potenti nullam ac tortor vitae purus faucibus. Tellus mauris a diam maecenas sed. Enim sed faucibus turpis in. At varius vel pharetra vel turpis nunc eget. Rhoncus mattis enim Rhoncus urna neque viverra justo nec ultrices. Id diam maecenas ultricies mi eget mauris pharetra et. Mauris rhoncus aenean vel elit. Lorem ipsum dolor sit amet consectetur. Accumsan sit amet nulla facilisi morbi tempus iaculis. Curabitur vitae nunc sed velit dignissim sodales ut. In egestas erat imperdiet sed euismod nisi. Eleifend mi in nulla posuere sollicitudin. Convallis convallis tellus id interdum velit."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291g4",
+            "markDefs": []
+          }
+        ],
+        "blurb": "Nunc volutpat ex libero nullam ac magna quis nunc tempor maximus eget at ligula.",
+        "category": "Category",
+        "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870601/image_lwgqjo.png",
+          "width": 1280,
+          "height": 768
+        },
+        "date": "2023-06-03",
+        "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb61",
+        "tags": [
+          "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb70",
+          "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb71"
+        ]
+      },
+      {
+        "slug": "lorem-ipsum-dolor-sit-amet",
+        "_type": "post",
+        "title": "Lorem ipsum dolor sit amet",
+        "description": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tincidunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+        "content": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "19a60e06f0df224064bcc49031e291a7",
+                "_type": "span",
+                "text": "Congue mauris rhoncus aenean amit. Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet id donec. Ut eu sem integer vitae justo. Faucibus a pellentesque sit amet porttitor eget. Rhoncus mattis rhoncus urna neque viverra justo nec. Vitae suscipit tellus mauris a diam."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291g5",
+            "markDefs": []
+          },
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "19a60e06f0df224064bcc49031e291a8",
+                "_type": "span",
+                "text": "Id eu nisl nunc mi ipsum faucibus. Nulla facilisi nullam vehicula ipsum a arcu cursus. Mi quis hendrerit dolor magna eget est lorem ipsum. Diam ut venenatis tellus in metus vulputate eu scelerisque. Et malesuada fames ac turpis egestas integer. Pharetra sit amet aliquam Elementum sagittis vitae et leo duis ut. Netus et malesuada fames ac turpis egestas. Potenti nullam ac tortor vitae purus faucibus. Tellus mauris a diam maecenas sed. Enim sed faucibus turpis in. At varius vel pharetra vel turpis nunc eget. Rhoncus mattis enim Rhoncus urna neque viverra justo nec ultrices. Id diam maecenas ultricies mi eget mauris pharetra et. Mauris rhoncus aenean vel elit. Lorem ipsum dolor sit amet consectetur. Accumsan sit amet nulla facilisi morbi tempus iaculis. Curabitur vitae nunc sed velit dignissim sodales ut. In egestas erat imperdiet sed euismod nisi. Eleifend mi in nulla posuere sollicitudin. Convallis convallis tellus id interdum velit."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291g6",
+            "markDefs": []
+          }
+        ],
+        "blurb": "Consectetur adipiscing elit integer placerat scelerisque leo ac tincidunt ex feugiat vel.",
+        "category": "Category",
+        "image": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870601/image_lwgqjo.png",
+          "width": 1280,
+          "height": 768
+        },
+        "date": "2023-06-03",
+        "author": "author-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
+        "tags": [
+          "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb71"
+        ]
+      }
+    ],
+    "primaryMenuItems": [
+      {
+        "slug": "blog",
+        "_type": "primaryMenuItem",
+        "label": "Blog",
+        "url": "/blog"
+      },
+      {
+        "slug": "about",
+        "_type": "primaryMenuItem",
+        "label": "About",
+        "url": "/about"
+      },
+      {
+        "_id": "primary-menu-item-cN7ujGbqRl",
+        "_type": "primaryMenuItem",
+        "slug": "services",
+        "label": "Services",
+        "url": "/services"
+      },
+      {
+        "_id": "primary-menu-item-eBrdqsMmeq",
+        "_type": "primaryMenuItem",
+        "slug": "contact",
+        "label": "Contact",
+        "url": "/contact"
+      }
+    ],
+    "profiles": [
+      {
+        "_id": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efab70",
+        "_type": "profile",
+        "title": "Profile for Barry",
+        "excerpt": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tinc_idunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+        "bio": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "19a10e06f0df224064bcc49031a291a1",
+                "_type": "span",
+                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031a291a1",
+            "markDefs": []
+          }
+        ],
+        "position": "Writer",
+        "profileImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870601/image_lwgqjo.png",
+          "path": "/images/plugins/richjava_blog-basic/image.png",
+          "width": 48,
+          "height": 48
+        }
+      },
+      {
+        "_id": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efab7g1",
+        "_type": "profile",
+        "title": "Profile for Jane",
+        "excerpt": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tinc_idunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+        "bio": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "19a20e06f0df224064bcc49031a291a1",
+                "_type": "span",
+                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031b291a2",
+            "markDefs": []
+          }
+        ],
+        "position": "Writer",
+        "profileImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870601/image_lwgqjo.png",
+          "path": "/images/plugins/richjava_blog-basic/image.png",
+          "width": 48,
+          "height": 48
+        }
+      },
+      {
+        "_id": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
+        "_type": "profile",
+        "title": "Profile for Bob",
+        "excerpt": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tinc_idunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+        "bio": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "11a60e06f0df224064bcc49031e291a1",
+                "_type": "span",
+                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291a1",
+            "markDefs": []
+          }
+        ],
+        "position": "Writer",
+        "profileImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
+          "path": "/images/image.png",
+          "width": 48,
+          "height": 48,
+          "type": "image",
+          "_key": "8oRJHzbD0"
+        }
+      },
+      {
+        "_id": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb61",
+        "_type": "profile",
+        "title": "Profile for Mary",
+        "excerpt": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tinc_idunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+        "bio": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "12a60e06f0df224064bcc49031e291a1",
+                "_type": "span",
+                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291a2",
+            "markDefs": []
+          }
+        ],
+        "position": "Writer",
+        "profileImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
+          "path": "/images/image.png",
+          "width": 48,
+          "height": 48,
+          "type": "image",
+          "_key": "18KdVROXcA"
+        }
+      },
+      {
+        "_id": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb62",
+        "_type": "profile",
+        "title": "Profile for Joe",
+        "excerpt": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tinc_idunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
+        "bio": [
+          {
+            "_type": "block",
+            "children": [
+              {
+                "_key": "13a60e06f0df224064bcc49031e291a1",
+                "_type": "span",
+                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
+              }
+            ],
+            "_key": "19a60e06f0df224064bcc49031e291a3",
+            "markDefs": []
+          }
+        ],
+        "position": "Writer",
+        "profileImage": {
+          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
+          "path": "/images/image.png",
+          "width": 48,
+          "height": 48,
+          "type": "image",
+          "_key": "TlRmoABfA9"
+        }
+      }
+    ],
+    "tags": [
+      {
+        "_id": "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb70",
+        "_type": "tag",
+        "slug": "tag-1",
+        "name": "Tag 1"
+      },
+      {
+        "_id": "tag-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb71",
+        "_type": "tag",
+        "slug": "tag-2",
+        "name": "Tag 2"
       }
     ],
     "benefits": [
@@ -1265,111 +2182,6 @@
         ]
       }
     ],
-    "primaryMenuItems": [
-      {
-        "_id": "primary-menu-item-cN7ujGbqRl",
-        "_type": "primaryMenuItem",
-        "slug": "services",
-        "label": "Services",
-        "url": "/services"
-      },
-      {
-        "_id": "primary-menu-item-eBrdqsMmeq",
-        "_type": "primaryMenuItem",
-        "slug": "contact",
-        "label": "Contact",
-        "url": "/contact"
-      }
-    ],
-    "profiles": [
-      {
-        "_id": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb60",
-        "_type": "profile",
-        "title": "Profile for Bob",
-        "excerpt": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tinc_idunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
-        "bio": [
-          {
-            "_type": "block",
-            "children": [
-              {
-                "_key": "11a60e06f0df224064bcc49031e291a1",
-                "_type": "span",
-                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
-              }
-            ],
-            "_key": "19a60e06f0df224064bcc49031e291a1",
-            "markDefs": []
-          }
-        ],
-        "position": "Writer",
-        "profileImage": {
-          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
-          "path": "/images/image.png",
-          "width": 48,
-          "height": 48,
-          "type": "image",
-          "_key": "8oRJHzbD0"
-        }
-      },
-      {
-        "_id": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb61",
-        "_type": "profile",
-        "title": "Profile for Mary",
-        "excerpt": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tinc_idunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
-        "bio": [
-          {
-            "_type": "block",
-            "children": [
-              {
-                "_key": "12a60e06f0df224064bcc49031e291a1",
-                "_type": "span",
-                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
-              }
-            ],
-            "_key": "19a60e06f0df224064bcc49031e291a2",
-            "markDefs": []
-          }
-        ],
-        "position": "Writer",
-        "profileImage": {
-          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
-          "path": "/images/image.png",
-          "width": 48,
-          "height": 48,
-          "type": "image",
-          "_key": "18KdVROXcA"
-        }
-      },
-      {
-        "_id": "profile-fb4f3b3c-04ed-4e08-b8fb-6b7db6efcb62",
-        "_type": "profile",
-        "title": "Profile for Joe",
-        "excerpt": "Consectetur adipiscing elit. Integer placerat scelerisque leo, ac tinc_idunt ex feugiat vel. Nunc volutpat ex libero, vel imperdiet urna facilisis a. Nullam ac magna quis nunc tempor maximus eget at ligula.",
-        "bio": [
-          {
-            "_type": "block",
-            "children": [
-              {
-                "_key": "13a60e06f0df224064bcc49031e291a1",
-                "_type": "span",
-                "text": "Sapien et ligula ullamcorper malesuada proin libero nunc. Sed elementum tempus egestas sed sed risus. Tempor commodo ullamcorper a lacus vestibulum sed arcu non odio. Ut pharetra sit amet aliquam id diam maecenas. Convallis convallis tellus id interdum velit laoreet donec."
-              }
-            ],
-            "_key": "19a60e06f0df224064bcc49031e291a3",
-            "markDefs": []
-          }
-        ],
-        "position": "Writer",
-        "profileImage": {
-          "url": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878797/image_ldyekv.png",
-          "path": "/images/image.png",
-          "width": 48,
-          "height": 48,
-          "type": "image",
-          "_key": "TlRmoABfA9"
-        }
-      }
-    ],
     "services": [
       {
         "_id": "service-MgsMvXRxG_A",
@@ -1452,7 +2264,10 @@
       }
     ]
   },
-  "plugins": [],
+  "plugins": [
+    "richjava_blog-basic",
+    "richjava_about-basic"
+  ],
   "global": {
     "name": "Corporate Basic",
     "logo": {

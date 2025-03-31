@@ -1,1 +1,1 @@
-{"pages":[{"name":"home"},{"name":"about"},{"name":"authorArticle","contentType":{"name":"author","config":{"populate":[{"name":"profile"}]}}}]}
+{"pages":[{"name":"home"},{"name":"about"},{"name":"authorArticle","contentType":{"name":"author","config":{"populate":[{"name":"profile","type":"profile"}]}}}]}
