@@ -9,14 +9,6 @@
       "repoUrl": "https://github.com/richjava/corporate/blob/main/components/templates/headers/header1.tsx"
     },
     {
-      "name": "header2",
-      "title": "Header 2",
-      "category": "headers",
-      "namespace": "richjava_corporate-basic",
-      "description": "Simple header with a logo followed by nav links.",
-      "repoUrl": "https://github.com/richjava/corporate/tree/main/src/components/templates/headers/header2"
-    },
-    {
       "name": "footer1",
       "title": "Footer 1",
       "category": "footers",
