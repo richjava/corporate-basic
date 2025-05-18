@@ -22,11 +22,13 @@ export default function Cover1({ content }: any) {
           <div className="px-4 pt-10 pb-20 lg:py-40">
             <Preheading data={data.preheading}></Preheading>
             <h1 className="display-lg">{data.heading}</h1>
-            <p className="mb-12">{data.blurb}</p>
+            <p className="my-12">{data.blurb}</p>
             {data.buttonLinks &&
               data.buttonLinks.map((button: any) => {
                 return (
+                  <span className="mr-6">
                   <ButtonLink key={button.type} data={button}></ButtonLink>
+                  </span>
                 );
               })}
           </div>

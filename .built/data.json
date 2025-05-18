@@ -741,7 +741,6 @@
       "name": "blogLanding",
       "title": "Blog Landing",
       "description": "The blog page landing area. This area contains the latest published blog post.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870675/list1_ba4rio.png",
       "templates": [
         "list1"
       ],
@@ -773,7 +772,6 @@
       "name": "postList",
       "title": "Blog Item List",
       "description": "A list of all published blog posts excluding the latest published blog post.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870675/list2_lirwam.png",
       "templates": [
         "list1",
         "list2"
@@ -807,7 +805,6 @@
       "name": "blogArticleLanding",
       "title": "Blog Article Landing",
       "description": "The blog post article page landing section.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870643/article1_kyaxxq.png",
       "templates": [
         "article1"
       ],
@@ -820,7 +817,6 @@
       "name": "blogRelatedArticles",
       "title": "Blog Related Articles",
       "description": "A list of related articles to and excluding the currently viewed article.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725870675/list2_lirwam.png",
       "templates": [
         "list1",
         "list2"
@@ -945,12 +941,12 @@
         "buttonLinks": [
           {
             "url": "/services",
-            "label": "Button",
+            "label": "Services",
             "type": "primary"
           },
           {
             "url": "/contact",
-            "label": "Button",
+            "label": "Contact",
             "type": "secondary"
           }
         ]

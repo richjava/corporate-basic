@@ -117,8 +117,8 @@
           "type": "image"
         },
         "buttonLinks": [
-          { "url": "/services", "label": "Button", "type": "primary" },
-          { "url": "/contact", "label": "Button", "type": "secondary" }
+          { "url": "/services", "label": "Services", "type": "primary" },
+          { "url": "/contact", "label": "Contact", "type": "secondary" }
         ]
       },
       "templates": ["cover1", "cover2", "cover3"],

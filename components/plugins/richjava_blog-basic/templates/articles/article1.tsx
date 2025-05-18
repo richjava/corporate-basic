@@ -58,7 +58,7 @@ export default function Article1({ content }: any) {
                     />
                   </div>
                   <div>
-                    <p className="mb-0 font-bold text-black capitalize paragraph-md">
+                    <p className="mb-0 font-bold capitalize paragraph-md">
                       {author.fullName}
                     </p>
                     <p className="mb-0 text-sm capitalize">
