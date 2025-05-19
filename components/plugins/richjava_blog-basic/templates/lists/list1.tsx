@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Link from "next/link";
 import Image from "next/image";
 import { format } from "date-fns";
@@ -6,11 +7,11 @@ import { Tag } from "@/components/plugins/richjava_blog-basic/shared";
 
 export default function List1({ content }: any) {
   if (!content) return <></>;
-  let { collections = null } = { ...content };
+  const { collections = null } = { ...content };
   if (!collections) {
     return <></>;
   }
-  let collectionName = Object.keys(collections)[0];
+  const collectionName = Object.keys(collections)[0];
   const heroPost = collections[collectionName][0];
   const url = `/${collectionSlug(heroPost)}/${entrySlug(heroPost)}`;
   return (

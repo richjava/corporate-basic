@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ButtonLink, Preheading } from "@/components/plugins/richjava_about-basic/elements";
 
 export default function Block1({ content }:any) {
   if (!content) return <></>;
-  let { data=null } = {...content};
+  const { data=null } = {...content};
   return (
     <section id="block-1" className="template">
       <div className="mx-auto max-w-screen-xl">

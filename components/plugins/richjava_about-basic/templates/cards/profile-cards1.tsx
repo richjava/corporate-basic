@@ -1,16 +1,17 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
 import Link from "next/link";
 import { collectionSlug, entrySlug } from "@/lib/builtjs-utils";
 
 export default function ProfileCards1({ content }: any) {
   if (!content) return <></>;
-  let { collections = null } = { ...content };
+  const { collections = null } = { ...content };
   const cols = 3;
   if (!collections) {
     throw new Error("No template collections");
   }
-  let collectionName = Object.keys(collections)[0];
-  let collection = collections[collectionName];
+  const collectionName = Object.keys(collections)[0];
+  const collection = collections[collectionName];
 
   return (
     <section id="profile-cards-1" className="template">

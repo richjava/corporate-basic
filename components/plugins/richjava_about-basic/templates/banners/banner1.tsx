@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ButtonLink } from "@/components/plugins/richjava_about-basic/elements";
 
 export default function Banner1({ content }:any) {
   if (!content) return <></>;
-  let { data=null} = {...content};
+  const { data=null} = {...content};
   return (
     <section id="banner-1" className="template">
       <div className="px-4 py-20 text-center bg-primary dark:bg-gray-700">

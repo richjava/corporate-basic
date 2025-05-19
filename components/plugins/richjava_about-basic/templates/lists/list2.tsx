@@ -1,15 +1,16 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Link from "next/link";
 import { collectionSlug, entrySlug } from "@/lib/builtjs-utils";
 import Image from "next/image";
 
-export default function List2({ content, router }: any) {
+export default function List2({ content }: any) {
   if (!content) return <></>;
   const { collections } = content;
   if (!collections) {
     return <></>;
   }
-  let collectionName = Object.keys(collections)[0];
-  let collection = collections[collectionName];
+  const collectionName = Object.keys(collections)[0];
+  const collection = collections[collectionName];
 
   return (
     <section id="list-2" className="template">

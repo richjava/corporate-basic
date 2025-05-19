@@ -1,15 +1,16 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
 import { widthForImage, heightForImage } from "@/lib/builtjs-utils";
 import { ButtonLink, Preheading } from "@/components/plugins/richjava_about-basic/elements";
 
 export default function List1({ content }: any) {
   if (!content) return <></>;
-  let { collections = null } = { ...content };
+  const { collections = null } = { ...content };
   if (!collections) {
     return <></>;
   }
-  let collectionName = Object.keys(collections)[0];
-  let collection = collections[collectionName];
+  const collectionName = Object.keys(collections)[0];
+  const collection = collections[collectionName];
 
   return (
     <section id="list-1" className="template">

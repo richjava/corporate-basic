@@ -27,8 +27,8 @@ export function getComponents(sections: any): Promise<React.ComponentType[]> {
     getComponentMap(sections).then((map: any) => {
       let comps: React.ComponentType[] = [];
       for (const key of Object.keys(map)) {
-        let comp = dynamic(() => map[key], {
-          suspense: false,
+        const comp = dynamic(() => map[key], {
+          loading: () => null
         });
         comps.push(comp);
       }

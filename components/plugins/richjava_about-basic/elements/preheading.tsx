@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export default function Preheading({ data }:any) {
   if (!data) return <></>;
   return (

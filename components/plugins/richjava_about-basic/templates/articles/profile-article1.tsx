@@ -1,12 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Head from "next/head";
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
 
 export default function ProfileArticle1({ content }: any) {
   if (!content) return <></>;
-  let { entry: author = null } = { ...content };
+  const { entry: author = null } = { ...content };
 
-  let profile = author ? author.profile : null;
+  const profile = author ? author.profile : null;
   return (
     <>
       <Head>

@@ -1,18 +1,19 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
 import Link from "next/link";
 import { collectionSlug, entrySlug } from "@/lib/builtjs-utils";
 
 export default function Cards5({ content }: any) {
   if (!content) return <></>;
-  let { collections = null } = { ...content };
-  let data: any = null;
+  const { collections = null } = { ...content };
+  const data: any = null;
   const DEFAULT_COLS = 3;
   const cols = (data && data.columns) || DEFAULT_COLS;
   if (!collections) {
     return <></>;
   }
-  let collectionName = Object.keys(collections)[0];
-  let collection = collections[collectionName];
+  const collectionName = Object.keys(collections)[0];
+  const collection = collections[collectionName];
 
   return (
     <section id="cards-5" className="template">

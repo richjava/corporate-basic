@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Link from "next/link";
 import Image from "next/image";
 import { format } from "date-fns";
@@ -10,8 +11,8 @@ export default function List2({ content }: any) {
   if (!collections) {
     return <></>;
   }
-  let collectionName = Object.keys(collections)[0];
-  let collection = collections[collectionName];
+  const collectionName = Object.keys(collections)[0];
+  const collection = collections[collectionName];
   return (
     <section id="list2" className="px-4 py-20 template">
       <div className="max-w-screen-xl mx-auto">

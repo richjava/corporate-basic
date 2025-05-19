@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import Image from "next/image";
 import { ButtonLink, Preheading } from "@/components/plugins/richjava_about-basic/elements";
 
 export default function Cover5({ content }: any) {
   if (!content) return <></>;
-  let { data = null } = { ...content };
+  const { data = null } = { ...content };
 
   return (
     <section id="cover-5" className="p-0 template">

@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
 import { widthForImage, heightForImage } from "@/lib/builtjs-utils";
 import { ButtonLink, Preheading } from "@/components/plugins/richjava_about-basic/elements";
 
 export default function Cover1({ content }: any) {
   if (!content) return <></>;
-  let { data = null } = { ...content };
+  const { data = null } = { ...content };
 
   return (
     <section id="cover-1" className="p-0 template">

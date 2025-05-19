@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { format } from "date-fns";
 import Head from "next/head";
 import Image from "next/image";
@@ -7,7 +8,7 @@ import { PortableText } from "@portabletext/react";
 
 export default function Article1({ content }: any) {
   if (!content) return <></>;
-  let { entry = null } = { ...content };
+  const { entry = null } = { ...content };
   let author = null;
   if (entry && entry.author) {
     author = entry.author;
