@@ -1,4 +1,5 @@
-import { GetStaticPaths, GetStaticProps } from "next";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+  import { GetStaticPaths, GetStaticProps } from "next";
   import { withRouter } from "next/router";
   import { getConfig, fetchEntries } from "@builtjs/theme";
   import Page from "@/lib/theme/page";
