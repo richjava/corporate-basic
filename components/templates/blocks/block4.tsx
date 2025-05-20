@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ButtonLink, Preheading } from "@/components/elements";
 
 export default function Block4({ content }:any) {
   if (!content) return <></>;
-  let { data=null } = {...content};
+  const { data=null } = {...content};
   return (
     <section id="block-4" className="template">
       <div className="mx-auto text-center max-w-screen-xl">

@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ButtonLink, Preheading } from "@/components/elements";
 
 export default function Block5({ content }: any) {
   if (!content) return <></>;
-  let { data = null } = { ...content };
+  const { data = null } = { ...content };
   return (
     <section id="block-5" className="template">
       <div className="mx-auto max-w-screen-xl">

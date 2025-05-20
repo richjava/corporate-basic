@@ -1,6 +1,5 @@
-import getConfig from "next/config";
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import dynamic from "next/dynamic";
-const { publicRuntimeConfig } = getConfig();
 
 export async function getComponentMap(sections:any) {
   return new Promise(async (resolve) => {
@@ -25,7 +24,7 @@ export async function getComponentMap(sections:any) {
 export function getComponents(sections: any): Promise<React.ComponentType[]> {
   return new Promise((resolve) => {
     getComponentMap(sections).then((map: any) => {
-      let comps: React.ComponentType[] = [];
+      const comps: React.ComponentType[] = [];
       for (const key of Object.keys(map)) {
         const comp = dynamic(() => map[key], {
           loading: () => null
@@ -35,12 +34,6 @@ export function getComponents(sections: any): Promise<React.ComponentType[]> {
       resolve(comps);
     });
   });
-}
-
-export const urlForImage = (source: any) => {
-  return `${publicRuntimeConfig.BACKEND_URL || ""}${
-    source?.path
-  }`
 }
 
 export const widthForImage = (source: any) =>

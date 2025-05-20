@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Head from "next/head";
 
 export default function Seo( {content}:any ) {
-  let { data = {} } = { ...content };
-  let shareImage = data?.shareImage.url;
+  const { data = {} } = { ...content };
+  const shareImage = data?.shareImage.url;
   return (
     <>
       {data && (

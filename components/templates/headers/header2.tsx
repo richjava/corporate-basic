@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,7 +10,7 @@ export default function Header2({ content }: any) {
   const router = useRouter();
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   if (!content) return <></>;
-  let { collections = null, global = null } = { ...content };
+  const { collections = null, global = null } = { ...content };
   const collectionNames = {
     PRIMARY_MENU_ITEMS: "primaryMenuItem",
   };

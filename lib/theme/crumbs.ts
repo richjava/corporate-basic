@@ -1,16 +1,17 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const setupCrumbs = async (router: any) => {
   requestAnimationFrame(() => {
     showCrumbs();
   });
-  router.events.on("routeChangeComplete", (url: string) => {
+  router.events.on("routeChangeComplete", () => {
     showCrumbs();
   });
 };
 
 const showCrumbs = async () => {
-  let crumbClassName = "crumb";
+  const crumbClassName = "crumb";
   if (!document.querySelector("#crumb-style")) {
-    let css = getCrumbCSS(),
+    const css = getCrumbCSS(),
       style = document.createElement("style");
     style.id = "crumb-style";
     style.type = "text/css";
@@ -18,11 +19,11 @@ const showCrumbs = async () => {
     document.head.appendChild(style);
   }
   setTimeout(function () {
-    let sections = document.querySelectorAll(".template");
+    const sections = document.querySelectorAll(".template");
     sections.forEach((section) => {
       if (!section.querySelector(".crumb")) {
-        let id = section.id;
-        let crumb = document.createElement("div");
+        const id = section.id;
+        const crumb = document.createElement("div");
         crumb.classList.add(crumbClassName);
         crumb.innerHTML = id;
         section.prepend(crumb);

@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ButtonLink } from "@/components/elements";
 
 export default function Banner5({ content }:any) {
   if (!content) return <></>;
-  let { data } = content;
+  const { data } = content;
   return (
     <section id="banner-5" className="template">
       <div className="max-w-screen-lg mx-auto">

@@ -1,4 +1,4 @@
-
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Preheading,
   Field,
@@ -9,7 +9,7 @@ import SocialLink from "@/components/shared/social-link";
 
 export default function Form1({ content }: any) {
   if (!content) return <></>;
-  let { data = null, collections = null } = { ...content };
+  const { data = null, collections = null } = { ...content };
   let socialLinks = [];
   if (collections && collections["socialLink"]) {
     socialLinks = collections["socialLink"];

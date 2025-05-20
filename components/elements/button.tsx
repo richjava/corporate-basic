@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export default function Button({ data }:any) {
   if (!data) return <></>;
   const isPrimary = data.type === "primary";

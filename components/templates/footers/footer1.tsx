@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import SocialLink from "@/components/shared/social-link";
 
 export default function Footer1({ content }: any) {
   if (!content) return <></>;
-  let { collections = null } = { ...content };
+  const { collections = null } = { ...content };
   let primaryMenuItems = [];
   if (collections && collections["primaryMenuItem"]) {
     primaryMenuItems = collections["primaryMenuItem"];

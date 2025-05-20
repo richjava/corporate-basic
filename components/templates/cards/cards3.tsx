@@ -1,13 +1,14 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ButtonLink, Preheading } from "@/components/elements";
 
 export default function Cards3({ content }: any) {
   if (!content) return <></>;
-  let { collections = null } = { ...content };
+  const { collections = null } = { ...content };
   if (!collections) {
     return <></>;
   }
-  let collectionName = Object.keys(collections)[0];
-  let collection = collections[collectionName];
+  const collectionName = Object.keys(collections)[0];
+  const collection = collections[collectionName];
 
   return (
     <section id="cards-3" className="template">

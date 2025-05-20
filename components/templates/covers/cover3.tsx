@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
 import { ButtonLink, Preheading } from "@/components/elements";
 
 export default function Cover3({ content }: any) {
   if (!content) return <></>;
-  let { data = null } = { ...content };
+  const { data = null } = { ...content };
 
   return (
     <section id="cover-3" className="p-0 template">

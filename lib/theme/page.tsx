@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import { useParams } from "next/navigation";
 import Layout from "@/components/plugins/richjava_about-basic/layout";
 import { getComponents } from "@/lib/builtjs-utils";
 import { setupCrumbs } from "@/lib/theme/crumbs";
-const { transformPage, fetchEntry, fetchEntries } = require("@builtjs/theme");
+import { transformPage, fetchEntry, fetchEntries } from "@builtjs/theme";
 
 const Page = ({ config }: any) => {
   const router = useRouter();
@@ -28,11 +29,11 @@ const Page = ({ config }: any) => {
     if (!config) {
       return;
     }
-    let page: any = await transformPage(config, params);
+    const page: any = await transformPage(config, params);
     if (!page) {
       return;
     }
-    let [sectionComponents, layoutComponents] = await Promise.all([
+    const [sectionComponents, layoutComponents] = await Promise.all([
       getComponents(page.sections),
       getComponents(page.layout.sections),
     ]);

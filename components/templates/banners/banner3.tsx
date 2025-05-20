@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ButtonLink } from "@/components/elements";
 
 export default function Banner3({ content }: any) {
   if (!content) return <></>;
-  let { data = null } = { ...content };
+  const { data = null } = { ...content };
   return (
     <section id="banner-3" className="template">
       <div className="px-4 py-20 bg-primary dark:bg-gray-700">
