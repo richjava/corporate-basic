@@ -124,6 +124,7 @@
       "templates": ["cover1", "cover2", "cover3"],
       "type": "body",
       "defaultTemplate": { "name": "cover1" },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878863/cover1_mzktvz.png",
       "collections": {}
     },
     {
@@ -180,6 +181,7 @@
       "templates": ["form1", "form2"],
       "type": "body",
       "defaultTemplate": { "name": "form1" },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878847/form1_zjmwvf.png",
       "collections": { "socialLink": { "config": {} } }
     },
     {
@@ -189,13 +191,13 @@
       "templates": ["cards1", "cards2", "cards3", "cards4"],
       "type": "body",
       "defaultTemplate": { "name": "cards1" },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878875/cards1_cpzq8p.png",
       "collections": { "feature": { "config": {} } }
     },
     {
       "name": "contactTeaser",
       "title": "Contact Teaser",
       "description": "A contact call-to-action to encourage users to make contact.",
-      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878892/banner1_agmnah.png",
       "data": {
         "preheading": { "text": "Preheading", "type": "line" },
         "heading": "Lorem ipsum dolor sit amet",
@@ -206,6 +208,7 @@
       "templates": ["banner1, banner2, banner3, banner4, banner5"],
       "type": "body",
       "defaultTemplate": { "name": "banner1" },
+      "imageUrl": "https://res.cloudinary.com/dn7feeelf/image/upload/v1725878892/banner1_agmnah.png",
       "collections": {}
     },
     {

@@ -7,7 +7,7 @@ export default function Banner3({ content }: any) {
   return (
     <section id="banner-3" className="template">
       <div className="px-4 py-20 bg-primary dark:bg-gray-700">
-        <div className="mx-auto max-w-screen-lg">
+        <div className="mx-auto max-w-screen-lg text-white">
           <div className="items-center grid grid-cols-1 gap-x-6 md:grid-cols-4">
             <div className="col-span-3">
               <h2 className="heading-xl">{data.heading}</h2>
