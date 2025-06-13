@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@builtjs/theme": "^1.4.16",
+    "@builtjs/theme": "^1.4.38",
     "@portabletext/react": "^3.2.1",
     "date-fns": "^4.1.0",
     "next": "15.3.2",
